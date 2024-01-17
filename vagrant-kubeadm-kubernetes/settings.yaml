@@ -11,6 +11,7 @@ cluster_name: Kubernetes Cluster
 network:
   # Worker IPs are simply incremented from the control IP.
   control_ip: 10.0.0.10
+  load_balancer_ip: 10.0.0.100
   dns_servers:
     - 8.8.8.8
     - 1.1.1.1
@@ -19,11 +20,14 @@ network:
 nodes:
   control:
     cpu: 2
-    memory: 4096
+    memory: 2048
   workers:
-    count: 1
+    count: 2
     cpu: 1
     memory: 2048
+  load_balancer:
+    cpu: 1
+    memory: 1024
 # Mount additional shared folders from the host into each virtual machine.
 # Note that the project directory is automatically mounted at /vagrant.
 # shared_folders:
