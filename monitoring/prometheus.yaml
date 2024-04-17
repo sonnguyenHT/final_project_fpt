@@ -1,0 +1,34 @@
+# Description: Prometheus application for ArgoCD############################################
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: prometheus
+  namespace: argocd
+  finalizers:
+    - resources-finalizer.argocd.argoproj.io
+spec:
+  destination:
+    namespace: monitoring
+    server: https://kubernetes.default.svc
+  project: default
+  sources:
+    - repoURL: https://github.com/sonnguyenHT/final_project_fpt.git
+      targetRevision: HEAD
+      ref: <customizable reference>
+    - repoURL: https://prometheus-community.github.io/helm-charts/
+      chart: prometheus
+      targetRevision: 19.7.2
+      helm:
+        values: |
+            server:
+              service:
+                type: LoadBalancer
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+      - CreateNamespace=true
+  
+  
+# ############################## END OF prometheus.yaml ####################################

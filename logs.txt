@@ -1,0 +1,4164 @@
+* 
+* ==> Audit <==
+* |--------------|--------------------------------|----------|------|---------|---------------------|---------------------|
+|   Command    |              Args              | Profile  | User | Version |     Start Time      |      End Time       |
+|--------------|--------------------------------|----------|------|---------|---------------------|---------------------|
+| start        |                                | minikube | son  | v1.32.0 | 01 Mar 24 10:58 +07 | 01 Mar 24 11:00 +07 |
+| addons       | list                           | minikube | son  | v1.32.0 | 01 Mar 24 11:00 +07 | 01 Mar 24 11:00 +07 |
+| addons       | enable ingress -p minikube     | minikube | son  | v1.32.0 | 01 Mar 24 11:02 +07 | 01 Mar 24 11:02 +07 |
+| addons       | list                           | minikube | son  | v1.32.0 | 01 Mar 24 11:02 +07 | 01 Mar 24 11:02 +07 |
+| completion   | zsh                            | minikube | son  | v1.32.0 | 01 Mar 24 11:03 +07 | 01 Mar 24 11:03 +07 |
+| addons       | list                           | minikube | son  | v1.32.0 | 01 Mar 24 11:12 +07 | 01 Mar 24 11:12 +07 |
+| stop         |                                | minikube | son  | v1.32.0 | 01 Mar 24 11:15 +07 | 01 Mar 24 11:15 +07 |
+| start        |                                | minikube | son  | v1.32.0 | 01 Mar 24 11:15 +07 | 01 Mar 24 11:17 +07 |
+| ssh          | --node minikube-m02            | minikube | son  | v1.32.0 | 01 Mar 24 11:18 +07 |                     |
+| ssh          | --node minikube-m02            | minikube | son  | v1.32.0 | 01 Mar 24 11:19 +07 |                     |
+| start        |                                | minikube | son  | v1.32.0 | 01 Mar 24 11:24 +07 | 01 Mar 24 11:25 +07 |
+| ssh          | --node minikube-m03            | minikube | son  | v1.32.0 | 01 Mar 24 11:29 +07 |                     |
+| ssh          | --node minikube-m03            | minikube | son  | v1.32.0 | 01 Mar 24 11:29 +07 |                     |
+| stop         |                                | minikube | son  | v1.32.0 | 01 Mar 24 16:27 +07 | 01 Mar 24 16:28 +07 |
+| completion   | zsh                            | minikube | son  | v1.32.0 | 02 Mar 24 18:09 +07 | 02 Mar 24 18:09 +07 |
+| start        |                                | minikube | son  | v1.32.0 | 03 Mar 24 17:38 +07 | 03 Mar 24 17:41 +07 |
+| completion   | zsh                            | minikube | son  | v1.32.0 | 03 Mar 24 17:39 +07 | 03 Mar 24 17:39 +07 |
+| completion   | zsh                            | minikube | son  | v1.32.0 | 03 Mar 24 17:39 +07 | 03 Mar 24 17:39 +07 |
+| update-check |                                | minikube | son  | v1.32.0 | 03 Mar 24 17:39 +07 | 03 Mar 24 17:40 +07 |
+| completion   | zsh                            | minikube | son  | v1.32.0 | 03 Mar 24 17:39 +07 | 03 Mar 24 17:39 +07 |
+| addons       | enable ingress -p minikube     | minikube | son  | v1.32.0 | 03 Mar 24 17:42 +07 | 03 Mar 24 17:42 +07 |
+| addons       | list                           | minikube | son  | v1.32.0 | 03 Mar 24 17:42 +07 | 03 Mar 24 17:42 +07 |
+| ssh          | --node minikube-m03            | minikube | son  | v1.32.0 | 03 Mar 24 17:56 +07 | 03 Mar 24 17:57 +07 |
+| ssh          | --node minikube                | minikube | son  | v1.32.0 | 03 Mar 24 17:57 +07 |                     |
+| completion   | zsh                            | minikube | son  | v1.32.0 | 03 Mar 24 18:05 +07 | 03 Mar 24 18:05 +07 |
+| config       | view                           | minikube | son  | v1.32.0 | 03 Mar 24 18:07 +07 | 03 Mar 24 18:07 +07 |
+| ssh          | --node minikube                | minikube | son  | v1.32.0 | 03 Mar 24 18:20 +07 |                     |
+| completion   | zsh                            | minikube | son  | v1.32.0 | 03 Mar 24 19:59 +07 | 03 Mar 24 19:59 +07 |
+| stop         |                                | minikube | son  | v1.32.0 | 03 Mar 24 20:49 +07 | 03 Mar 24 20:49 +07 |
+| completion   | zsh                            | minikube | son  | v1.32.0 | 05 Mar 24 14:36 +07 | 05 Mar 24 14:36 +07 |
+| start        |                                | minikube | son  | v1.32.0 | 05 Mar 24 14:58 +07 | 05 Mar 24 15:00 +07 |
+| completion   | zsh                            | minikube | son  | v1.32.0 | 05 Mar 24 15:04 +07 | 05 Mar 24 15:04 +07 |
+| ssh          | --node minikube                | minikube | son  | v1.32.0 | 05 Mar 24 15:44 +07 | 05 Mar 24 17:14 +07 |
+| stop         |                                | minikube | son  | v1.32.0 | 05 Mar 24 17:14 +07 | 05 Mar 24 17:15 +07 |
+| start        |                                | minikube | son  | v1.32.0 | 06 Mar 24 09:11 +07 | 06 Mar 24 09:13 +07 |
+| stop         |                                | minikube | son  | v1.32.0 | 06 Mar 24 09:13 +07 | 06 Mar 24 09:13 +07 |
+| start        |                                | minikube | son  | v1.32.0 | 06 Mar 24 09:17 +07 |                     |
+| stop         |                                | minikube | son  | v1.32.0 | 06 Mar 24 09:19 +07 |                     |
+| stop         |                                | minikube | son  | v1.32.0 | 06 Mar 24 09:21 +07 | 06 Mar 24 09:21 +07 |
+| start        |                                | minikube | son  | v1.32.0 | 06 Mar 24 09:21 +07 | 06 Mar 24 09:23 +07 |
+| ssh          | --node minikube                | minikube | son  | v1.32.0 | 06 Mar 24 09:35 +07 |                     |
+| ssh          | --node minikube                | minikube | son  | v1.32.0 | 06 Mar 24 10:34 +07 | 06 Mar 24 12:24 +07 |
+| completion   | zsh                            | minikube | son  | v1.32.0 | 06 Mar 24 10:37 +07 | 06 Mar 24 10:37 +07 |
+| ssh          | --node minikube                | minikube | son  | v1.32.0 | 06 Mar 24 10:38 +07 |                     |
+| ssh          | --node minikube-m03            | minikube | son  | v1.32.0 | 06 Mar 24 12:24 +07 |                     |
+| ssh          | --node minikube-m03            | minikube | son  | v1.32.0 | 06 Mar 24 12:24 +07 |                     |
+| ssh          | --node minikube-m03            | minikube | son  | v1.32.0 | 06 Mar 24 12:24 +07 |                     |
+| ssh          | --node minikube-m03            | minikube | son  | v1.32.0 | 06 Mar 24 12:28 +07 |                     |
+| ssh          | --node minikube                | minikube | son  | v1.32.0 | 06 Mar 24 12:48 +07 | 06 Mar 24 17:24 +07 |
+| start        |                                | minikube | son  | v1.32.0 | 06 Mar 24 12:55 +07 | 06 Mar 24 12:57 +07 |
+| delete       |                                | minikube | son  | v1.32.0 | 06 Mar 24 17:41 +07 | 06 Mar 24 17:41 +07 |
+| start        | --driver=virtualbox            | minikube | son  | v1.32.0 | 06 Mar 24 17:42 +07 | 06 Mar 24 17:43 +07 |
+| delete       |                                | minikube | son  | v1.32.0 | 06 Mar 24 17:43 +07 | 06 Mar 24 17:43 +07 |
+| config       | set driver virtualbox          | minikube | son  | v1.32.0 | 06 Mar 24 17:43 +07 | 06 Mar 24 17:43 +07 |
+| config       | set cpus 2                     | minikube | son  | v1.32.0 | 06 Mar 24 17:43 +07 | 06 Mar 24 17:43 +07 |
+| config       | set memory 4000                | minikube | son  | v1.32.0 | 06 Mar 24 17:43 +07 | 06 Mar 24 17:43 +07 |
+| config       | set disk-size 10GB             | minikube | son  | v1.32.0 | 06 Mar 24 17:43 +07 | 06 Mar 24 17:43 +07 |
+| config       | set kubernetes-version v1.28.3 | minikube | son  | v1.32.0 | 06 Mar 24 17:43 +07 | 06 Mar 24 17:43 +07 |
+| config       | set container-runtime docker   | minikube | son  | v1.32.0 | 06 Mar 24 17:43 +07 | 06 Mar 24 17:43 +07 |
+| config       | set disable-driver-mounts true | minikube | son  | v1.32.0 | 06 Mar 24 17:43 +07 | 06 Mar 24 17:43 +07 |
+|--------------|--------------------------------|----------|------|---------|---------------------|---------------------|
+
+* 
+* ==> Last Start <==
+* Log file created at: 2024/03/06 17:42:13
+Running on machine: son-Bravo-15-B5DD
+Binary: Built with gc go1.21.3 for linux/amd64
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I0306 17:42:13.494940  596486 out.go:296] Setting OutFile to fd 1 ...
+I0306 17:42:13.495200  596486 out.go:348] isatty.IsTerminal(1) = true
+I0306 17:42:13.495204  596486 out.go:309] Setting ErrFile to fd 2...
+I0306 17:42:13.495210  596486 out.go:348] isatty.IsTerminal(2) = true
+I0306 17:42:13.495616  596486 root.go:338] Updating PATH: /home/son/.minikube/bin
+I0306 17:42:13.496683  596486 out.go:303] Setting JSON to false
+I0306 17:42:13.499293  596486 start.go:128] hostinfo: {"hostname":"son-Bravo-15-B5DD","uptime":368512,"bootTime":1709353221,"procs":577,"os":"linux","platform":"ubuntu","platformFamily":"debian","platformVersion":"22.04","kernelVersion":"6.5.0-21-generic","kernelArch":"x86_64","virtualizationSystem":"kvm","virtualizationRole":"host","hostId":"cf4ec15a-f76a-4b58-9e43-1e98b584c88c"}
+I0306 17:42:13.499332  596486 start.go:138] virtualization: kvm host
+I0306 17:42:13.501653  596486 out.go:177] 😄  minikube v1.32.0 on Ubuntu 22.04
+I0306 17:42:13.506811  596486 notify.go:220] Checking for updates...
+I0306 17:42:13.507623  596486 driver.go:378] Setting default libvirt URI to qemu:///system
+I0306 17:42:13.559153  596486 virtualbox.go:136] virtual box version: 7.0.12r159484
+I0306 17:42:13.561862  596486 out.go:177] ✨  Using the virtualbox driver based on user configuration
+I0306 17:42:13.565724  596486 start.go:298] selected driver: virtualbox
+I0306 17:42:13.565744  596486 start.go:902] validating driver "virtualbox" against <nil>
+I0306 17:42:13.565755  596486 start.go:913] status for virtualbox: {Installed:true Healthy:true Running:false NeedsImprovement:false Error:<nil> Reason: Fix: Doc: Version:7.0.12r159484
+}
+I0306 17:42:13.566395  596486 start_flags.go:309] no existing cluster config was found, will generate one from the flags 
+I0306 17:42:13.567990  596486 start_flags.go:913] Wait components to verify : map[apiserver:true system_pods:true]
+I0306 17:42:13.568073  596486 cni.go:84] Creating CNI manager for ""
+I0306 17:42:13.568088  596486 cni.go:158] "virtualbox" driver + "docker" container runtime found on kubernetes v1.24+, recommending bridge
+I0306 17:42:13.568096  596486 start_flags.go:318] Found "bridge CNI" CNI - setting NetworkPlugin=cni
+I0306 17:42:13.568106  596486 start_flags.go:323] config:
+{Name:minikube KeepContext:false EmbedCerts:false MinikubeISO: KicBaseImage:gcr.io/k8s-minikube/kicbase:v0.0.42@sha256:d35ac07dfda971cabee05e0deca8aeac772f885a5348e1a0c0b0a36db20fcfc0 Memory:4000 CPUs:2 DiskSize:10240 VMDriver: Driver:virtualbox HyperkitVpnKitSock: HyperkitVSockPorts:[] DockerEnv:[] ContainerVolumeMounts:[] InsecureRegistry:[] RegistryMirror:[] HostOnlyCIDR:192.168.59.1/24 HypervVirtualSwitch: HypervUseExternalSwitch:false HypervExternalAdapter: KVMNetwork:default KVMQemuURI:qemu:///system KVMGPU:false KVMHidden:false KVMNUMACount:1 APIServerPort:0 DockerOpt:[] DisableDriverMounts:true NFSShare:[] NFSSharesRoot:/nfsshares UUID: NoVTXCheck:false DNSProxy:false HostDNSResolver:true HostOnlyNicType:virtio NatNicType:virtio SSHIPAddress: SSHUser:root SSHKey: SSHPort:22 KubernetesConfig:{KubernetesVersion:v1.28.3 ClusterName:minikube Namespace:default APIServerName:minikubeCA APIServerNames:[] APIServerIPs:[] DNSDomain:cluster.local ContainerRuntime:docker CRISocket: NetworkPlugin:cni FeatureGates: ServiceCIDR:10.96.0.0/12 ImageRepository: LoadBalancerStartIP: LoadBalancerEndIP: CustomIngressCert: RegistryAliases: ExtraOptions:[] ShouldLoadCachedImages:true EnableDefaultCNI:false CNI: NodeIP: NodePort:8443 NodeName:} Nodes:[] Addons:map[] CustomAddonImages:map[] CustomAddonRegistries:map[] VerifyComponents:map[apiserver:true system_pods:true] StartHostTimeout:6m0s ScheduledStop:<nil> ExposedPorts:[] ListenAddress: Network: Subnet: MultiNodeRequested:false ExtraDisks:0 CertExpiration:26280h0m0s Mount:false MountString:/home/son:/minikube-host Mount9PVersion:9p2000.L MountGID:docker MountIP: MountMSize:262144 MountOptions:[] MountPort:0 MountType:9p MountUID:docker BinaryMirror: DisableOptimizations:false DisableMetrics:false CustomQemuFirmwarePath: SocketVMnetClientPath: SocketVMnetPath: StaticIP: SSHAuthSock: SSHAgentPID:0 AutoPauseInterval:1m0s GPUs:}
+I0306 17:42:13.569713  596486 iso.go:125] acquiring lock: {Name:mk7a5dcdbd8394606403d151a7b8634dbe24bfb5 Clock:{} Delay:500ms Timeout:10m0s Cancel:<nil>}
+I0306 17:42:13.573204  596486 out.go:177] 👍  Starting control plane node minikube in cluster minikube
+I0306 17:42:13.575432  596486 preload.go:132] Checking if preload exists for k8s version v1.28.3 and runtime docker
+I0306 17:42:13.575498  596486 preload.go:148] Found local preload: /home/son/.minikube/cache/preloaded-tarball/preloaded-images-k8s-v18-v1.28.3-docker-overlay2-amd64.tar.lz4
+I0306 17:42:13.575508  596486 cache.go:56] Caching tarball of preloaded images
+I0306 17:42:13.575630  596486 preload.go:174] Found /home/son/.minikube/cache/preloaded-tarball/preloaded-images-k8s-v18-v1.28.3-docker-overlay2-amd64.tar.lz4 in cache, skipping download
+I0306 17:42:13.575641  596486 cache.go:59] Finished verifying existence of preloaded tar for  v1.28.3 on docker
+I0306 17:42:13.575944  596486 profile.go:148] Saving config to /home/son/.minikube/profiles/minikube/config.json ...
+I0306 17:42:13.575961  596486 lock.go:35] WriteFile acquiring /home/son/.minikube/profiles/minikube/config.json: {Name:mkc46592f2ce18ca5a1a6b055e785b6873040e04 Clock:{} Delay:500ms Timeout:1m0s Cancel:<nil>}
+I0306 17:42:13.576145  596486 start.go:365] acquiring machines lock for minikube: {Name:mkd9feba9280adeced40d0dd71b8f6be9cc08535 Clock:{} Delay:500ms Timeout:13m0s Cancel:<nil>}
+I0306 17:42:13.576186  596486 start.go:369] acquired machines lock for "minikube" in 30.102µs
+I0306 17:42:13.576200  596486 start.go:93] Provisioning new machine with config: &{Name:minikube KeepContext:false EmbedCerts:false MinikubeISO:https://storage.googleapis.com/minikube/iso/minikube-v1.32.1-amd64.iso KicBaseImage:gcr.io/k8s-minikube/kicbase:v0.0.42@sha256:d35ac07dfda971cabee05e0deca8aeac772f885a5348e1a0c0b0a36db20fcfc0 Memory:4000 CPUs:2 DiskSize:10240 VMDriver: Driver:virtualbox HyperkitVpnKitSock: HyperkitVSockPorts:[] DockerEnv:[] ContainerVolumeMounts:[] InsecureRegistry:[] RegistryMirror:[] HostOnlyCIDR:192.168.59.1/24 HypervVirtualSwitch: HypervUseExternalSwitch:false HypervExternalAdapter: KVMNetwork:default KVMQemuURI:qemu:///system KVMGPU:false KVMHidden:false KVMNUMACount:1 APIServerPort:0 DockerOpt:[] DisableDriverMounts:true NFSShare:[] NFSSharesRoot:/nfsshares UUID: NoVTXCheck:false DNSProxy:false HostDNSResolver:true HostOnlyNicType:virtio NatNicType:virtio SSHIPAddress: SSHUser:root SSHKey: SSHPort:22 KubernetesConfig:{KubernetesVersion:v1.28.3 ClusterName:minikube Namespace:default APIServerName:minikubeCA APIServerNames:[] APIServerIPs:[] DNSDomain:cluster.local ContainerRuntime:docker CRISocket: NetworkPlugin:cni FeatureGates: ServiceCIDR:10.96.0.0/12 ImageRepository: LoadBalancerStartIP: LoadBalancerEndIP: CustomIngressCert: RegistryAliases: ExtraOptions:[] ShouldLoadCachedImages:true EnableDefaultCNI:false CNI: NodeIP: NodePort:8443 NodeName:} Nodes:[{Name: IP: Port:8443 KubernetesVersion:v1.28.3 ContainerRuntime:docker ControlPlane:true Worker:true}] Addons:map[] CustomAddonImages:map[] CustomAddonRegistries:map[] VerifyComponents:map[apiserver:true system_pods:true] StartHostTimeout:6m0s ScheduledStop:<nil> ExposedPorts:[] ListenAddress: Network: Subnet: MultiNodeRequested:false ExtraDisks:0 CertExpiration:26280h0m0s Mount:false MountString:/home/son:/minikube-host Mount9PVersion:9p2000.L MountGID:docker MountIP: MountMSize:262144 MountOptions:[] MountPort:0 MountType:9p MountUID:docker BinaryMirror: DisableOptimizations:false DisableMetrics:false CustomQemuFirmwarePath: SocketVMnetClientPath: SocketVMnetPath: StaticIP: SSHAuthSock: SSHAgentPID:0 AutoPauseInterval:1m0s GPUs:} &{Name: IP: Port:8443 KubernetesVersion:v1.28.3 ContainerRuntime:docker ControlPlane:true Worker:true}
+I0306 17:42:13.576248  596486 start.go:125] createHost starting for "" (driver="virtualbox")
+I0306 17:42:13.578719  596486 out.go:204] 🔥  Creating virtualbox VM (CPUs=2, Memory=4000MB, Disk=10240MB) ...
+I0306 17:42:13.580297  596486 start.go:159] libmachine.API.Create for "minikube" (driver="virtualbox")
+I0306 17:42:13.580321  596486 client.go:168] LocalClient.Create starting
+I0306 17:42:13.580421  596486 main.go:141] libmachine: Reading certificate data from /home/son/.minikube/certs/ca.pem
+I0306 17:42:13.580960  596486 main.go:141] libmachine: Decoding PEM data...
+I0306 17:42:13.580977  596486 main.go:141] libmachine: Parsing certificate...
+I0306 17:42:13.581920  596486 main.go:141] libmachine: Reading certificate data from /home/son/.minikube/certs/cert.pem
+I0306 17:42:13.582432  596486 main.go:141] libmachine: Decoding PEM data...
+I0306 17:42:13.582451  596486 main.go:141] libmachine: Parsing certificate...
+I0306 17:42:13.582522  596486 main.go:141] libmachine: COMMAND: /usr/bin/VBoxManage --version
+I0306 17:42:13.624858  596486 main.go:141] libmachine: STDOUT:
+{
+7.0.12r159484
+}
+I0306 17:42:13.624888  596486 main.go:141] libmachine: STDERR:
+{
+}
+I0306 17:42:13.624933  596486 main.go:141] libmachine: COMMAND: /usr/bin/VBoxManage list hostonlyifs
+I0306 17:42:13.724108  596486 main.go:141] libmachine: STDOUT:
+{
+Name:            vboxnet0
+GUID:            786f6276-656e-4074-8000-0a0027000000
+DHCP:            Disabled
+IPAddress:       192.168.56.1
+NetworkMask:     255.255.255.0
+IPV6Address:     
+IPV6NetworkMaskPrefixLength: 0
+HardwareAddress: 0a:00:27:00:00:00
+MediumType:      Ethernet
+Wireless:        No
+Status:          Down
+VBoxNetworkName: HostInterfaceNetworking-vboxnet0
+
+Name:            vboxnet1
+GUID:            786f6276-656e-4174-8000-0a0027000001
+DHCP:            Disabled
+IPAddress:       10.0.0.1
+NetworkMask:     255.255.255.0
+IPV6Address:     
+IPV6NetworkMaskPrefixLength: 0
+HardwareAddress: 0a:00:27:00:00:01
+MediumType:      Ethernet
+Wireless:        No
+Status:          Down
+VBoxNetworkName: HostInterfaceNetworking-vboxnet1
+
+Name:            vboxnet2
+GUID:            786f6276-656e-4274-8000-0a0027000002
+DHCP:            Disabled
+IPAddress:       192.168.58.1
+NetworkMask:     255.255.255.0
+IPV6Address:     
+IPV6NetworkMaskPrefixLength: 0
+HardwareAddress: 0a:00:27:00:00:02
+MediumType:      Ethernet
+Wireless:        No
+Status:          Down
+VBoxNetworkName: HostInterfaceNetworking-vboxnet2
+
+Name:            vboxnet3
+GUID:            786f6276-656e-4374-8000-0a0027000003
+DHCP:            Disabled
+IPAddress:       192.168.59.1
+NetworkMask:     255.255.255.0
+IPV6Address:     fe80::800:27ff:fe00:3
+IPV6NetworkMaskPrefixLength: 64
+HardwareAddress: 0a:00:27:00:00:03
+MediumType:      Ethernet
+Wireless:        No
+Status:          Up
+VBoxNetworkName: HostInterfaceNetworking-vboxnet3
+
+}
+I0306 17:42:13.724121  596486 main.go:141] libmachine: STDERR:
+{
+}
+I0306 17:42:13.724589  596486 main.go:141] libmachine: Downloading /home/son/.minikube/cache/boot2docker.iso from file:///home/son/.minikube/cache/iso/amd64/minikube-v1.32.1-amd64.iso...
+I0306 17:42:14.283811  596486 main.go:141] libmachine: Creating VirtualBox VM...
+I0306 17:42:14.283823  596486 main.go:141] libmachine: Creating SSH key...
+I0306 17:42:14.332819  596486 main.go:141] libmachine: Creating disk image...
+I0306 17:42:14.332842  596486 main.go:141] libmachine: Creating 10240 MB hard disk image...
+I0306 17:42:14.332851  596486 main.go:141] libmachine: Writing magic tar header
+I0306 17:42:14.332876  596486 main.go:141] libmachine: Writing SSH key tar header
+I0306 17:42:14.332918  596486 main.go:141] libmachine: Calling inner createDiskImage
+I0306 17:42:14.332947  596486 main.go:141] libmachine: /usr/bin/VBoxManage convertfromraw stdin /home/son/.minikube/machines/minikube/disk.vmdk 10737418240 --format VMDK
+I0306 17:42:14.332982  596486 main.go:141] libmachine: Starting command
+I0306 17:42:14.333320  596486 main.go:141] libmachine: Copying to stdin
+I0306 17:42:14.333334  596486 main.go:141] libmachine: Filling zeroes
+I0306 17:42:20.887322  596486 main.go:141] libmachine: Closing STDIN
+I0306 17:42:20.887368  596486 main.go:141] libmachine: Waiting on cmd
+I0306 17:42:20.901804  596486 main.go:141] libmachine: COMMAND: /usr/bin/VBoxManage createvm --basefolder /home/son/.minikube/machines/minikube --name minikube --register
+I0306 17:42:20.971760  596486 main.go:141] libmachine: STDOUT:
+{
+Virtual machine 'minikube' is created and registered.
+UUID: d4122688-2626-4d9d-b4ed-edd33383d12d
+Settings file: '/home/son/.minikube/machines/minikube/minikube/minikube.vbox'
+}
+I0306 17:42:20.971773  596486 main.go:141] libmachine: STDERR:
+{
+}
+I0306 17:42:20.971780  596486 main.go:141] libmachine: VM CPUS: 2
+I0306 17:42:20.971786  596486 main.go:141] libmachine: VM Memory: 4000
+I0306 17:42:20.971818  596486 main.go:141] libmachine: COMMAND: /usr/bin/VBoxManage modifyvm minikube --firmware bios --bioslogofadein off --bioslogofadeout off --bioslogodisplaytime 0 --biosbootmenu disabled --ostype Linux26_64 --cpus 2 --memory 4000 --acpi on --ioapic on --rtcuseutc on --natdnshostresolver1 on --natdnsproxy1 off --cpuhotplug off --pae on --hpet on --hwvirtex on --nestedpaging on --largepages on --vtxvpid on --accelerate3d off --boot1 dvd --natlocalhostreachable1 on
+I0306 17:42:21.046737  596486 main.go:141] libmachine: STDOUT:
+{
+}
+I0306 17:42:21.046748  596486 main.go:141] libmachine: STDERR:
+{
+}
+I0306 17:42:21.046769  596486 main.go:141] libmachine: COMMAND: /usr/bin/VBoxManage modifyvm minikube --nic1 nat --nictype1 virtio --cableconnected1 on
+I0306 17:42:21.116129  596486 main.go:141] libmachine: STDOUT:
+{
+}
+I0306 17:42:21.116148  596486 main.go:141] libmachine: STDERR:
+{
+}
+I0306 17:42:21.116166  596486 main.go:141] libmachine: COMMAND: /usr/bin/VBoxManage storagectl minikube --name SATA --add sata --hostiocache on
+I0306 17:42:21.186532  596486 main.go:141] libmachine: STDOUT:
+{
+}
+I0306 17:42:21.186542  596486 main.go:141] libmachine: STDERR:
+{
+}
+I0306 17:42:21.186557  596486 main.go:141] libmachine: COMMAND: /usr/bin/VBoxManage storageattach minikube --storagectl SATA --port 0 --device 0 --type dvddrive --medium /home/son/.minikube/machines/minikube/boot2docker.iso
+I0306 17:42:21.255986  596486 main.go:141] libmachine: STDOUT:
+{
+}
+I0306 17:42:21.256010  596486 main.go:141] libmachine: STDERR:
+{
+}
+I0306 17:42:21.256048  596486 main.go:141] libmachine: COMMAND: /usr/bin/VBoxManage storageattach minikube --storagectl SATA --port 1 --device 0 --type hdd --medium /home/son/.minikube/machines/minikube/disk.vmdk
+I0306 17:42:21.349162  596486 main.go:141] libmachine: STDOUT:
+{
+}
+I0306 17:42:21.349186  596486 main.go:141] libmachine: STDERR:
+{
+}
+I0306 17:42:21.349200  596486 main.go:141] libmachine: COMMAND: /usr/bin/VBoxManage guestproperty set minikube /VirtualBox/GuestAdd/SharedFolders/MountPrefix /
+I0306 17:42:21.421985  596486 main.go:141] libmachine: STDOUT:
+{
+}
+I0306 17:42:21.422003  596486 main.go:141] libmachine: STDERR:
+{
+}
+I0306 17:42:21.422035  596486 main.go:141] libmachine: COMMAND: /usr/bin/VBoxManage guestproperty set minikube /VirtualBox/GuestAdd/SharedFolders/MountDir /
+I0306 17:42:21.491638  596486 main.go:141] libmachine: STDOUT:
+{
+}
+I0306 17:42:21.491654  596486 main.go:141] libmachine: STDERR:
+{
+}
+I0306 17:42:21.491665  596486 main.go:141] libmachine: Starting the VM...
+I0306 17:42:21.491681  596486 main.go:141] libmachine: COMMAND: /usr/bin/VBoxManage showvminfo minikube --machinereadable
+I0306 17:42:21.589107  596486 main.go:141] libmachine: STDOUT:
+{
+name="minikube"
+Encryption:     disabled
+groups="/"
+ostype="Linux 2.6 / 3.x / 4.x / 5.x (64-bit)"
+UUID="d4122688-2626-4d9d-b4ed-edd33383d12d"
+CfgFile="/home/son/.minikube/machines/minikube/minikube/minikube.vbox"
+SnapFldr="/home/son/.minikube/machines/minikube/minikube/Snapshots"
+LogFldr="/home/son/.minikube/machines/minikube/minikube/Logs"
+hardwareuuid="d4122688-2626-4d9d-b4ed-edd33383d12d"
+memory=4000
+pagefusion="off"
+vram=8
+cpuexecutioncap=100
+hpet="on"
+cpu-profile="host"
+chipset="piix3"
+firmware="BIOS"
+cpus=2
+pae="on"
+longmode="on"
+triplefaultreset="off"
+apic="on"
+x2apic="off"
+nested-hw-virt="off"
+cpuid-portability-level=0
+bootmenu="disabled"
+boot1="dvd"
+boot2="dvd"
+boot3="disk"
+boot4="none"
+acpi="on"
+ioapic="on"
+biosapic="apic"
+biossystemtimeoffset=0
+BIOS NVRAM File="/home/son/.minikube/machines/minikube/minikube/minikube.nvram"
+rtcuseutc="on"
+hwvirtex="on"
+nestedpaging="on"
+largepages="on"
+vtxvpid="on"
+vtxux="on"
+virtvmsavevmload="on"
+iommu="none"
+paravirtprovider="default"
+effparavirtprovider="kvm"
+VMState="poweroff"
+VMStateChangeTime="2024-03-06T10:42:20.948000000"
+graphicscontroller="vboxvga"
+monitorcount=1
+accelerate3d="off"
+accelerate2dvideo="off"
+teleporterenabled="off"
+teleporterport=0
+teleporteraddress=""
+teleporterpassword=""
+tracing-enabled="off"
+tracing-allow-vm-access="off"
+tracing-config=""
+autostart-enabled="off"
+autostart-delay=0
+defaultfrontend=""
+vmprocpriority="default"
+storagecontrollername0="SATA"
+storagecontrollertype0="IntelAhci"
+storagecontrollerinstance0="0"
+storagecontrollermaxportcount0="30"
+storagecontrollerportcount0="30"
+storagecontrollerbootable0="on"
+"SATA-0-0"="/home/son/.minikube/machines/minikube/boot2docker.iso"
+"SATA-ImageUUID-0-0"="7ead6861-b2f7-4b36-9888-a6a3dcf59532"
+"SATA-tempeject-0-0"="off"
+"SATA-IsEjected-0-0"="off"
+"SATA-hot-pluggable-0-0"="off"
+"SATA-nonrotational-0-0"="off"
+"SATA-discard-0-0"="off"
+"SATA-1-0"="/home/son/.minikube/machines/minikube/disk.vmdk"
+"SATA-ImageUUID-1-0"="cf36a715-2519-4068-a0f9-e7d329f87f1d"
+"SATA-hot-pluggable-1-0"="off"
+"SATA-nonrotational-1-0"="off"
+"SATA-discard-1-0"="off"
+"SATA-2-0"="none"
+"SATA-3-0"="none"
+"SATA-4-0"="none"
+"SATA-5-0"="none"
+"SATA-6-0"="none"
+"SATA-7-0"="none"
+"SATA-8-0"="none"
+"SATA-9-0"="none"
+"SATA-10-0"="none"
+"SATA-11-0"="none"
+"SATA-12-0"="none"
+"SATA-13-0"="none"
+"SATA-14-0"="none"
+"SATA-15-0"="none"
+"SATA-16-0"="none"
+"SATA-17-0"="none"
+"SATA-18-0"="none"
+"SATA-19-0"="none"
+"SATA-20-0"="none"
+"SATA-21-0"="none"
+"SATA-22-0"="none"
+"SATA-23-0"="none"
+"SATA-24-0"="none"
+"SATA-25-0"="none"
+"SATA-26-0"="none"
+"SATA-27-0"="none"
+"SATA-28-0"="none"
+"SATA-29-0"="none"
+natnet1="nat"
+macaddress1="0800271912E9"
+cableconnected1="on"
+nic1="nat"
+nictype1="virtio"
+nicspeed1="0"
+mtu="0"
+sockSnd="64"
+sockRcv="64"
+tcpWndSnd="64"
+tcpWndRcv="64"
+nic2="none"
+nic3="none"
+nic4="none"
+nic5="none"
+nic6="none"
+nic7="none"
+nic8="none"
+hidpointing="ps2mouse"
+hidkeyboard="ps2kbd"
+uart1="off"
+uart2="off"
+uart3="off"
+uart4="off"
+lpt1="off"
+lpt2="off"
+audio="default"
+audio_out="off"
+audio_in="off"
+clipboard="disabled"
+draganddrop="disabled"
+vrde="off"
+usb="off"
+ehci="off"
+xhci="off"
+recording_enabled="off"
+recording_screens=1
+ rec_screen0
+rec_screen_enabled="on"
+rec_screen_id=0
+rec_screen_video_enabled="on"
+rec_screen_dest="File"
+rec_screen_dest_filename="/home/son/.minikube/machines/minikube/minikube/minikube-screen0.webm"
+rec_screen_opts="vc_enabled=true,ac_enabled=false,ac_profile=med"
+rec_screen_video_res_xy="1024x768"
+rec_screen_video_rate_kbps=512
+rec_screen_video_fps=25
+GuestMemoryBalloon=0
+}
+I0306 17:42:21.589123  596486 main.go:141] libmachine: STDERR:
+{
+}
+I0306 17:42:21.589170  596486 main.go:141] libmachine: Check network to re-create if needed...
+I0306 17:42:21.589181  596486 main.go:141] libmachine: COMMAND: /usr/bin/VBoxManage list hostonlyifs
+I0306 17:42:21.688462  596486 main.go:141] libmachine: STDOUT:
+{
+Name:            vboxnet0
+GUID:            786f6276-656e-4074-8000-0a0027000000
+DHCP:            Disabled
+IPAddress:       192.168.56.1
+NetworkMask:     255.255.255.0
+IPV6Address:     
+IPV6NetworkMaskPrefixLength: 0
+HardwareAddress: 0a:00:27:00:00:00
+MediumType:      Ethernet
+Wireless:        No
+Status:          Down
+VBoxNetworkName: HostInterfaceNetworking-vboxnet0
+
+Name:            vboxnet1
+GUID:            786f6276-656e-4174-8000-0a0027000001
+DHCP:            Disabled
+IPAddress:       10.0.0.1
+NetworkMask:     255.255.255.0
+IPV6Address:     
+IPV6NetworkMaskPrefixLength: 0
+HardwareAddress: 0a:00:27:00:00:01
+MediumType:      Ethernet
+Wireless:        No
+Status:          Down
+VBoxNetworkName: HostInterfaceNetworking-vboxnet1
+
+Name:            vboxnet2
+GUID:            786f6276-656e-4274-8000-0a0027000002
+DHCP:            Disabled
+IPAddress:       192.168.58.1
+NetworkMask:     255.255.255.0
+IPV6Address:     
+IPV6NetworkMaskPrefixLength: 0
+HardwareAddress: 0a:00:27:00:00:02
+MediumType:      Ethernet
+Wireless:        No
+Status:          Down
+VBoxNetworkName: HostInterfaceNetworking-vboxnet2
+
+Name:            vboxnet3
+GUID:            786f6276-656e-4374-8000-0a0027000003
+DHCP:            Disabled
+IPAddress:       192.168.59.1
+NetworkMask:     255.255.255.0
+IPV6Address:     fe80::800:27ff:fe00:3
+IPV6NetworkMaskPrefixLength: 64
+HardwareAddress: 0a:00:27:00:00:03
+MediumType:      Ethernet
+Wireless:        No
+Status:          Up
+VBoxNetworkName: HostInterfaceNetworking-vboxnet3
+
+}
+I0306 17:42:21.688478  596486 main.go:141] libmachine: STDERR:
+{
+}
+I0306 17:42:21.689183  596486 main.go:141] libmachine: Searching for hostonly interface for IPv4: 192.168.59.1 and Mask: ffffff00
+I0306 17:42:21.689192  596486 main.go:141] libmachine: Found: vboxnet3
+I0306 17:42:21.689200  596486 main.go:141] libmachine: COMMAND: /usr/bin/VBoxManage list dhcpservers
+I0306 17:42:21.768099  596486 main.go:141] libmachine: STDOUT:
+{
+NetworkName:    HostInterfaceNetworking-vboxnet0
+Dhcpd IP:       192.168.56.100
+LowerIPAddress: 192.168.56.101
+UpperIPAddress: 192.168.56.254
+NetworkMask:    255.255.255.0
+Enabled:        Yes
+Global Configuration:
+    minLeaseTime:     default
+    defaultLeaseTime: default
+    maxLeaseTime:     default
+    Forced options:   None
+    Suppressed opts.: None
+        1/legacy: 255.255.255.0
+Groups:               None
+Individual Configs:   None
+
+NetworkName:    HostInterfaceNetworking-vboxnet1
+Dhcpd IP:       0.0.0.0
+LowerIPAddress: 0.0.0.0
+UpperIPAddress: 0.0.0.0
+NetworkMask:    0.0.0.0
+Enabled:        No
+Global Configuration:
+    minLeaseTime:     default
+    defaultLeaseTime: default
+    maxLeaseTime:     default
+    Forced options:   None
+    Suppressed opts.: None
+        1/legacy: 0.0.0.0
+Groups:               None
+Individual Configs:   None
+
+NetworkName:    HostInterfaceNetworking-vboxnet2
+Dhcpd IP:       0.0.0.0
+LowerIPAddress: 0.0.0.0
+UpperIPAddress: 0.0.0.0
+NetworkMask:    0.0.0.0
+Enabled:        No
+Global Configuration:
+    minLeaseTime:     default
+    defaultLeaseTime: default
+    maxLeaseTime:     default
+    Forced options:   None
+    Suppressed opts.: None
+        1/legacy: 0.0.0.0
+Groups:               None
+Individual Configs:   None
+
+NetworkName:    NATNetwork101
+Dhcpd IP:       192.168.10.3
+LowerIPAddress: 192.168.10.4
+UpperIPAddress: 192.168.10.254
+NetworkMask:    255.255.255.0
+Enabled:        Yes
+Global Configuration:
+    minLeaseTime:     default
+    defaultLeaseTime: default
+    maxLeaseTime:     default
+    Forced options:   None
+    Suppressed opts.: None
+        1/legacy: 255.255.255.0
+        3/legacy: 192.168.10.1
+        6/legacy: 192.168.10.1
+       15/legacy: .
+Groups:               None
+Individual Configs:   None
+
+NetworkName:    HostInterfaceNetworking-vboxnet3
+Dhcpd IP:       192.168.59.3
+LowerIPAddress: 192.168.59.100
+UpperIPAddress: 192.168.59.254
+NetworkMask:    255.255.255.0
+Enabled:        Yes
+Global Configuration:
+    minLeaseTime:     default
+    defaultLeaseTime: default
+    maxLeaseTime:     default
+    Forced options:   None
+    Suppressed opts.: None
+        1/legacy: 255.255.255.0
+Groups:               None
+Individual Configs:   None
+}
+I0306 17:42:21.768122  596486 main.go:141] libmachine: STDERR:
+{
+}
+I0306 17:42:21.768237  596486 main.go:141] libmachine: Removing orphan DHCP servers...
+I0306 17:42:21.768248  596486 main.go:141] libmachine: COMMAND: /usr/bin/VBoxManage list hostonlyifs
+I0306 17:42:21.863679  596486 main.go:141] libmachine: STDOUT:
+{
+Name:            vboxnet0
+GUID:            786f6276-656e-4074-8000-0a0027000000
+DHCP:            Disabled
+IPAddress:       192.168.56.1
+NetworkMask:     255.255.255.0
+IPV6Address:     
+IPV6NetworkMaskPrefixLength: 0
+HardwareAddress: 0a:00:27:00:00:00
+MediumType:      Ethernet
+Wireless:        No
+Status:          Down
+VBoxNetworkName: HostInterfaceNetworking-vboxnet0
+
+Name:            vboxnet1
+GUID:            786f6276-656e-4174-8000-0a0027000001
+DHCP:            Disabled
+IPAddress:       10.0.0.1
+NetworkMask:     255.255.255.0
+IPV6Address:     
+IPV6NetworkMaskPrefixLength: 0
+HardwareAddress: 0a:00:27:00:00:01
+MediumType:      Ethernet
+Wireless:        No
+Status:          Down
+VBoxNetworkName: HostInterfaceNetworking-vboxnet1
+
+Name:            vboxnet2
+GUID:            786f6276-656e-4274-8000-0a0027000002
+DHCP:            Disabled
+IPAddress:       192.168.58.1
+NetworkMask:     255.255.255.0
+IPV6Address:     
+IPV6NetworkMaskPrefixLength: 0
+HardwareAddress: 0a:00:27:00:00:02
+MediumType:      Ethernet
+Wireless:        No
+Status:          Down
+VBoxNetworkName: HostInterfaceNetworking-vboxnet2
+
+Name:            vboxnet3
+GUID:            786f6276-656e-4374-8000-0a0027000003
+DHCP:            Disabled
+IPAddress:       192.168.59.1
+NetworkMask:     255.255.255.0
+IPV6Address:     fe80::800:27ff:fe00:3
+IPV6NetworkMaskPrefixLength: 64
+HardwareAddress: 0a:00:27:00:00:03
+MediumType:      Ethernet
+Wireless:        No
+Status:          Up
+VBoxNetworkName: HostInterfaceNetworking-vboxnet3
+
+}
+I0306 17:42:21.863693  596486 main.go:141] libmachine: STDERR:
+{
+}
+I0306 17:42:21.863783  596486 main.go:141] libmachine: Adding/Modifying DHCP server "192.168.59.5" with address range "192.168.59.100" - "192.168.59.254"...
+I0306 17:42:21.863795  596486 main.go:141] libmachine: COMMAND: /usr/bin/VBoxManage list dhcpservers
+I0306 17:42:21.930113  596486 main.go:141] libmachine: STDOUT:
+{
+NetworkName:    HostInterfaceNetworking-vboxnet0
+Dhcpd IP:       192.168.56.100
+LowerIPAddress: 192.168.56.101
+UpperIPAddress: 192.168.56.254
+NetworkMask:    255.255.255.0
+Enabled:        Yes
+Global Configuration:
+    minLeaseTime:     default
+    defaultLeaseTime: default
+    maxLeaseTime:     default
+    Forced options:   None
+    Suppressed opts.: None
+        1/legacy: 255.255.255.0
+Groups:               None
+Individual Configs:   None
+
+NetworkName:    HostInterfaceNetworking-vboxnet1
+Dhcpd IP:       0.0.0.0
+LowerIPAddress: 0.0.0.0
+UpperIPAddress: 0.0.0.0
+NetworkMask:    0.0.0.0
+Enabled:        No
+Global Configuration:
+    minLeaseTime:     default
+    defaultLeaseTime: default
+    maxLeaseTime:     default
+    Forced options:   None
+    Suppressed opts.: None
+        1/legacy: 0.0.0.0
+Groups:               None
+Individual Configs:   None
+
+NetworkName:    HostInterfaceNetworking-vboxnet2
+Dhcpd IP:       0.0.0.0
+LowerIPAddress: 0.0.0.0
+UpperIPAddress: 0.0.0.0
+NetworkMask:    0.0.0.0
+Enabled:        No
+Global Configuration:
+    minLeaseTime:     default
+    defaultLeaseTime: default
+    maxLeaseTime:     default
+    Forced options:   None
+    Suppressed opts.: None
+        1/legacy: 0.0.0.0
+Groups:               None
+Individual Configs:   None
+
+NetworkName:    NATNetwork101
+Dhcpd IP:       192.168.10.3
+LowerIPAddress: 192.168.10.4
+UpperIPAddress: 192.168.10.254
+NetworkMask:    255.255.255.0
+Enabled:        Yes
+Global Configuration:
+    minLeaseTime:     default
+    defaultLeaseTime: default
+    maxLeaseTime:     default
+    Forced options:   None
+    Suppressed opts.: None
+        1/legacy: 255.255.255.0
+        3/legacy: 192.168.10.1
+        6/legacy: 192.168.10.1
+       15/legacy: .
+Groups:               None
+Individual Configs:   None
+
+NetworkName:    HostInterfaceNetworking-vboxnet3
+Dhcpd IP:       192.168.59.3
+LowerIPAddress: 192.168.59.100
+UpperIPAddress: 192.168.59.254
+NetworkMask:    255.255.255.0
+Enabled:        Yes
+Global Configuration:
+    minLeaseTime:     default
+    defaultLeaseTime: default
+    maxLeaseTime:     default
+    Forced options:   None
+    Suppressed opts.: None
+        1/legacy: 255.255.255.0
+Groups:               None
+Individual Configs:   None
+}
+I0306 17:42:21.930126  596486 main.go:141] libmachine: STDERR:
+{
+}
+I0306 17:42:21.930246  596486 main.go:141] libmachine: COMMAND: /usr/bin/VBoxManage dhcpserver modify --netname HostInterfaceNetworking-vboxnet3 --ip 192.168.59.5 --netmask 255.255.255.0 --lowerip 192.168.59.100 --upperip 192.168.59.254 --enable
+I0306 17:42:22.014343  596486 main.go:141] libmachine: STDOUT:
+{
+}
+I0306 17:42:22.014357  596486 main.go:141] libmachine: STDERR:
+{
+}
+I0306 17:42:22.014392  596486 main.go:141] libmachine: COMMAND: /usr/bin/VBoxManage modifyvm minikube --nic2 hostonly --nictype2 virtio --nicpromisc2 deny --hostonlyadapter2 vboxnet3 --cableconnected2 on
+I0306 17:42:22.124843  596486 main.go:141] libmachine: STDOUT:
+{
+}
+I0306 17:42:22.124853  596486 main.go:141] libmachine: STDERR:
+{
+}
+I0306 17:42:22.124996  596486 main.go:141] libmachine: COMMAND: /usr/bin/VBoxManage modifyvm minikube --natpf1 delete ssh
+I0306 17:42:22.190857  596486 main.go:141] libmachine: STDOUT:
+{
+}
+I0306 17:42:22.190884  596486 main.go:141] libmachine: STDERR:
+{
+VBoxManage: error: Code NS_ERROR_INVALID_ARG (0x80070057) - Invalid argument value (extended info not available)
+VBoxManage: error: Context: "RemoveRedirect(Bstr(ValueUnion.psz).raw())" at line 2111 of file VBoxManageModifyVM.cpp
+}
+I0306 17:42:22.190918  596486 main.go:141] libmachine: COMMAND: /usr/bin/VBoxManage modifyvm minikube --natpf1 ssh,tcp,127.0.0.1,39213,,22
+I0306 17:42:22.264638  596486 main.go:141] libmachine: STDOUT:
+{
+}
+I0306 17:42:22.264654  596486 main.go:141] libmachine: STDERR:
+{
+}
+I0306 17:42:22.264669  596486 main.go:141] libmachine: COMMAND: /usr/bin/VBoxManage startvm minikube --type headless
+I0306 17:42:22.598115  596486 main.go:141] libmachine: STDOUT:
+{
+Waiting for VM "minikube" to power on...
+VM "minikube" has been successfully started.
+}
+I0306 17:42:22.598134  596486 main.go:141] libmachine: STDERR:
+{
+}
+I0306 17:42:22.598145  596486 main.go:141] libmachine: Checking vm logs: /home/son/.minikube/machines/minikube/minikube/Logs/VBox.log
+I0306 17:42:22.598422  596486 main.go:141] libmachine: Waiting for an IP...
+I0306 17:42:22.598430  596486 main.go:141] libmachine: Getting to WaitForSSH function...
+I0306 17:42:22.598518  596486 main.go:141] libmachine: Using SSH client type: native
+I0306 17:42:22.598772  596486 main.go:141] libmachine: &{{{<nil> 0 [] [] []} docker [0x808a40] 0x80b720 <nil>  [] 0s} 127.0.0.1 39213 <nil> <nil>}
+I0306 17:42:22.598778  596486 main.go:141] libmachine: About to run SSH command:
+exit 0
+I0306 17:42:42.915037  596486 main.go:141] libmachine: SSH cmd err, output: <nil>: 
+I0306 17:42:42.915065  596486 main.go:141] libmachine: COMMAND: /usr/bin/VBoxManage showvminfo minikube --machinereadable
+I0306 17:42:43.018888  596486 main.go:141] libmachine: STDOUT:
+{
+name="minikube"
+Encryption:     disabled
+groups="/"
+ostype="Linux 2.6 / 3.x / 4.x / 5.x (64-bit)"
+UUID="d4122688-2626-4d9d-b4ed-edd33383d12d"
+CfgFile="/home/son/.minikube/machines/minikube/minikube/minikube.vbox"
+SnapFldr="/home/son/.minikube/machines/minikube/minikube/Snapshots"
+LogFldr="/home/son/.minikube/machines/minikube/minikube/Logs"
+hardwareuuid="d4122688-2626-4d9d-b4ed-edd33383d12d"
+memory=4000
+pagefusion="off"
+vram=8
+cpuexecutioncap=100
+hpet="on"
+cpu-profile="host"
+chipset="piix3"
+firmware="BIOS"
+cpus=2
+pae="on"
+longmode="on"
+triplefaultreset="off"
+apic="on"
+x2apic="off"
+nested-hw-virt="off"
+cpuid-portability-level=0
+bootmenu="disabled"
+boot1="dvd"
+boot2="dvd"
+boot3="disk"
+boot4="none"
+acpi="on"
+ioapic="on"
+biosapic="apic"
+biossystemtimeoffset=0
+BIOS NVRAM File="/home/son/.minikube/machines/minikube/minikube/minikube.nvram"
+rtcuseutc="on"
+hwvirtex="on"
+nestedpaging="on"
+largepages="on"
+vtxvpid="on"
+vtxux="on"
+virtvmsavevmload="on"
+iommu="none"
+paravirtprovider="default"
+effparavirtprovider="kvm"
+VMState="running"
+VMStateChangeTime="2024-03-06T10:42:22.593000000"
+graphicscontroller="vboxvga"
+monitorcount=1
+accelerate3d="off"
+accelerate2dvideo="off"
+teleporterenabled="off"
+teleporterport=0
+teleporteraddress=""
+teleporterpassword=""
+tracing-enabled="off"
+tracing-allow-vm-access="off"
+tracing-config=""
+autostart-enabled="off"
+autostart-delay=0
+defaultfrontend=""
+vmprocpriority="default"
+storagecontrollername0="SATA"
+storagecontrollertype0="IntelAhci"
+storagecontrollerinstance0="0"
+storagecontrollermaxportcount0="30"
+storagecontrollerportcount0="30"
+storagecontrollerbootable0="on"
+"SATA-0-0"="/home/son/.minikube/machines/minikube/boot2docker.iso"
+"SATA-ImageUUID-0-0"="7ead6861-b2f7-4b36-9888-a6a3dcf59532"
+"SATA-tempeject-0-0"="off"
+"SATA-IsEjected-0-0"="off"
+"SATA-hot-pluggable-0-0"="off"
+"SATA-nonrotational-0-0"="off"
+"SATA-discard-0-0"="off"
+"SATA-1-0"="/home/son/.minikube/machines/minikube/disk.vmdk"
+"SATA-ImageUUID-1-0"="cf36a715-2519-4068-a0f9-e7d329f87f1d"
+"SATA-hot-pluggable-1-0"="off"
+"SATA-nonrotational-1-0"="off"
+"SATA-discard-1-0"="off"
+"SATA-2-0"="none"
+"SATA-3-0"="none"
+"SATA-4-0"="none"
+"SATA-5-0"="none"
+"SATA-6-0"="none"
+"SATA-7-0"="none"
+"SATA-8-0"="none"
+"SATA-9-0"="none"
+"SATA-10-0"="none"
+"SATA-11-0"="none"
+"SATA-12-0"="none"
+"SATA-13-0"="none"
+"SATA-14-0"="none"
+"SATA-15-0"="none"
+"SATA-16-0"="none"
+"SATA-17-0"="none"
+"SATA-18-0"="none"
+"SATA-19-0"="none"
+"SATA-20-0"="none"
+"SATA-21-0"="none"
+"SATA-22-0"="none"
+"SATA-23-0"="none"
+"SATA-24-0"="none"
+"SATA-25-0"="none"
+"SATA-26-0"="none"
+"SATA-27-0"="none"
+"SATA-28-0"="none"
+"SATA-29-0"="none"
+natnet1="nat"
+macaddress1="0800271912E9"
+cableconnected1="on"
+nic1="nat"
+nictype1="virtio"
+nicspeed1="0"
+mtu="0"
+sockSnd="64"
+sockRcv="64"
+tcpWndSnd="64"
+tcpWndRcv="64"
+Forwarding(0)="ssh,tcp,127.0.0.1,39213,,22"
+hostonlyadapter2="vboxnet3"
+macaddress2="080027430061"
+cableconnected2="on"
+nic2="hostonly"
+nictype2="virtio"
+nicspeed2="0"
+nic3="none"
+nic4="none"
+nic5="none"
+nic6="none"
+nic7="none"
+nic8="none"
+hidpointing="ps2mouse"
+hidkeyboard="ps2kbd"
+uart1="off"
+uart2="off"
+uart3="off"
+uart4="off"
+lpt1="off"
+lpt2="off"
+audio="default"
+audio_out="off"
+audio_in="off"
+clipboard="disabled"
+draganddrop="disabled"
+SessionName="headless"
+VideoMode="720,400,0"@0,0 1
+vrde="off"
+usb="off"
+ehci="off"
+xhci="off"
+VRDEActiveConnection="off"
+VRDEClients==0
+recording_enabled="off"
+recording_screens=1
+ rec_screen0
+rec_screen_enabled="on"
+rec_screen_id=0
+rec_screen_video_enabled="on"
+rec_screen_dest="File"
+rec_screen_dest_filename="/home/son/.minikube/machines/minikube/minikube/minikube-screen0.webm"
+rec_screen_opts="vc_enabled=true,ac_enabled=false,ac_profile=med"
+rec_screen_video_res_xy="1024x768"
+rec_screen_video_rate_kbps=512
+rec_screen_video_fps=25
+GuestMemoryBalloon=0
+GuestOSType="Linux26_64"
+GuestAdditionsRunLevel=2
+GuestAdditionsVersion="6.0.0 r127566"
+GuestAdditionsFacility_VirtualBox Base Driver=50,1709721760953
+GuestAdditionsFacility_VirtualBox System Service=50,1709721761182
+GuestAdditionsFacility_Seamless Mode=0,1709721760953
+GuestAdditionsFacility_Graphics Mode=0,1709721760952
+}
+I0306 17:42:43.018906  596486 main.go:141] libmachine: STDERR:
+{
+}
+I0306 17:42:43.018956  596486 main.go:141] libmachine: COMMAND: /usr/bin/VBoxManage showvminfo minikube --machinereadable
+I0306 17:42:43.118723  596486 main.go:141] libmachine: STDOUT:
+{
+name="minikube"
+Encryption:     disabled
+groups="/"
+ostype="Linux 2.6 / 3.x / 4.x / 5.x (64-bit)"
+UUID="d4122688-2626-4d9d-b4ed-edd33383d12d"
+CfgFile="/home/son/.minikube/machines/minikube/minikube/minikube.vbox"
+SnapFldr="/home/son/.minikube/machines/minikube/minikube/Snapshots"
+LogFldr="/home/son/.minikube/machines/minikube/minikube/Logs"
+hardwareuuid="d4122688-2626-4d9d-b4ed-edd33383d12d"
+memory=4000
+pagefusion="off"
+vram=8
+cpuexecutioncap=100
+hpet="on"
+cpu-profile="host"
+chipset="piix3"
+firmware="BIOS"
+cpus=2
+pae="on"
+longmode="on"
+triplefaultreset="off"
+apic="on"
+x2apic="off"
+nested-hw-virt="off"
+cpuid-portability-level=0
+bootmenu="disabled"
+boot1="dvd"
+boot2="dvd"
+boot3="disk"
+boot4="none"
+acpi="on"
+ioapic="on"
+biosapic="apic"
+biossystemtimeoffset=0
+BIOS NVRAM File="/home/son/.minikube/machines/minikube/minikube/minikube.nvram"
+rtcuseutc="on"
+hwvirtex="on"
+nestedpaging="on"
+largepages="on"
+vtxvpid="on"
+vtxux="on"
+virtvmsavevmload="on"
+iommu="none"
+paravirtprovider="default"
+effparavirtprovider="kvm"
+VMState="running"
+VMStateChangeTime="2024-03-06T10:42:22.593000000"
+graphicscontroller="vboxvga"
+monitorcount=1
+accelerate3d="off"
+accelerate2dvideo="off"
+teleporterenabled="off"
+teleporterport=0
+teleporteraddress=""
+teleporterpassword=""
+tracing-enabled="off"
+tracing-allow-vm-access="off"
+tracing-config=""
+autostart-enabled="off"
+autostart-delay=0
+defaultfrontend=""
+vmprocpriority="default"
+storagecontrollername0="SATA"
+storagecontrollertype0="IntelAhci"
+storagecontrollerinstance0="0"
+storagecontrollermaxportcount0="30"
+storagecontrollerportcount0="30"
+storagecontrollerbootable0="on"
+"SATA-0-0"="/home/son/.minikube/machines/minikube/boot2docker.iso"
+"SATA-ImageUUID-0-0"="7ead6861-b2f7-4b36-9888-a6a3dcf59532"
+"SATA-tempeject-0-0"="off"
+"SATA-IsEjected-0-0"="off"
+"SATA-hot-pluggable-0-0"="off"
+"SATA-nonrotational-0-0"="off"
+"SATA-discard-0-0"="off"
+"SATA-1-0"="/home/son/.minikube/machines/minikube/disk.vmdk"
+"SATA-ImageUUID-1-0"="cf36a715-2519-4068-a0f9-e7d329f87f1d"
+"SATA-hot-pluggable-1-0"="off"
+"SATA-nonrotational-1-0"="off"
+"SATA-discard-1-0"="off"
+"SATA-2-0"="none"
+"SATA-3-0"="none"
+"SATA-4-0"="none"
+"SATA-5-0"="none"
+"SATA-6-0"="none"
+"SATA-7-0"="none"
+"SATA-8-0"="none"
+"SATA-9-0"="none"
+"SATA-10-0"="none"
+"SATA-11-0"="none"
+"SATA-12-0"="none"
+"SATA-13-0"="none"
+"SATA-14-0"="none"
+"SATA-15-0"="none"
+"SATA-16-0"="none"
+"SATA-17-0"="none"
+"SATA-18-0"="none"
+"SATA-19-0"="none"
+"SATA-20-0"="none"
+"SATA-21-0"="none"
+"SATA-22-0"="none"
+"SATA-23-0"="none"
+"SATA-24-0"="none"
+"SATA-25-0"="none"
+"SATA-26-0"="none"
+"SATA-27-0"="none"
+"SATA-28-0"="none"
+"SATA-29-0"="none"
+natnet1="nat"
+macaddress1="0800271912E9"
+cableconnected1="on"
+nic1="nat"
+nictype1="virtio"
+nicspeed1="0"
+mtu="0"
+sockSnd="64"
+sockRcv="64"
+tcpWndSnd="64"
+tcpWndRcv="64"
+Forwarding(0)="ssh,tcp,127.0.0.1,39213,,22"
+hostonlyadapter2="vboxnet3"
+macaddress2="080027430061"
+cableconnected2="on"
+nic2="hostonly"
+nictype2="virtio"
+nicspeed2="0"
+nic3="none"
+nic4="none"
+nic5="none"
+nic6="none"
+nic7="none"
+nic8="none"
+hidpointing="ps2mouse"
+hidkeyboard="ps2kbd"
+uart1="off"
+uart2="off"
+uart3="off"
+uart4="off"
+lpt1="off"
+lpt2="off"
+audio="default"
+audio_out="off"
+audio_in="off"
+clipboard="disabled"
+draganddrop="disabled"
+SessionName="headless"
+VideoMode="720,400,0"@0,0 1
+vrde="off"
+usb="off"
+ehci="off"
+xhci="off"
+VRDEActiveConnection="off"
+VRDEClients==0
+recording_enabled="off"
+recording_screens=1
+ rec_screen0
+rec_screen_enabled="on"
+rec_screen_id=0
+rec_screen_video_enabled="on"
+rec_screen_dest="File"
+rec_screen_dest_filename="/home/son/.minikube/machines/minikube/minikube/minikube-screen0.webm"
+rec_screen_opts="vc_enabled=true,ac_enabled=false,ac_profile=med"
+rec_screen_video_res_xy="1024x768"
+rec_screen_video_rate_kbps=512
+rec_screen_video_fps=25
+GuestMemoryBalloon=0
+GuestOSType="Linux26_64"
+GuestAdditionsRunLevel=2
+GuestAdditionsVersion="6.0.0 r127566"
+GuestAdditionsFacility_VirtualBox Base Driver=50,1709721760953
+GuestAdditionsFacility_VirtualBox System Service=50,1709721761182
+GuestAdditionsFacility_Seamless Mode=0,1709721760953
+GuestAdditionsFacility_Graphics Mode=0,1709721760952
+}
+I0306 17:42:43.118735  596486 main.go:141] libmachine: STDERR:
+{
+}
+I0306 17:42:43.118857  596486 main.go:141] libmachine: Host-only MAC: 080027430061
+
+I0306 17:42:43.118908  596486 main.go:141] libmachine: Using SSH client type: native
+I0306 17:42:43.119182  596486 main.go:141] libmachine: &{{{<nil> 0 [] [] []} docker [0x808a40] 0x80b720 <nil>  [] 0s} 127.0.0.1 39213 <nil> <nil>}
+I0306 17:42:43.119189  596486 main.go:141] libmachine: About to run SSH command:
+ip addr show
+I0306 17:42:43.184999  596486 main.go:141] libmachine: SSH cmd err, output: <nil>: 1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP group default qlen 1000
+    link/ether 08:00:27:19:12:e9 brd ff:ff:ff:ff:ff:ff
+    inet 10.0.2.15/24 brd 10.0.2.255 scope global dynamic eth0
+       valid_lft 86398sec preferred_lft 86398sec
+3: eth1: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP group default qlen 1000
+    link/ether 08:00:27:43:00:61 brd ff:ff:ff:ff:ff:ff
+    inet 192.168.59.107/24 brd 192.168.59.255 scope global dynamic eth1
+       valid_lft 598sec preferred_lft 598sec
+4: sit0@NONE: <NOARP> mtu 1480 qdisc noop state DOWN group default qlen 1000
+    link/sit 0.0.0.0 brd 0.0.0.0
+
+I0306 17:42:43.185031  596486 main.go:141] libmachine: SSH returned: 1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP group default qlen 1000
+    link/ether 08:00:27:19:12:e9 brd ff:ff:ff:ff:ff:ff
+    inet 10.0.2.15/24 brd 10.0.2.255 scope global dynamic eth0
+       valid_lft 86398sec preferred_lft 86398sec
+3: eth1: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP group default qlen 1000
+    link/ether 08:00:27:43:00:61 brd ff:ff:ff:ff:ff:ff
+    inet 192.168.59.107/24 brd 192.168.59.255 scope global dynamic eth1
+       valid_lft 598sec preferred_lft 598sec
+4: sit0@NONE: <NOARP> mtu 1480 qdisc noop state DOWN group default qlen 1000
+    link/sit 0.0.0.0 brd 0.0.0.0
+
+END SSH
+
+I0306 17:42:43.185041  596486 main.go:141] libmachine: IP is 192.168.59.107
+I0306 17:42:43.185052  596486 main.go:141] libmachine: COMMAND: /usr/bin/VBoxManage showvminfo minikube --machinereadable
+I0306 17:42:43.277807  596486 main.go:141] libmachine: STDOUT:
+{
+name="minikube"
+Encryption:     disabled
+groups="/"
+ostype="Linux 2.6 / 3.x / 4.x / 5.x (64-bit)"
+UUID="d4122688-2626-4d9d-b4ed-edd33383d12d"
+CfgFile="/home/son/.minikube/machines/minikube/minikube/minikube.vbox"
+SnapFldr="/home/son/.minikube/machines/minikube/minikube/Snapshots"
+LogFldr="/home/son/.minikube/machines/minikube/minikube/Logs"
+hardwareuuid="d4122688-2626-4d9d-b4ed-edd33383d12d"
+memory=4000
+pagefusion="off"
+vram=8
+cpuexecutioncap=100
+hpet="on"
+cpu-profile="host"
+chipset="piix3"
+firmware="BIOS"
+cpus=2
+pae="on"
+longmode="on"
+triplefaultreset="off"
+apic="on"
+x2apic="off"
+nested-hw-virt="off"
+cpuid-portability-level=0
+bootmenu="disabled"
+boot1="dvd"
+boot2="dvd"
+boot3="disk"
+boot4="none"
+acpi="on"
+ioapic="on"
+biosapic="apic"
+biossystemtimeoffset=0
+BIOS NVRAM File="/home/son/.minikube/machines/minikube/minikube/minikube.nvram"
+rtcuseutc="on"
+hwvirtex="on"
+nestedpaging="on"
+largepages="on"
+vtxvpid="on"
+vtxux="on"
+virtvmsavevmload="on"
+iommu="none"
+paravirtprovider="default"
+effparavirtprovider="kvm"
+VMState="running"
+VMStateChangeTime="2024-03-06T10:42:22.593000000"
+graphicscontroller="vboxvga"
+monitorcount=1
+accelerate3d="off"
+accelerate2dvideo="off"
+teleporterenabled="off"
+teleporterport=0
+teleporteraddress=""
+teleporterpassword=""
+tracing-enabled="off"
+tracing-allow-vm-access="off"
+tracing-config=""
+autostart-enabled="off"
+autostart-delay=0
+defaultfrontend=""
+vmprocpriority="default"
+storagecontrollername0="SATA"
+storagecontrollertype0="IntelAhci"
+storagecontrollerinstance0="0"
+storagecontrollermaxportcount0="30"
+storagecontrollerportcount0="30"
+storagecontrollerbootable0="on"
+"SATA-0-0"="/home/son/.minikube/machines/minikube/boot2docker.iso"
+"SATA-ImageUUID-0-0"="7ead6861-b2f7-4b36-9888-a6a3dcf59532"
+"SATA-tempeject-0-0"="off"
+"SATA-IsEjected-0-0"="off"
+"SATA-hot-pluggable-0-0"="off"
+"SATA-nonrotational-0-0"="off"
+"SATA-discard-0-0"="off"
+"SATA-1-0"="/home/son/.minikube/machines/minikube/disk.vmdk"
+"SATA-ImageUUID-1-0"="cf36a715-2519-4068-a0f9-e7d329f87f1d"
+"SATA-hot-pluggable-1-0"="off"
+"SATA-nonrotational-1-0"="off"
+"SATA-discard-1-0"="off"
+"SATA-2-0"="none"
+"SATA-3-0"="none"
+"SATA-4-0"="none"
+"SATA-5-0"="none"
+"SATA-6-0"="none"
+"SATA-7-0"="none"
+"SATA-8-0"="none"
+"SATA-9-0"="none"
+"SATA-10-0"="none"
+"SATA-11-0"="none"
+"SATA-12-0"="none"
+"SATA-13-0"="none"
+"SATA-14-0"="none"
+"SATA-15-0"="none"
+"SATA-16-0"="none"
+"SATA-17-0"="none"
+"SATA-18-0"="none"
+"SATA-19-0"="none"
+"SATA-20-0"="none"
+"SATA-21-0"="none"
+"SATA-22-0"="none"
+"SATA-23-0"="none"
+"SATA-24-0"="none"
+"SATA-25-0"="none"
+"SATA-26-0"="none"
+"SATA-27-0"="none"
+"SATA-28-0"="none"
+"SATA-29-0"="none"
+natnet1="nat"
+macaddress1="0800271912E9"
+cableconnected1="on"
+nic1="nat"
+nictype1="virtio"
+nicspeed1="0"
+mtu="0"
+sockSnd="64"
+sockRcv="64"
+tcpWndSnd="64"
+tcpWndRcv="64"
+Forwarding(0)="ssh,tcp,127.0.0.1,39213,,22"
+hostonlyadapter2="vboxnet3"
+macaddress2="080027430061"
+cableconnected2="on"
+nic2="hostonly"
+nictype2="virtio"
+nicspeed2="0"
+nic3="none"
+nic4="none"
+nic5="none"
+nic6="none"
+nic7="none"
+nic8="none"
+hidpointing="ps2mouse"
+hidkeyboard="ps2kbd"
+uart1="off"
+uart2="off"
+uart3="off"
+uart4="off"
+lpt1="off"
+lpt2="off"
+audio="default"
+audio_out="off"
+audio_in="off"
+clipboard="disabled"
+draganddrop="disabled"
+SessionName="headless"
+VideoMode="720,400,0"@0,0 1
+vrde="off"
+usb="off"
+ehci="off"
+xhci="off"
+VRDEActiveConnection="off"
+VRDEClients==0
+recording_enabled="off"
+recording_screens=1
+ rec_screen0
+rec_screen_enabled="on"
+rec_screen_id=0
+rec_screen_video_enabled="on"
+rec_screen_dest="File"
+rec_screen_dest_filename="/home/son/.minikube/machines/minikube/minikube/minikube-screen0.webm"
+rec_screen_opts="vc_enabled=true,ac_enabled=false,ac_profile=med"
+rec_screen_video_res_xy="1024x768"
+rec_screen_video_rate_kbps=512
+rec_screen_video_fps=25
+GuestMemoryBalloon=0
+GuestOSType="Linux26_64"
+GuestAdditionsRunLevel=2
+GuestAdditionsVersion="6.0.0 r127566"
+GuestAdditionsFacility_VirtualBox Base Driver=50,1709721760953
+GuestAdditionsFacility_VirtualBox System Service=50,1709721761182
+GuestAdditionsFacility_Seamless Mode=0,1709721760953
+GuestAdditionsFacility_Graphics Mode=0,1709721760952
+}
+I0306 17:42:43.277823  596486 main.go:141] libmachine: STDERR:
+{
+}
+I0306 17:42:43.277894  596486 main.go:141] libmachine: COMMAND: /usr/bin/VBoxManage showvminfo minikube --machinereadable
+I0306 17:42:43.383251  596486 main.go:141] libmachine: STDOUT:
+{
+name="minikube"
+Encryption:     disabled
+groups="/"
+ostype="Linux 2.6 / 3.x / 4.x / 5.x (64-bit)"
+UUID="d4122688-2626-4d9d-b4ed-edd33383d12d"
+CfgFile="/home/son/.minikube/machines/minikube/minikube/minikube.vbox"
+SnapFldr="/home/son/.minikube/machines/minikube/minikube/Snapshots"
+LogFldr="/home/son/.minikube/machines/minikube/minikube/Logs"
+hardwareuuid="d4122688-2626-4d9d-b4ed-edd33383d12d"
+memory=4000
+pagefusion="off"
+vram=8
+cpuexecutioncap=100
+hpet="on"
+cpu-profile="host"
+chipset="piix3"
+firmware="BIOS"
+cpus=2
+pae="on"
+longmode="on"
+triplefaultreset="off"
+apic="on"
+x2apic="off"
+nested-hw-virt="off"
+cpuid-portability-level=0
+bootmenu="disabled"
+boot1="dvd"
+boot2="dvd"
+boot3="disk"
+boot4="none"
+acpi="on"
+ioapic="on"
+biosapic="apic"
+biossystemtimeoffset=0
+BIOS NVRAM File="/home/son/.minikube/machines/minikube/minikube/minikube.nvram"
+rtcuseutc="on"
+hwvirtex="on"
+nestedpaging="on"
+largepages="on"
+vtxvpid="on"
+vtxux="on"
+virtvmsavevmload="on"
+iommu="none"
+paravirtprovider="default"
+effparavirtprovider="kvm"
+VMState="running"
+VMStateChangeTime="2024-03-06T10:42:22.593000000"
+graphicscontroller="vboxvga"
+monitorcount=1
+accelerate3d="off"
+accelerate2dvideo="off"
+teleporterenabled="off"
+teleporterport=0
+teleporteraddress=""
+teleporterpassword=""
+tracing-enabled="off"
+tracing-allow-vm-access="off"
+tracing-config=""
+autostart-enabled="off"
+autostart-delay=0
+defaultfrontend=""
+vmprocpriority="default"
+storagecontrollername0="SATA"
+storagecontrollertype0="IntelAhci"
+storagecontrollerinstance0="0"
+storagecontrollermaxportcount0="30"
+storagecontrollerportcount0="30"
+storagecontrollerbootable0="on"
+"SATA-0-0"="/home/son/.minikube/machines/minikube/boot2docker.iso"
+"SATA-ImageUUID-0-0"="7ead6861-b2f7-4b36-9888-a6a3dcf59532"
+"SATA-tempeject-0-0"="off"
+"SATA-IsEjected-0-0"="off"
+"SATA-hot-pluggable-0-0"="off"
+"SATA-nonrotational-0-0"="off"
+"SATA-discard-0-0"="off"
+"SATA-1-0"="/home/son/.minikube/machines/minikube/disk.vmdk"
+"SATA-ImageUUID-1-0"="cf36a715-2519-4068-a0f9-e7d329f87f1d"
+"SATA-hot-pluggable-1-0"="off"
+"SATA-nonrotational-1-0"="off"
+"SATA-discard-1-0"="off"
+"SATA-2-0"="none"
+"SATA-3-0"="none"
+"SATA-4-0"="none"
+"SATA-5-0"="none"
+"SATA-6-0"="none"
+"SATA-7-0"="none"
+"SATA-8-0"="none"
+"SATA-9-0"="none"
+"SATA-10-0"="none"
+"SATA-11-0"="none"
+"SATA-12-0"="none"
+"SATA-13-0"="none"
+"SATA-14-0"="none"
+"SATA-15-0"="none"
+"SATA-16-0"="none"
+"SATA-17-0"="none"
+"SATA-18-0"="none"
+"SATA-19-0"="none"
+"SATA-20-0"="none"
+"SATA-21-0"="none"
+"SATA-22-0"="none"
+"SATA-23-0"="none"
+"SATA-24-0"="none"
+"SATA-25-0"="none"
+"SATA-26-0"="none"
+"SATA-27-0"="none"
+"SATA-28-0"="none"
+"SATA-29-0"="none"
+natnet1="nat"
+macaddress1="0800271912E9"
+cableconnected1="on"
+nic1="nat"
+nictype1="virtio"
+nicspeed1="0"
+mtu="0"
+sockSnd="64"
+sockRcv="64"
+tcpWndSnd="64"
+tcpWndRcv="64"
+Forwarding(0)="ssh,tcp,127.0.0.1,39213,,22"
+hostonlyadapter2="vboxnet3"
+macaddress2="080027430061"
+cableconnected2="on"
+nic2="hostonly"
+nictype2="virtio"
+nicspeed2="0"
+nic3="none"
+nic4="none"
+nic5="none"
+nic6="none"
+nic7="none"
+nic8="none"
+hidpointing="ps2mouse"
+hidkeyboard="ps2kbd"
+uart1="off"
+uart2="off"
+uart3="off"
+uart4="off"
+lpt1="off"
+lpt2="off"
+audio="default"
+audio_out="off"
+audio_in="off"
+clipboard="disabled"
+draganddrop="disabled"
+SessionName="headless"
+VideoMode="720,400,0"@0,0 1
+vrde="off"
+usb="off"
+ehci="off"
+xhci="off"
+VRDEActiveConnection="off"
+VRDEClients==0
+recording_enabled="off"
+recording_screens=1
+ rec_screen0
+rec_screen_enabled="on"
+rec_screen_id=0
+rec_screen_video_enabled="on"
+rec_screen_dest="File"
+rec_screen_dest_filename="/home/son/.minikube/machines/minikube/minikube/minikube-screen0.webm"
+rec_screen_opts="vc_enabled=true,ac_enabled=false,ac_profile=med"
+rec_screen_video_res_xy="1024x768"
+rec_screen_video_rate_kbps=512
+rec_screen_video_fps=25
+GuestMemoryBalloon=0
+GuestOSType="Linux26_64"
+GuestAdditionsRunLevel=2
+GuestAdditionsVersion="6.0.0 r127566"
+GuestAdditionsFacility_VirtualBox Base Driver=50,1709721760953
+GuestAdditionsFacility_VirtualBox System Service=50,1709721761182
+GuestAdditionsFacility_Seamless Mode=0,1709721760953
+GuestAdditionsFacility_Graphics Mode=0,1709721760952
+}
+I0306 17:42:43.383269  596486 main.go:141] libmachine: STDERR:
+{
+}
+I0306 17:42:43.383384  596486 main.go:141] libmachine: Host-only MAC: 080027430061
+
+I0306 17:42:43.383428  596486 main.go:141] libmachine: Using SSH client type: native
+I0306 17:42:43.383666  596486 main.go:141] libmachine: &{{{<nil> 0 [] [] []} docker [0x808a40] 0x80b720 <nil>  [] 0s} 127.0.0.1 39213 <nil> <nil>}
+I0306 17:42:43.383673  596486 main.go:141] libmachine: About to run SSH command:
+ip addr show
+I0306 17:42:43.450501  596486 main.go:141] libmachine: SSH cmd err, output: <nil>: 1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP group default qlen 1000
+    link/ether 08:00:27:19:12:e9 brd ff:ff:ff:ff:ff:ff
+    inet 10.0.2.15/24 brd 10.0.2.255 scope global dynamic eth0
+       valid_lft 86398sec preferred_lft 86398sec
+3: eth1: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP group default qlen 1000
+    link/ether 08:00:27:43:00:61 brd ff:ff:ff:ff:ff:ff
+    inet 192.168.59.107/24 brd 192.168.59.255 scope global dynamic eth1
+       valid_lft 598sec preferred_lft 598sec
+4: sit0@NONE: <NOARP> mtu 1480 qdisc noop state DOWN group default qlen 1000
+    link/sit 0.0.0.0 brd 0.0.0.0
+
+I0306 17:42:43.450524  596486 main.go:141] libmachine: SSH returned: 1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP group default qlen 1000
+    link/ether 08:00:27:19:12:e9 brd ff:ff:ff:ff:ff:ff
+    inet 10.0.2.15/24 brd 10.0.2.255 scope global dynamic eth0
+       valid_lft 86398sec preferred_lft 86398sec
+3: eth1: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP group default qlen 1000
+    link/ether 08:00:27:43:00:61 brd ff:ff:ff:ff:ff:ff
+    inet 192.168.59.107/24 brd 192.168.59.255 scope global dynamic eth1
+       valid_lft 598sec preferred_lft 598sec
+4: sit0@NONE: <NOARP> mtu 1480 qdisc noop state DOWN group default qlen 1000
+    link/sit 0.0.0.0 brd 0.0.0.0
+
+END SSH
+
+I0306 17:42:43.450537  596486 main.go:141] libmachine: COMMAND: /usr/bin/VBoxManage list hostonlyifs
+I0306 17:42:43.552935  596486 main.go:141] libmachine: STDOUT:
+{
+Name:            vboxnet0
+GUID:            786f6276-656e-4074-8000-0a0027000000
+DHCP:            Disabled
+IPAddress:       192.168.56.1
+NetworkMask:     255.255.255.0
+IPV6Address:     
+IPV6NetworkMaskPrefixLength: 0
+HardwareAddress: 0a:00:27:00:00:00
+MediumType:      Ethernet
+Wireless:        No
+Status:          Down
+VBoxNetworkName: HostInterfaceNetworking-vboxnet0
+
+Name:            vboxnet1
+GUID:            786f6276-656e-4174-8000-0a0027000001
+DHCP:            Disabled
+IPAddress:       10.0.0.1
+NetworkMask:     255.255.255.0
+IPV6Address:     
+IPV6NetworkMaskPrefixLength: 0
+HardwareAddress: 0a:00:27:00:00:01
+MediumType:      Ethernet
+Wireless:        No
+Status:          Down
+VBoxNetworkName: HostInterfaceNetworking-vboxnet1
+
+Name:            vboxnet2
+GUID:            786f6276-656e-4274-8000-0a0027000002
+DHCP:            Disabled
+IPAddress:       192.168.58.1
+NetworkMask:     255.255.255.0
+IPV6Address:     
+IPV6NetworkMaskPrefixLength: 0
+HardwareAddress: 0a:00:27:00:00:02
+MediumType:      Ethernet
+Wireless:        No
+Status:          Down
+VBoxNetworkName: HostInterfaceNetworking-vboxnet2
+
+Name:            vboxnet3
+GUID:            786f6276-656e-4374-8000-0a0027000003
+DHCP:            Disabled
+IPAddress:       192.168.59.1
+NetworkMask:     255.255.255.0
+IPV6Address:     fe80::800:27ff:fe00:3
+IPV6NetworkMaskPrefixLength: 64
+HardwareAddress: 0a:00:27:00:00:03
+MediumType:      Ethernet
+Wireless:        No
+Status:          Up
+VBoxNetworkName: HostInterfaceNetworking-vboxnet3
+
+}
+I0306 17:42:43.552947  596486 main.go:141] libmachine: STDERR:
+{
+}
+I0306 17:42:43.553744  596486 main.go:141] libmachine: Found: vboxnet3
+I0306 17:42:43.553757  596486 main.go:141] libmachine: COMMAND: /usr/bin/VBoxManage showvminfo minikube --machinereadable
+I0306 17:42:43.658652  596486 main.go:141] libmachine: STDOUT:
+{
+name="minikube"
+Encryption:     disabled
+groups="/"
+ostype="Linux 2.6 / 3.x / 4.x / 5.x (64-bit)"
+UUID="d4122688-2626-4d9d-b4ed-edd33383d12d"
+CfgFile="/home/son/.minikube/machines/minikube/minikube/minikube.vbox"
+SnapFldr="/home/son/.minikube/machines/minikube/minikube/Snapshots"
+LogFldr="/home/son/.minikube/machines/minikube/minikube/Logs"
+hardwareuuid="d4122688-2626-4d9d-b4ed-edd33383d12d"
+memory=4000
+pagefusion="off"
+vram=8
+cpuexecutioncap=100
+hpet="on"
+cpu-profile="host"
+chipset="piix3"
+firmware="BIOS"
+cpus=2
+pae="on"
+longmode="on"
+triplefaultreset="off"
+apic="on"
+x2apic="off"
+nested-hw-virt="off"
+cpuid-portability-level=0
+bootmenu="disabled"
+boot1="dvd"
+boot2="dvd"
+boot3="disk"
+boot4="none"
+acpi="on"
+ioapic="on"
+biosapic="apic"
+biossystemtimeoffset=0
+BIOS NVRAM File="/home/son/.minikube/machines/minikube/minikube/minikube.nvram"
+rtcuseutc="on"
+hwvirtex="on"
+nestedpaging="on"
+largepages="on"
+vtxvpid="on"
+vtxux="on"
+virtvmsavevmload="on"
+iommu="none"
+paravirtprovider="default"
+effparavirtprovider="kvm"
+VMState="running"
+VMStateChangeTime="2024-03-06T10:42:22.593000000"
+graphicscontroller="vboxvga"
+monitorcount=1
+accelerate3d="off"
+accelerate2dvideo="off"
+teleporterenabled="off"
+teleporterport=0
+teleporteraddress=""
+teleporterpassword=""
+tracing-enabled="off"
+tracing-allow-vm-access="off"
+tracing-config=""
+autostart-enabled="off"
+autostart-delay=0
+defaultfrontend=""
+vmprocpriority="default"
+storagecontrollername0="SATA"
+storagecontrollertype0="IntelAhci"
+storagecontrollerinstance0="0"
+storagecontrollermaxportcount0="30"
+storagecontrollerportcount0="30"
+storagecontrollerbootable0="on"
+"SATA-0-0"="/home/son/.minikube/machines/minikube/boot2docker.iso"
+"SATA-ImageUUID-0-0"="7ead6861-b2f7-4b36-9888-a6a3dcf59532"
+"SATA-tempeject-0-0"="off"
+"SATA-IsEjected-0-0"="off"
+"SATA-hot-pluggable-0-0"="off"
+"SATA-nonrotational-0-0"="off"
+"SATA-discard-0-0"="off"
+"SATA-1-0"="/home/son/.minikube/machines/minikube/disk.vmdk"
+"SATA-ImageUUID-1-0"="cf36a715-2519-4068-a0f9-e7d329f87f1d"
+"SATA-hot-pluggable-1-0"="off"
+"SATA-nonrotational-1-0"="off"
+"SATA-discard-1-0"="off"
+"SATA-2-0"="none"
+"SATA-3-0"="none"
+"SATA-4-0"="none"
+"SATA-5-0"="none"
+"SATA-6-0"="none"
+"SATA-7-0"="none"
+"SATA-8-0"="none"
+"SATA-9-0"="none"
+"SATA-10-0"="none"
+"SATA-11-0"="none"
+"SATA-12-0"="none"
+"SATA-13-0"="none"
+"SATA-14-0"="none"
+"SATA-15-0"="none"
+"SATA-16-0"="none"
+"SATA-17-0"="none"
+"SATA-18-0"="none"
+"SATA-19-0"="none"
+"SATA-20-0"="none"
+"SATA-21-0"="none"
+"SATA-22-0"="none"
+"SATA-23-0"="none"
+"SATA-24-0"="none"
+"SATA-25-0"="none"
+"SATA-26-0"="none"
+"SATA-27-0"="none"
+"SATA-28-0"="none"
+"SATA-29-0"="none"
+natnet1="nat"
+macaddress1="0800271912E9"
+cableconnected1="on"
+nic1="nat"
+nictype1="virtio"
+nicspeed1="0"
+mtu="0"
+sockSnd="64"
+sockRcv="64"
+tcpWndSnd="64"
+tcpWndRcv="64"
+Forwarding(0)="ssh,tcp,127.0.0.1,39213,,22"
+hostonlyadapter2="vboxnet3"
+macaddress2="080027430061"
+cableconnected2="on"
+nic2="hostonly"
+nictype2="virtio"
+nicspeed2="0"
+nic3="none"
+nic4="none"
+nic5="none"
+nic6="none"
+nic7="none"
+nic8="none"
+hidpointing="ps2mouse"
+hidkeyboard="ps2kbd"
+uart1="off"
+uart2="off"
+uart3="off"
+uart4="off"
+lpt1="off"
+lpt2="off"
+audio="default"
+audio_out="off"
+audio_in="off"
+clipboard="disabled"
+draganddrop="disabled"
+SessionName="headless"
+VideoMode="720,400,0"@0,0 1
+vrde="off"
+usb="off"
+ehci="off"
+xhci="off"
+VRDEActiveConnection="off"
+VRDEClients==0
+recording_enabled="off"
+recording_screens=1
+ rec_screen0
+rec_screen_enabled="on"
+rec_screen_id=0
+rec_screen_video_enabled="on"
+rec_screen_dest="File"
+rec_screen_dest_filename="/home/son/.minikube/machines/minikube/minikube/minikube-screen0.webm"
+rec_screen_opts="vc_enabled=true,ac_enabled=false,ac_profile=med"
+rec_screen_video_res_xy="1024x768"
+rec_screen_video_rate_kbps=512
+rec_screen_video_fps=25
+GuestMemoryBalloon=0
+GuestOSType="Linux26_64"
+GuestAdditionsRunLevel=2
+GuestAdditionsVersion="6.0.0 r127566"
+GuestAdditionsFacility_VirtualBox Base Driver=50,1709721760953
+GuestAdditionsFacility_VirtualBox System Service=50,1709721761182
+GuestAdditionsFacility_Seamless Mode=0,1709721760953
+GuestAdditionsFacility_Graphics Mode=0,1709721760952
+}
+I0306 17:42:43.658672  596486 main.go:141] libmachine: STDERR:
+{
+}
+I0306 17:42:43.658730  596486 machine.go:88] provisioning docker machine ...
+I0306 17:42:43.658753  596486 buildroot.go:166] provisioning hostname "minikube"
+I0306 17:42:43.658802  596486 main.go:141] libmachine: Using SSH client type: native
+I0306 17:42:43.659037  596486 main.go:141] libmachine: &{{{<nil> 0 [] [] []} docker [0x808a40] 0x80b720 <nil>  [] 0s} 127.0.0.1 39213 <nil> <nil>}
+I0306 17:42:43.659045  596486 main.go:141] libmachine: About to run SSH command:
+sudo hostname minikube && echo "minikube" | sudo tee /etc/hostname
+I0306 17:42:43.733407  596486 main.go:141] libmachine: SSH cmd err, output: <nil>: minikube
+
+I0306 17:42:43.733462  596486 main.go:141] libmachine: Using SSH client type: native
+I0306 17:42:43.733707  596486 main.go:141] libmachine: &{{{<nil> 0 [] [] []} docker [0x808a40] 0x80b720 <nil>  [] 0s} 127.0.0.1 39213 <nil> <nil>}
+I0306 17:42:43.733717  596486 main.go:141] libmachine: About to run SSH command:
+
+		if ! grep -xq '.*\sminikube' /etc/hosts; then
+			if grep -xq '127.0.1.1\s.*' /etc/hosts; then
+				sudo sed -i 's/^127.0.1.1\s.*/127.0.1.1 minikube/g' /etc/hosts;
+			else 
+				echo '127.0.1.1 minikube' | sudo tee -a /etc/hosts; 
+			fi
+		fi
+I0306 17:42:43.803891  596486 main.go:141] libmachine: SSH cmd err, output: <nil>: 
+I0306 17:42:43.803912  596486 buildroot.go:172] set auth options {CertDir:/home/son/.minikube CaCertPath:/home/son/.minikube/certs/ca.pem CaPrivateKeyPath:/home/son/.minikube/certs/ca-key.pem CaCertRemotePath:/etc/docker/ca.pem ServerCertPath:/home/son/.minikube/machines/server.pem ServerKeyPath:/home/son/.minikube/machines/server-key.pem ClientKeyPath:/home/son/.minikube/certs/key.pem ServerCertRemotePath:/etc/docker/server.pem ServerKeyRemotePath:/etc/docker/server-key.pem ClientCertPath:/home/son/.minikube/certs/cert.pem ServerCertSANs:[] StorePath:/home/son/.minikube}
+I0306 17:42:43.803928  596486 buildroot.go:174] setting up certificates
+I0306 17:42:43.803939  596486 provision.go:83] configureAuth start
+I0306 17:42:43.803956  596486 main.go:141] libmachine: COMMAND: /usr/bin/VBoxManage showvminfo minikube --machinereadable
+I0306 17:42:43.905919  596486 main.go:141] libmachine: STDOUT:
+{
+name="minikube"
+Encryption:     disabled
+groups="/"
+ostype="Linux 2.6 / 3.x / 4.x / 5.x (64-bit)"
+UUID="d4122688-2626-4d9d-b4ed-edd33383d12d"
+CfgFile="/home/son/.minikube/machines/minikube/minikube/minikube.vbox"
+SnapFldr="/home/son/.minikube/machines/minikube/minikube/Snapshots"
+LogFldr="/home/son/.minikube/machines/minikube/minikube/Logs"
+hardwareuuid="d4122688-2626-4d9d-b4ed-edd33383d12d"
+memory=4000
+pagefusion="off"
+vram=8
+cpuexecutioncap=100
+hpet="on"
+cpu-profile="host"
+chipset="piix3"
+firmware="BIOS"
+cpus=2
+pae="on"
+longmode="on"
+triplefaultreset="off"
+apic="on"
+x2apic="off"
+nested-hw-virt="off"
+cpuid-portability-level=0
+bootmenu="disabled"
+boot1="dvd"
+boot2="dvd"
+boot3="disk"
+boot4="none"
+acpi="on"
+ioapic="on"
+biosapic="apic"
+biossystemtimeoffset=0
+BIOS NVRAM File="/home/son/.minikube/machines/minikube/minikube/minikube.nvram"
+rtcuseutc="on"
+hwvirtex="on"
+nestedpaging="on"
+largepages="on"
+vtxvpid="on"
+vtxux="on"
+virtvmsavevmload="on"
+iommu="none"
+paravirtprovider="default"
+effparavirtprovider="kvm"
+VMState="running"
+VMStateChangeTime="2024-03-06T10:42:22.593000000"
+graphicscontroller="vboxvga"
+monitorcount=1
+accelerate3d="off"
+accelerate2dvideo="off"
+teleporterenabled="off"
+teleporterport=0
+teleporteraddress=""
+teleporterpassword=""
+tracing-enabled="off"
+tracing-allow-vm-access="off"
+tracing-config=""
+autostart-enabled="off"
+autostart-delay=0
+defaultfrontend=""
+vmprocpriority="default"
+storagecontrollername0="SATA"
+storagecontrollertype0="IntelAhci"
+storagecontrollerinstance0="0"
+storagecontrollermaxportcount0="30"
+storagecontrollerportcount0="30"
+storagecontrollerbootable0="on"
+"SATA-0-0"="/home/son/.minikube/machines/minikube/boot2docker.iso"
+"SATA-ImageUUID-0-0"="7ead6861-b2f7-4b36-9888-a6a3dcf59532"
+"SATA-tempeject-0-0"="off"
+"SATA-IsEjected-0-0"="off"
+"SATA-hot-pluggable-0-0"="off"
+"SATA-nonrotational-0-0"="off"
+"SATA-discard-0-0"="off"
+"SATA-1-0"="/home/son/.minikube/machines/minikube/disk.vmdk"
+"SATA-ImageUUID-1-0"="cf36a715-2519-4068-a0f9-e7d329f87f1d"
+"SATA-hot-pluggable-1-0"="off"
+"SATA-nonrotational-1-0"="off"
+"SATA-discard-1-0"="off"
+"SATA-2-0"="none"
+"SATA-3-0"="none"
+"SATA-4-0"="none"
+"SATA-5-0"="none"
+"SATA-6-0"="none"
+"SATA-7-0"="none"
+"SATA-8-0"="none"
+"SATA-9-0"="none"
+"SATA-10-0"="none"
+"SATA-11-0"="none"
+"SATA-12-0"="none"
+"SATA-13-0"="none"
+"SATA-14-0"="none"
+"SATA-15-0"="none"
+"SATA-16-0"="none"
+"SATA-17-0"="none"
+"SATA-18-0"="none"
+"SATA-19-0"="none"
+"SATA-20-0"="none"
+"SATA-21-0"="none"
+"SATA-22-0"="none"
+"SATA-23-0"="none"
+"SATA-24-0"="none"
+"SATA-25-0"="none"
+"SATA-26-0"="none"
+"SATA-27-0"="none"
+"SATA-28-0"="none"
+"SATA-29-0"="none"
+natnet1="nat"
+macaddress1="0800271912E9"
+cableconnected1="on"
+nic1="nat"
+nictype1="virtio"
+nicspeed1="0"
+mtu="0"
+sockSnd="64"
+sockRcv="64"
+tcpWndSnd="64"
+tcpWndRcv="64"
+Forwarding(0)="ssh,tcp,127.0.0.1,39213,,22"
+hostonlyadapter2="vboxnet3"
+macaddress2="080027430061"
+cableconnected2="on"
+nic2="hostonly"
+nictype2="virtio"
+nicspeed2="0"
+nic3="none"
+nic4="none"
+nic5="none"
+nic6="none"
+nic7="none"
+nic8="none"
+hidpointing="ps2mouse"
+hidkeyboard="ps2kbd"
+uart1="off"
+uart2="off"
+uart3="off"
+uart4="off"
+lpt1="off"
+lpt2="off"
+audio="default"
+audio_out="off"
+audio_in="off"
+clipboard="disabled"
+draganddrop="disabled"
+SessionName="headless"
+VideoMode="720,400,0"@0,0 1
+vrde="off"
+usb="off"
+ehci="off"
+xhci="off"
+VRDEActiveConnection="off"
+VRDEClients==0
+recording_enabled="off"
+recording_screens=1
+ rec_screen0
+rec_screen_enabled="on"
+rec_screen_id=0
+rec_screen_video_enabled="on"
+rec_screen_dest="File"
+rec_screen_dest_filename="/home/son/.minikube/machines/minikube/minikube/minikube-screen0.webm"
+rec_screen_opts="vc_enabled=true,ac_enabled=false,ac_profile=med"
+rec_screen_video_res_xy="1024x768"
+rec_screen_video_rate_kbps=512
+rec_screen_video_fps=25
+GuestMemoryBalloon=0
+GuestOSType="Linux26_64"
+GuestAdditionsRunLevel=2
+GuestAdditionsVersion="6.0.0 r127566"
+GuestAdditionsFacility_VirtualBox Base Driver=50,1709721760953
+GuestAdditionsFacility_VirtualBox System Service=50,1709721761182
+GuestAdditionsFacility_Seamless Mode=0,1709721760953
+GuestAdditionsFacility_Graphics Mode=0,1709721760952
+}
+I0306 17:42:43.905936  596486 main.go:141] libmachine: STDERR:
+{
+}
+I0306 17:42:43.905997  596486 main.go:141] libmachine: COMMAND: /usr/bin/VBoxManage showvminfo minikube --machinereadable
+I0306 17:42:44.008718  596486 main.go:141] libmachine: STDOUT:
+{
+name="minikube"
+Encryption:     disabled
+groups="/"
+ostype="Linux 2.6 / 3.x / 4.x / 5.x (64-bit)"
+UUID="d4122688-2626-4d9d-b4ed-edd33383d12d"
+CfgFile="/home/son/.minikube/machines/minikube/minikube/minikube.vbox"
+SnapFldr="/home/son/.minikube/machines/minikube/minikube/Snapshots"
+LogFldr="/home/son/.minikube/machines/minikube/minikube/Logs"
+hardwareuuid="d4122688-2626-4d9d-b4ed-edd33383d12d"
+memory=4000
+pagefusion="off"
+vram=8
+cpuexecutioncap=100
+hpet="on"
+cpu-profile="host"
+chipset="piix3"
+firmware="BIOS"
+cpus=2
+pae="on"
+longmode="on"
+triplefaultreset="off"
+apic="on"
+x2apic="off"
+nested-hw-virt="off"
+cpuid-portability-level=0
+bootmenu="disabled"
+boot1="dvd"
+boot2="dvd"
+boot3="disk"
+boot4="none"
+acpi="on"
+ioapic="on"
+biosapic="apic"
+biossystemtimeoffset=0
+BIOS NVRAM File="/home/son/.minikube/machines/minikube/minikube/minikube.nvram"
+rtcuseutc="on"
+hwvirtex="on"
+nestedpaging="on"
+largepages="on"
+vtxvpid="on"
+vtxux="on"
+virtvmsavevmload="on"
+iommu="none"
+paravirtprovider="default"
+effparavirtprovider="kvm"
+VMState="running"
+VMStateChangeTime="2024-03-06T10:42:22.593000000"
+graphicscontroller="vboxvga"
+monitorcount=1
+accelerate3d="off"
+accelerate2dvideo="off"
+teleporterenabled="off"
+teleporterport=0
+teleporteraddress=""
+teleporterpassword=""
+tracing-enabled="off"
+tracing-allow-vm-access="off"
+tracing-config=""
+autostart-enabled="off"
+autostart-delay=0
+defaultfrontend=""
+vmprocpriority="default"
+storagecontrollername0="SATA"
+storagecontrollertype0="IntelAhci"
+storagecontrollerinstance0="0"
+storagecontrollermaxportcount0="30"
+storagecontrollerportcount0="30"
+storagecontrollerbootable0="on"
+"SATA-0-0"="/home/son/.minikube/machines/minikube/boot2docker.iso"
+"SATA-ImageUUID-0-0"="7ead6861-b2f7-4b36-9888-a6a3dcf59532"
+"SATA-tempeject-0-0"="off"
+"SATA-IsEjected-0-0"="off"
+"SATA-hot-pluggable-0-0"="off"
+"SATA-nonrotational-0-0"="off"
+"SATA-discard-0-0"="off"
+"SATA-1-0"="/home/son/.minikube/machines/minikube/disk.vmdk"
+"SATA-ImageUUID-1-0"="cf36a715-2519-4068-a0f9-e7d329f87f1d"
+"SATA-hot-pluggable-1-0"="off"
+"SATA-nonrotational-1-0"="off"
+"SATA-discard-1-0"="off"
+"SATA-2-0"="none"
+"SATA-3-0"="none"
+"SATA-4-0"="none"
+"SATA-5-0"="none"
+"SATA-6-0"="none"
+"SATA-7-0"="none"
+"SATA-8-0"="none"
+"SATA-9-0"="none"
+"SATA-10-0"="none"
+"SATA-11-0"="none"
+"SATA-12-0"="none"
+"SATA-13-0"="none"
+"SATA-14-0"="none"
+"SATA-15-0"="none"
+"SATA-16-0"="none"
+"SATA-17-0"="none"
+"SATA-18-0"="none"
+"SATA-19-0"="none"
+"SATA-20-0"="none"
+"SATA-21-0"="none"
+"SATA-22-0"="none"
+"SATA-23-0"="none"
+"SATA-24-0"="none"
+"SATA-25-0"="none"
+"SATA-26-0"="none"
+"SATA-27-0"="none"
+"SATA-28-0"="none"
+"SATA-29-0"="none"
+natnet1="nat"
+macaddress1="0800271912E9"
+cableconnected1="on"
+nic1="nat"
+nictype1="virtio"
+nicspeed1="0"
+mtu="0"
+sockSnd="64"
+sockRcv="64"
+tcpWndSnd="64"
+tcpWndRcv="64"
+Forwarding(0)="ssh,tcp,127.0.0.1,39213,,22"
+hostonlyadapter2="vboxnet3"
+macaddress2="080027430061"
+cableconnected2="on"
+nic2="hostonly"
+nictype2="virtio"
+nicspeed2="0"
+nic3="none"
+nic4="none"
+nic5="none"
+nic6="none"
+nic7="none"
+nic8="none"
+hidpointing="ps2mouse"
+hidkeyboard="ps2kbd"
+uart1="off"
+uart2="off"
+uart3="off"
+uart4="off"
+lpt1="off"
+lpt2="off"
+audio="default"
+audio_out="off"
+audio_in="off"
+clipboard="disabled"
+draganddrop="disabled"
+SessionName="headless"
+VideoMode="720,400,0"@0,0 1
+vrde="off"
+usb="off"
+ehci="off"
+xhci="off"
+VRDEActiveConnection="off"
+VRDEClients==0
+recording_enabled="off"
+recording_screens=1
+ rec_screen0
+rec_screen_enabled="on"
+rec_screen_id=0
+rec_screen_video_enabled="on"
+rec_screen_dest="File"
+rec_screen_dest_filename="/home/son/.minikube/machines/minikube/minikube/minikube-screen0.webm"
+rec_screen_opts="vc_enabled=true,ac_enabled=false,ac_profile=med"
+rec_screen_video_res_xy="1024x768"
+rec_screen_video_rate_kbps=512
+rec_screen_video_fps=25
+GuestMemoryBalloon=0
+GuestOSType="Linux26_64"
+GuestAdditionsRunLevel=2
+GuestAdditionsVersion="6.0.0 r127566"
+GuestAdditionsFacility_VirtualBox Base Driver=50,1709721760953
+GuestAdditionsFacility_VirtualBox System Service=50,1709721761182
+GuestAdditionsFacility_Seamless Mode=0,1709721760953
+GuestAdditionsFacility_Graphics Mode=0,1709721760952
+}
+I0306 17:42:44.008738  596486 main.go:141] libmachine: STDERR:
+{
+}
+I0306 17:42:44.008872  596486 main.go:141] libmachine: Host-only MAC: 080027430061
+
+I0306 17:42:44.008921  596486 main.go:141] libmachine: Using SSH client type: native
+I0306 17:42:44.009227  596486 main.go:141] libmachine: &{{{<nil> 0 [] [] []} docker [0x808a40] 0x80b720 <nil>  [] 0s} 127.0.0.1 39213 <nil> <nil>}
+I0306 17:42:44.009239  596486 main.go:141] libmachine: About to run SSH command:
+ip addr show
+I0306 17:42:44.074700  596486 main.go:141] libmachine: SSH cmd err, output: <nil>: 1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP group default qlen 1000
+    link/ether 08:00:27:19:12:e9 brd ff:ff:ff:ff:ff:ff
+    inet 10.0.2.15/24 brd 10.0.2.255 scope global dynamic eth0
+       valid_lft 86398sec preferred_lft 86398sec
+3: eth1: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP group default qlen 1000
+    link/ether 08:00:27:43:00:61 brd ff:ff:ff:ff:ff:ff
+    inet 192.168.59.107/24 brd 192.168.59.255 scope global dynamic eth1
+       valid_lft 598sec preferred_lft 598sec
+4: sit0@NONE: <NOARP> mtu 1480 qdisc noop state DOWN group default qlen 1000
+    link/sit 0.0.0.0 brd 0.0.0.0
+
+I0306 17:42:44.074751  596486 main.go:141] libmachine: SSH returned: 1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP group default qlen 1000
+    link/ether 08:00:27:19:12:e9 brd ff:ff:ff:ff:ff:ff
+    inet 10.0.2.15/24 brd 10.0.2.255 scope global dynamic eth0
+       valid_lft 86398sec preferred_lft 86398sec
+3: eth1: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP group default qlen 1000
+    link/ether 08:00:27:43:00:61 brd ff:ff:ff:ff:ff:ff
+    inet 192.168.59.107/24 brd 192.168.59.255 scope global dynamic eth1
+       valid_lft 598sec preferred_lft 598sec
+4: sit0@NONE: <NOARP> mtu 1480 qdisc noop state DOWN group default qlen 1000
+    link/sit 0.0.0.0 brd 0.0.0.0
+
+END SSH
+
+I0306 17:42:44.074768  596486 provision.go:138] copyHostCerts
+I0306 17:42:44.074839  596486 exec_runner.go:144] found /home/son/.minikube/ca.pem, removing ...
+I0306 17:42:44.074857  596486 exec_runner.go:203] rm: /home/son/.minikube/ca.pem
+I0306 17:42:44.074946  596486 exec_runner.go:151] cp: /home/son/.minikube/certs/ca.pem --> /home/son/.minikube/ca.pem (1070 bytes)
+I0306 17:42:44.075095  596486 exec_runner.go:144] found /home/son/.minikube/cert.pem, removing ...
+I0306 17:42:44.075102  596486 exec_runner.go:203] rm: /home/son/.minikube/cert.pem
+I0306 17:42:44.075145  596486 exec_runner.go:151] cp: /home/son/.minikube/certs/cert.pem --> /home/son/.minikube/cert.pem (1115 bytes)
+I0306 17:42:44.075242  596486 exec_runner.go:144] found /home/son/.minikube/key.pem, removing ...
+I0306 17:42:44.075248  596486 exec_runner.go:203] rm: /home/son/.minikube/key.pem
+I0306 17:42:44.075290  596486 exec_runner.go:151] cp: /home/son/.minikube/certs/key.pem --> /home/son/.minikube/key.pem (1679 bytes)
+I0306 17:42:44.086081  596486 provision.go:112] generating server cert: /home/son/.minikube/machines/server.pem ca-key=/home/son/.minikube/certs/ca.pem private-key=/home/son/.minikube/certs/ca-key.pem org=son.minikube san=[192.168.59.107 127.0.0.1 localhost 127.0.0.1 minikube minikube]
+I0306 17:42:44.139987  596486 provision.go:172] copyRemoteCerts
+I0306 17:42:44.140097  596486 ssh_runner.go:195] Run: sudo mkdir -p /etc/docker /etc/docker /etc/docker
+I0306 17:42:44.140126  596486 sshutil.go:53] new ssh client: &{IP:127.0.0.1 Port:39213 SSHKeyPath:/home/son/.minikube/machines/minikube/id_rsa Username:docker}
+I0306 17:42:44.178551  596486 ssh_runner.go:362] scp /home/son/.minikube/certs/ca.pem --> /etc/docker/ca.pem (1070 bytes)
+I0306 17:42:44.191158  596486 ssh_runner.go:362] scp /home/son/.minikube/machines/server.pem --> /etc/docker/server.pem (1192 bytes)
+I0306 17:42:44.203728  596486 ssh_runner.go:362] scp /home/son/.minikube/machines/server-key.pem --> /etc/docker/server-key.pem (1679 bytes)
+I0306 17:42:44.215575  596486 provision.go:86] duration metric: configureAuth took 411.623136ms
+I0306 17:42:44.215593  596486 buildroot.go:189] setting minikube options for container-runtime
+I0306 17:42:44.215743  596486 config.go:182] Loaded profile config "minikube": Driver=virtualbox, ContainerRuntime=docker, KubernetesVersion=v1.28.3
+I0306 17:42:44.215800  596486 main.go:141] libmachine: Using SSH client type: native
+I0306 17:42:44.216040  596486 main.go:141] libmachine: &{{{<nil> 0 [] [] []} docker [0x808a40] 0x80b720 <nil>  [] 0s} 127.0.0.1 39213 <nil> <nil>}
+I0306 17:42:44.216048  596486 main.go:141] libmachine: About to run SSH command:
+df --output=fstype / | tail -n 1
+I0306 17:42:44.280182  596486 main.go:141] libmachine: SSH cmd err, output: <nil>: tmpfs
+
+I0306 17:42:44.280193  596486 buildroot.go:70] root file system type: tmpfs
+I0306 17:42:44.280281  596486 provision.go:309] Updating docker unit: /lib/systemd/system/docker.service ...
+I0306 17:42:44.280344  596486 main.go:141] libmachine: Using SSH client type: native
+I0306 17:42:44.280643  596486 main.go:141] libmachine: &{{{<nil> 0 [] [] []} docker [0x808a40] 0x80b720 <nil>  [] 0s} 127.0.0.1 39213 <nil> <nil>}
+I0306 17:42:44.280696  596486 main.go:141] libmachine: About to run SSH command:
+sudo mkdir -p /lib/systemd/system && printf %!s(MISSING) "[Unit]
+Description=Docker Application Container Engine
+Documentation=https://docs.docker.com
+After=network.target  minikube-automount.service docker.socket
+Requires= minikube-automount.service docker.socket 
+StartLimitBurst=3
+StartLimitIntervalSec=60
+
+[Service]
+Type=notify
+Restart=on-failure
+
+
+
+# This file is a systemd drop-in unit that inherits from the base dockerd configuration.
+# The base configuration already specifies an 'ExecStart=...' command. The first directive
+# here is to clear out that command inherited from the base configuration. Without this,
+# the command from the base configuration and the command specified here are treated as
+# a sequence of commands, which is not the desired behavior, nor is it valid -- systemd
+# will catch this invalid input and refuse to start the service with an error like:
+#  Service has more than one ExecStart= setting, which is only allowed for Type=oneshot services.
+
+# NOTE: default-ulimit=nofile is set to an arbitrary number for consistency with other
+# container runtimes. If left unlimited, it may result in OOM issues with MySQL.
+ExecStart=
+ExecStart=/usr/bin/dockerd -H tcp://0.0.0.0:2376 -H unix:///var/run/docker.sock --default-ulimit=nofile=1048576:1048576 --tlsverify --tlscacert /etc/docker/ca.pem --tlscert /etc/docker/server.pem --tlskey /etc/docker/server-key.pem --label provider=virtualbox --insecure-registry 10.96.0.0/12 
+ExecReload=/bin/kill -s HUP \$MAINPID
+
+# Having non-zero Limit*s causes performance problems due to accounting overhead
+# in the kernel. We recommend using cgroups to do container-local accounting.
+LimitNOFILE=infinity
+LimitNPROC=infinity
+LimitCORE=infinity
+
+# Uncomment TasksMax if your systemd version supports it.
+# Only systemd 226 and above support this version.
+TasksMax=infinity
+TimeoutStartSec=0
+
+# set delegate yes so that systemd does not reset the cgroups of docker containers
+Delegate=yes
+
+# kill only the docker process, not all processes in the cgroup
+KillMode=process
+
+[Install]
+WantedBy=multi-user.target
+" | sudo tee /lib/systemd/system/docker.service.new
+I0306 17:42:44.354536  596486 main.go:141] libmachine: SSH cmd err, output: <nil>: [Unit]
+Description=Docker Application Container Engine
+Documentation=https://docs.docker.com
+After=network.target  minikube-automount.service docker.socket
+Requires= minikube-automount.service docker.socket 
+StartLimitBurst=3
+StartLimitIntervalSec=60
+
+[Service]
+Type=notify
+Restart=on-failure
+
+
+
+# This file is a systemd drop-in unit that inherits from the base dockerd configuration.
+# The base configuration already specifies an 'ExecStart=...' command. The first directive
+# here is to clear out that command inherited from the base configuration. Without this,
+# the command from the base configuration and the command specified here are treated as
+# a sequence of commands, which is not the desired behavior, nor is it valid -- systemd
+# will catch this invalid input and refuse to start the service with an error like:
+#  Service has more than one ExecStart= setting, which is only allowed for Type=oneshot services.
+
+# NOTE: default-ulimit=nofile is set to an arbitrary number for consistency with other
+# container runtimes. If left unlimited, it may result in OOM issues with MySQL.
+ExecStart=
+ExecStart=/usr/bin/dockerd -H tcp://0.0.0.0:2376 -H unix:///var/run/docker.sock --default-ulimit=nofile=1048576:1048576 --tlsverify --tlscacert /etc/docker/ca.pem --tlscert /etc/docker/server.pem --tlskey /etc/docker/server-key.pem --label provider=virtualbox --insecure-registry 10.96.0.0/12 
+ExecReload=/bin/kill -s HUP $MAINPID
+
+# Having non-zero Limit*s causes performance problems due to accounting overhead
+# in the kernel. We recommend using cgroups to do container-local accounting.
+LimitNOFILE=infinity
+LimitNPROC=infinity
+LimitCORE=infinity
+
+# Uncomment TasksMax if your systemd version supports it.
+# Only systemd 226 and above support this version.
+TasksMax=infinity
+TimeoutStartSec=0
+
+# set delegate yes so that systemd does not reset the cgroups of docker containers
+Delegate=yes
+
+# kill only the docker process, not all processes in the cgroup
+KillMode=process
+
+[Install]
+WantedBy=multi-user.target
+
+I0306 17:42:44.354594  596486 main.go:141] libmachine: Using SSH client type: native
+I0306 17:42:44.354885  596486 main.go:141] libmachine: &{{{<nil> 0 [] [] []} docker [0x808a40] 0x80b720 <nil>  [] 0s} 127.0.0.1 39213 <nil> <nil>}
+I0306 17:42:44.354901  596486 main.go:141] libmachine: About to run SSH command:
+sudo diff -u /lib/systemd/system/docker.service /lib/systemd/system/docker.service.new || { sudo mv /lib/systemd/system/docker.service.new /lib/systemd/system/docker.service; sudo systemctl -f daemon-reload && sudo systemctl -f enable docker && sudo systemctl -f restart docker; }
+I0306 17:42:44.750429  596486 main.go:141] libmachine: SSH cmd err, output: <nil>: diff: can't stat '/lib/systemd/system/docker.service': No such file or directory
+Created symlink /etc/systemd/system/multi-user.target.wants/docker.service → /usr/lib/systemd/system/docker.service.
+
+I0306 17:42:44.750444  596486 machine.go:91] provisioned docker machine in 1.091705705s
+I0306 17:42:44.750451  596486 client.go:171] LocalClient.Create took 31.170124105s
+I0306 17:42:44.750467  596486 start.go:167] duration metric: libmachine.API.Create for "minikube" took 31.170171178s
+I0306 17:42:44.750476  596486 start.go:300] post-start starting for "minikube" (driver="virtualbox")
+I0306 17:42:44.750486  596486 start.go:329] creating required directories: [/etc/kubernetes/addons /etc/kubernetes/manifests /var/tmp/minikube /var/lib/minikube /var/lib/minikube/certs /var/lib/minikube/images /var/lib/minikube/binaries /tmp/gvisor /usr/share/ca-certificates /etc/ssl/certs]
+I0306 17:42:44.750549  596486 ssh_runner.go:195] Run: sudo mkdir -p /etc/kubernetes/addons /etc/kubernetes/manifests /var/tmp/minikube /var/lib/minikube /var/lib/minikube/certs /var/lib/minikube/images /var/lib/minikube/binaries /tmp/gvisor /usr/share/ca-certificates /etc/ssl/certs
+I0306 17:42:44.750567  596486 sshutil.go:53] new ssh client: &{IP:127.0.0.1 Port:39213 SSHKeyPath:/home/son/.minikube/machines/minikube/id_rsa Username:docker}
+I0306 17:42:44.790329  596486 ssh_runner.go:195] Run: cat /etc/os-release
+I0306 17:42:44.792229  596486 info.go:137] Remote host: Buildroot 2021.02.12
+I0306 17:42:44.792240  596486 filesync.go:126] Scanning /home/son/.minikube/addons for local assets ...
+I0306 17:42:44.802944  596486 filesync.go:126] Scanning /home/son/.minikube/files for local assets ...
+I0306 17:42:44.803106  596486 start.go:303] post-start completed in 52.620193ms
+I0306 17:42:44.803413  596486 main.go:141] libmachine: COMMAND: /usr/bin/VBoxManage showvminfo minikube --machinereadable
+I0306 17:42:44.906269  596486 main.go:141] libmachine: STDOUT:
+{
+name="minikube"
+Encryption:     disabled
+groups="/"
+ostype="Linux 2.6 / 3.x / 4.x / 5.x (64-bit)"
+UUID="d4122688-2626-4d9d-b4ed-edd33383d12d"
+CfgFile="/home/son/.minikube/machines/minikube/minikube/minikube.vbox"
+SnapFldr="/home/son/.minikube/machines/minikube/minikube/Snapshots"
+LogFldr="/home/son/.minikube/machines/minikube/minikube/Logs"
+hardwareuuid="d4122688-2626-4d9d-b4ed-edd33383d12d"
+memory=4000
+pagefusion="off"
+vram=8
+cpuexecutioncap=100
+hpet="on"
+cpu-profile="host"
+chipset="piix3"
+firmware="BIOS"
+cpus=2
+pae="on"
+longmode="on"
+triplefaultreset="off"
+apic="on"
+x2apic="off"
+nested-hw-virt="off"
+cpuid-portability-level=0
+bootmenu="disabled"
+boot1="dvd"
+boot2="dvd"
+boot3="disk"
+boot4="none"
+acpi="on"
+ioapic="on"
+biosapic="apic"
+biossystemtimeoffset=0
+BIOS NVRAM File="/home/son/.minikube/machines/minikube/minikube/minikube.nvram"
+rtcuseutc="on"
+hwvirtex="on"
+nestedpaging="on"
+largepages="on"
+vtxvpid="on"
+vtxux="on"
+virtvmsavevmload="on"
+iommu="none"
+paravirtprovider="default"
+effparavirtprovider="kvm"
+VMState="running"
+VMStateChangeTime="2024-03-06T10:42:22.593000000"
+graphicscontroller="vboxvga"
+monitorcount=1
+accelerate3d="off"
+accelerate2dvideo="off"
+teleporterenabled="off"
+teleporterport=0
+teleporteraddress=""
+teleporterpassword=""
+tracing-enabled="off"
+tracing-allow-vm-access="off"
+tracing-config=""
+autostart-enabled="off"
+autostart-delay=0
+defaultfrontend=""
+vmprocpriority="default"
+storagecontrollername0="SATA"
+storagecontrollertype0="IntelAhci"
+storagecontrollerinstance0="0"
+storagecontrollermaxportcount0="30"
+storagecontrollerportcount0="30"
+storagecontrollerbootable0="on"
+"SATA-0-0"="/home/son/.minikube/machines/minikube/boot2docker.iso"
+"SATA-ImageUUID-0-0"="7ead6861-b2f7-4b36-9888-a6a3dcf59532"
+"SATA-tempeject-0-0"="off"
+"SATA-IsEjected-0-0"="off"
+"SATA-hot-pluggable-0-0"="off"
+"SATA-nonrotational-0-0"="off"
+"SATA-discard-0-0"="off"
+"SATA-1-0"="/home/son/.minikube/machines/minikube/disk.vmdk"
+"SATA-ImageUUID-1-0"="cf36a715-2519-4068-a0f9-e7d329f87f1d"
+"SATA-hot-pluggable-1-0"="off"
+"SATA-nonrotational-1-0"="off"
+"SATA-discard-1-0"="off"
+"SATA-2-0"="none"
+"SATA-3-0"="none"
+"SATA-4-0"="none"
+"SATA-5-0"="none"
+"SATA-6-0"="none"
+"SATA-7-0"="none"
+"SATA-8-0"="none"
+"SATA-9-0"="none"
+"SATA-10-0"="none"
+"SATA-11-0"="none"
+"SATA-12-0"="none"
+"SATA-13-0"="none"
+"SATA-14-0"="none"
+"SATA-15-0"="none"
+"SATA-16-0"="none"
+"SATA-17-0"="none"
+"SATA-18-0"="none"
+"SATA-19-0"="none"
+"SATA-20-0"="none"
+"SATA-21-0"="none"
+"SATA-22-0"="none"
+"SATA-23-0"="none"
+"SATA-24-0"="none"
+"SATA-25-0"="none"
+"SATA-26-0"="none"
+"SATA-27-0"="none"
+"SATA-28-0"="none"
+"SATA-29-0"="none"
+natnet1="nat"
+macaddress1="0800271912E9"
+cableconnected1="on"
+nic1="nat"
+nictype1="virtio"
+nicspeed1="0"
+mtu="0"
+sockSnd="64"
+sockRcv="64"
+tcpWndSnd="64"
+tcpWndRcv="64"
+Forwarding(0)="ssh,tcp,127.0.0.1,39213,,22"
+hostonlyadapter2="vboxnet3"
+macaddress2="080027430061"
+cableconnected2="on"
+nic2="hostonly"
+nictype2="virtio"
+nicspeed2="0"
+nic3="none"
+nic4="none"
+nic5="none"
+nic6="none"
+nic7="none"
+nic8="none"
+hidpointing="ps2mouse"
+hidkeyboard="ps2kbd"
+uart1="off"
+uart2="off"
+uart3="off"
+uart4="off"
+lpt1="off"
+lpt2="off"
+audio="default"
+audio_out="off"
+audio_in="off"
+clipboard="disabled"
+draganddrop="disabled"
+SessionName="headless"
+VideoMode="720,400,0"@0,0 1
+vrde="off"
+usb="off"
+ehci="off"
+xhci="off"
+VRDEActiveConnection="off"
+VRDEClients==0
+recording_enabled="off"
+recording_screens=1
+ rec_screen0
+rec_screen_enabled="on"
+rec_screen_id=0
+rec_screen_video_enabled="on"
+rec_screen_dest="File"
+rec_screen_dest_filename="/home/son/.minikube/machines/minikube/minikube/minikube-screen0.webm"
+rec_screen_opts="vc_enabled=true,ac_enabled=false,ac_profile=med"
+rec_screen_video_res_xy="1024x768"
+rec_screen_video_rate_kbps=512
+rec_screen_video_fps=25
+GuestMemoryBalloon=0
+GuestOSType="Linux26_64"
+GuestAdditionsRunLevel=2
+GuestAdditionsVersion="6.0.0 r127566"
+GuestAdditionsFacility_VirtualBox Base Driver=50,1709721760953
+GuestAdditionsFacility_VirtualBox System Service=50,1709721761182
+GuestAdditionsFacility_Seamless Mode=0,1709721760953
+GuestAdditionsFacility_Graphics Mode=0,1709721760952
+}
+I0306 17:42:44.906282  596486 main.go:141] libmachine: STDERR:
+{
+}
+I0306 17:42:44.906331  596486 main.go:141] libmachine: COMMAND: /usr/bin/VBoxManage showvminfo minikube --machinereadable
+I0306 17:42:45.011113  596486 main.go:141] libmachine: STDOUT:
+{
+name="minikube"
+Encryption:     disabled
+groups="/"
+ostype="Linux 2.6 / 3.x / 4.x / 5.x (64-bit)"
+UUID="d4122688-2626-4d9d-b4ed-edd33383d12d"
+CfgFile="/home/son/.minikube/machines/minikube/minikube/minikube.vbox"
+SnapFldr="/home/son/.minikube/machines/minikube/minikube/Snapshots"
+LogFldr="/home/son/.minikube/machines/minikube/minikube/Logs"
+hardwareuuid="d4122688-2626-4d9d-b4ed-edd33383d12d"
+memory=4000
+pagefusion="off"
+vram=8
+cpuexecutioncap=100
+hpet="on"
+cpu-profile="host"
+chipset="piix3"
+firmware="BIOS"
+cpus=2
+pae="on"
+longmode="on"
+triplefaultreset="off"
+apic="on"
+x2apic="off"
+nested-hw-virt="off"
+cpuid-portability-level=0
+bootmenu="disabled"
+boot1="dvd"
+boot2="dvd"
+boot3="disk"
+boot4="none"
+acpi="on"
+ioapic="on"
+biosapic="apic"
+biossystemtimeoffset=0
+BIOS NVRAM File="/home/son/.minikube/machines/minikube/minikube/minikube.nvram"
+rtcuseutc="on"
+hwvirtex="on"
+nestedpaging="on"
+largepages="on"
+vtxvpid="on"
+vtxux="on"
+virtvmsavevmload="on"
+iommu="none"
+paravirtprovider="default"
+effparavirtprovider="kvm"
+VMState="running"
+VMStateChangeTime="2024-03-06T10:42:22.593000000"
+graphicscontroller="vboxvga"
+monitorcount=1
+accelerate3d="off"
+accelerate2dvideo="off"
+teleporterenabled="off"
+teleporterport=0
+teleporteraddress=""
+teleporterpassword=""
+tracing-enabled="off"
+tracing-allow-vm-access="off"
+tracing-config=""
+autostart-enabled="off"
+autostart-delay=0
+defaultfrontend=""
+vmprocpriority="default"
+storagecontrollername0="SATA"
+storagecontrollertype0="IntelAhci"
+storagecontrollerinstance0="0"
+storagecontrollermaxportcount0="30"
+storagecontrollerportcount0="30"
+storagecontrollerbootable0="on"
+"SATA-0-0"="/home/son/.minikube/machines/minikube/boot2docker.iso"
+"SATA-ImageUUID-0-0"="7ead6861-b2f7-4b36-9888-a6a3dcf59532"
+"SATA-tempeject-0-0"="off"
+"SATA-IsEjected-0-0"="off"
+"SATA-hot-pluggable-0-0"="off"
+"SATA-nonrotational-0-0"="off"
+"SATA-discard-0-0"="off"
+"SATA-1-0"="/home/son/.minikube/machines/minikube/disk.vmdk"
+"SATA-ImageUUID-1-0"="cf36a715-2519-4068-a0f9-e7d329f87f1d"
+"SATA-hot-pluggable-1-0"="off"
+"SATA-nonrotational-1-0"="off"
+"SATA-discard-1-0"="off"
+"SATA-2-0"="none"
+"SATA-3-0"="none"
+"SATA-4-0"="none"
+"SATA-5-0"="none"
+"SATA-6-0"="none"
+"SATA-7-0"="none"
+"SATA-8-0"="none"
+"SATA-9-0"="none"
+"SATA-10-0"="none"
+"SATA-11-0"="none"
+"SATA-12-0"="none"
+"SATA-13-0"="none"
+"SATA-14-0"="none"
+"SATA-15-0"="none"
+"SATA-16-0"="none"
+"SATA-17-0"="none"
+"SATA-18-0"="none"
+"SATA-19-0"="none"
+"SATA-20-0"="none"
+"SATA-21-0"="none"
+"SATA-22-0"="none"
+"SATA-23-0"="none"
+"SATA-24-0"="none"
+"SATA-25-0"="none"
+"SATA-26-0"="none"
+"SATA-27-0"="none"
+"SATA-28-0"="none"
+"SATA-29-0"="none"
+natnet1="nat"
+macaddress1="0800271912E9"
+cableconnected1="on"
+nic1="nat"
+nictype1="virtio"
+nicspeed1="0"
+mtu="0"
+sockSnd="64"
+sockRcv="64"
+tcpWndSnd="64"
+tcpWndRcv="64"
+Forwarding(0)="ssh,tcp,127.0.0.1,39213,,22"
+hostonlyadapter2="vboxnet3"
+macaddress2="080027430061"
+cableconnected2="on"
+nic2="hostonly"
+nictype2="virtio"
+nicspeed2="0"
+nic3="none"
+nic4="none"
+nic5="none"
+nic6="none"
+nic7="none"
+nic8="none"
+hidpointing="ps2mouse"
+hidkeyboard="ps2kbd"
+uart1="off"
+uart2="off"
+uart3="off"
+uart4="off"
+lpt1="off"
+lpt2="off"
+audio="default"
+audio_out="off"
+audio_in="off"
+clipboard="disabled"
+draganddrop="disabled"
+SessionName="headless"
+VideoMode="720,400,0"@0,0 1
+vrde="off"
+usb="off"
+ehci="off"
+xhci="off"
+VRDEActiveConnection="off"
+VRDEClients==0
+recording_enabled="off"
+recording_screens=1
+ rec_screen0
+rec_screen_enabled="on"
+rec_screen_id=0
+rec_screen_video_enabled="on"
+rec_screen_dest="File"
+rec_screen_dest_filename="/home/son/.minikube/machines/minikube/minikube/minikube-screen0.webm"
+rec_screen_opts="vc_enabled=true,ac_enabled=false,ac_profile=med"
+rec_screen_video_res_xy="1024x768"
+rec_screen_video_rate_kbps=512
+rec_screen_video_fps=25
+GuestMemoryBalloon=0
+GuestOSType="Linux26_64"
+GuestAdditionsRunLevel=2
+GuestAdditionsVersion="6.0.0 r127566"
+GuestAdditionsFacility_VirtualBox Base Driver=50,1709721760953
+GuestAdditionsFacility_VirtualBox System Service=50,1709721761182
+GuestAdditionsFacility_Seamless Mode=0,1709721760953
+GuestAdditionsFacility_Graphics Mode=0,1709721760952
+}
+I0306 17:42:45.011126  596486 main.go:141] libmachine: STDERR:
+{
+}
+I0306 17:42:45.011250  596486 main.go:141] libmachine: Host-only MAC: 080027430061
+
+I0306 17:42:45.011305  596486 main.go:141] libmachine: Using SSH client type: native
+I0306 17:42:45.011558  596486 main.go:141] libmachine: &{{{<nil> 0 [] [] []} docker [0x808a40] 0x80b720 <nil>  [] 0s} 127.0.0.1 39213 <nil> <nil>}
+I0306 17:42:45.011564  596486 main.go:141] libmachine: About to run SSH command:
+ip addr show
+I0306 17:42:45.079394  596486 main.go:141] libmachine: SSH cmd err, output: <nil>: 1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP group default qlen 1000
+    link/ether 08:00:27:19:12:e9 brd ff:ff:ff:ff:ff:ff
+    inet 10.0.2.15/24 brd 10.0.2.255 scope global dynamic eth0
+       valid_lft 86397sec preferred_lft 86397sec
+3: eth1: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP group default qlen 1000
+    link/ether 08:00:27:43:00:61 brd ff:ff:ff:ff:ff:ff
+    inet 192.168.59.107/24 brd 192.168.59.255 scope global dynamic eth1
+       valid_lft 597sec preferred_lft 597sec
+4: sit0@NONE: <NOARP> mtu 1480 qdisc noop state DOWN group default qlen 1000
+    link/sit 0.0.0.0 brd 0.0.0.0
+5: docker0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc noqueue state DOWN group default 
+    link/ether 02:42:5a:ec:23:16 brd ff:ff:ff:ff:ff:ff
+    inet 172.17.0.1/16 brd 172.17.255.255 scope global docker0
+       valid_lft forever preferred_lft forever
+
+I0306 17:42:45.079442  596486 main.go:141] libmachine: SSH returned: 1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP group default qlen 1000
+    link/ether 08:00:27:19:12:e9 brd ff:ff:ff:ff:ff:ff
+    inet 10.0.2.15/24 brd 10.0.2.255 scope global dynamic eth0
+       valid_lft 86397sec preferred_lft 86397sec
+3: eth1: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP group default qlen 1000
+    link/ether 08:00:27:43:00:61 brd ff:ff:ff:ff:ff:ff
+    inet 192.168.59.107/24 brd 192.168.59.255 scope global dynamic eth1
+       valid_lft 597sec preferred_lft 597sec
+4: sit0@NONE: <NOARP> mtu 1480 qdisc noop state DOWN group default qlen 1000
+    link/sit 0.0.0.0 brd 0.0.0.0
+5: docker0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc noqueue state DOWN group default 
+    link/ether 02:42:5a:ec:23:16 brd ff:ff:ff:ff:ff:ff
+    inet 172.17.0.1/16 brd 172.17.255.255 scope global docker0
+       valid_lft forever preferred_lft forever
+
+END SSH
+
+I0306 17:42:45.079535  596486 profile.go:148] Saving config to /home/son/.minikube/profiles/minikube/config.json ...
+I0306 17:42:45.079765  596486 start.go:128] duration metric: createHost completed in 31.503504334s
+I0306 17:42:45.079806  596486 main.go:141] libmachine: Using SSH client type: native
+I0306 17:42:45.080037  596486 main.go:141] libmachine: &{{{<nil> 0 [] [] []} docker [0x808a40] 0x80b720 <nil>  [] 0s} 127.0.0.1 39213 <nil> <nil>}
+I0306 17:42:45.080044  596486 main.go:141] libmachine: About to run SSH command:
+date +%!s(MISSING).%!N(MISSING)
+I0306 17:42:45.149118  596486 main.go:141] libmachine: SSH cmd err, output: <nil>: 1709721765.147621086
+
+I0306 17:42:45.149136  596486 fix.go:206] guest clock: 1709721765.147621086
+I0306 17:42:45.149149  596486 fix.go:219] Guest: 2024-03-06 17:42:45.147621086 +0700 +07 Remote: 2024-03-06 17:42:45.07977088 +0700 +07 m=+31.633413813 (delta=67.850206ms)
+I0306 17:42:45.149185  596486 fix.go:190] guest clock delta is within tolerance: 67.850206ms
+I0306 17:42:45.149197  596486 start.go:83] releasing machines lock for "minikube", held for 31.573000676s
+I0306 17:42:45.149254  596486 main.go:141] libmachine: COMMAND: /usr/bin/VBoxManage showvminfo minikube --machinereadable
+I0306 17:42:45.250378  596486 main.go:141] libmachine: STDOUT:
+{
+name="minikube"
+Encryption:     disabled
+groups="/"
+ostype="Linux 2.6 / 3.x / 4.x / 5.x (64-bit)"
+UUID="d4122688-2626-4d9d-b4ed-edd33383d12d"
+CfgFile="/home/son/.minikube/machines/minikube/minikube/minikube.vbox"
+SnapFldr="/home/son/.minikube/machines/minikube/minikube/Snapshots"
+LogFldr="/home/son/.minikube/machines/minikube/minikube/Logs"
+hardwareuuid="d4122688-2626-4d9d-b4ed-edd33383d12d"
+memory=4000
+pagefusion="off"
+vram=8
+cpuexecutioncap=100
+hpet="on"
+cpu-profile="host"
+chipset="piix3"
+firmware="BIOS"
+cpus=2
+pae="on"
+longmode="on"
+triplefaultreset="off"
+apic="on"
+x2apic="off"
+nested-hw-virt="off"
+cpuid-portability-level=0
+bootmenu="disabled"
+boot1="dvd"
+boot2="dvd"
+boot3="disk"
+boot4="none"
+acpi="on"
+ioapic="on"
+biosapic="apic"
+biossystemtimeoffset=0
+BIOS NVRAM File="/home/son/.minikube/machines/minikube/minikube/minikube.nvram"
+rtcuseutc="on"
+hwvirtex="on"
+nestedpaging="on"
+largepages="on"
+vtxvpid="on"
+vtxux="on"
+virtvmsavevmload="on"
+iommu="none"
+paravirtprovider="default"
+effparavirtprovider="kvm"
+VMState="running"
+VMStateChangeTime="2024-03-06T10:42:22.593000000"
+graphicscontroller="vboxvga"
+monitorcount=1
+accelerate3d="off"
+accelerate2dvideo="off"
+teleporterenabled="off"
+teleporterport=0
+teleporteraddress=""
+teleporterpassword=""
+tracing-enabled="off"
+tracing-allow-vm-access="off"
+tracing-config=""
+autostart-enabled="off"
+autostart-delay=0
+defaultfrontend=""
+vmprocpriority="default"
+storagecontrollername0="SATA"
+storagecontrollertype0="IntelAhci"
+storagecontrollerinstance0="0"
+storagecontrollermaxportcount0="30"
+storagecontrollerportcount0="30"
+storagecontrollerbootable0="on"
+"SATA-0-0"="/home/son/.minikube/machines/minikube/boot2docker.iso"
+"SATA-ImageUUID-0-0"="7ead6861-b2f7-4b36-9888-a6a3dcf59532"
+"SATA-tempeject-0-0"="off"
+"SATA-IsEjected-0-0"="off"
+"SATA-hot-pluggable-0-0"="off"
+"SATA-nonrotational-0-0"="off"
+"SATA-discard-0-0"="off"
+"SATA-1-0"="/home/son/.minikube/machines/minikube/disk.vmdk"
+"SATA-ImageUUID-1-0"="cf36a715-2519-4068-a0f9-e7d329f87f1d"
+"SATA-hot-pluggable-1-0"="off"
+"SATA-nonrotational-1-0"="off"
+"SATA-discard-1-0"="off"
+"SATA-2-0"="none"
+"SATA-3-0"="none"
+"SATA-4-0"="none"
+"SATA-5-0"="none"
+"SATA-6-0"="none"
+"SATA-7-0"="none"
+"SATA-8-0"="none"
+"SATA-9-0"="none"
+"SATA-10-0"="none"
+"SATA-11-0"="none"
+"SATA-12-0"="none"
+"SATA-13-0"="none"
+"SATA-14-0"="none"
+"SATA-15-0"="none"
+"SATA-16-0"="none"
+"SATA-17-0"="none"
+"SATA-18-0"="none"
+"SATA-19-0"="none"
+"SATA-20-0"="none"
+"SATA-21-0"="none"
+"SATA-22-0"="none"
+"SATA-23-0"="none"
+"SATA-24-0"="none"
+"SATA-25-0"="none"
+"SATA-26-0"="none"
+"SATA-27-0"="none"
+"SATA-28-0"="none"
+"SATA-29-0"="none"
+natnet1="nat"
+macaddress1="0800271912E9"
+cableconnected1="on"
+nic1="nat"
+nictype1="virtio"
+nicspeed1="0"
+mtu="0"
+sockSnd="64"
+sockRcv="64"
+tcpWndSnd="64"
+tcpWndRcv="64"
+Forwarding(0)="ssh,tcp,127.0.0.1,39213,,22"
+hostonlyadapter2="vboxnet3"
+macaddress2="080027430061"
+cableconnected2="on"
+nic2="hostonly"
+nictype2="virtio"
+nicspeed2="0"
+nic3="none"
+nic4="none"
+nic5="none"
+nic6="none"
+nic7="none"
+nic8="none"
+hidpointing="ps2mouse"
+hidkeyboard="ps2kbd"
+uart1="off"
+uart2="off"
+uart3="off"
+uart4="off"
+lpt1="off"
+lpt2="off"
+audio="default"
+audio_out="off"
+audio_in="off"
+clipboard="disabled"
+draganddrop="disabled"
+SessionName="headless"
+VideoMode="720,400,0"@0,0 1
+vrde="off"
+usb="off"
+ehci="off"
+xhci="off"
+VRDEActiveConnection="off"
+VRDEClients==0
+recording_enabled="off"
+recording_screens=1
+ rec_screen0
+rec_screen_enabled="on"
+rec_screen_id=0
+rec_screen_video_enabled="on"
+rec_screen_dest="File"
+rec_screen_dest_filename="/home/son/.minikube/machines/minikube/minikube/minikube-screen0.webm"
+rec_screen_opts="vc_enabled=true,ac_enabled=false,ac_profile=med"
+rec_screen_video_res_xy="1024x768"
+rec_screen_video_rate_kbps=512
+rec_screen_video_fps=25
+GuestMemoryBalloon=0
+GuestOSType="Linux26_64"
+GuestAdditionsRunLevel=2
+GuestAdditionsVersion="6.0.0 r127566"
+GuestAdditionsFacility_VirtualBox Base Driver=50,1709721760953
+GuestAdditionsFacility_VirtualBox System Service=50,1709721761182
+GuestAdditionsFacility_Seamless Mode=0,1709721760953
+GuestAdditionsFacility_Graphics Mode=0,1709721760952
+}
+I0306 17:42:45.250393  596486 main.go:141] libmachine: STDERR:
+{
+}
+I0306 17:42:45.250443  596486 main.go:141] libmachine: COMMAND: /usr/bin/VBoxManage showvminfo minikube --machinereadable
+I0306 17:42:45.356337  596486 main.go:141] libmachine: STDOUT:
+{
+name="minikube"
+Encryption:     disabled
+groups="/"
+ostype="Linux 2.6 / 3.x / 4.x / 5.x (64-bit)"
+UUID="d4122688-2626-4d9d-b4ed-edd33383d12d"
+CfgFile="/home/son/.minikube/machines/minikube/minikube/minikube.vbox"
+SnapFldr="/home/son/.minikube/machines/minikube/minikube/Snapshots"
+LogFldr="/home/son/.minikube/machines/minikube/minikube/Logs"
+hardwareuuid="d4122688-2626-4d9d-b4ed-edd33383d12d"
+memory=4000
+pagefusion="off"
+vram=8
+cpuexecutioncap=100
+hpet="on"
+cpu-profile="host"
+chipset="piix3"
+firmware="BIOS"
+cpus=2
+pae="on"
+longmode="on"
+triplefaultreset="off"
+apic="on"
+x2apic="off"
+nested-hw-virt="off"
+cpuid-portability-level=0
+bootmenu="disabled"
+boot1="dvd"
+boot2="dvd"
+boot3="disk"
+boot4="none"
+acpi="on"
+ioapic="on"
+biosapic="apic"
+biossystemtimeoffset=0
+BIOS NVRAM File="/home/son/.minikube/machines/minikube/minikube/minikube.nvram"
+rtcuseutc="on"
+hwvirtex="on"
+nestedpaging="on"
+largepages="on"
+vtxvpid="on"
+vtxux="on"
+virtvmsavevmload="on"
+iommu="none"
+paravirtprovider="default"
+effparavirtprovider="kvm"
+VMState="running"
+VMStateChangeTime="2024-03-06T10:42:22.593000000"
+graphicscontroller="vboxvga"
+monitorcount=1
+accelerate3d="off"
+accelerate2dvideo="off"
+teleporterenabled="off"
+teleporterport=0
+teleporteraddress=""
+teleporterpassword=""
+tracing-enabled="off"
+tracing-allow-vm-access="off"
+tracing-config=""
+autostart-enabled="off"
+autostart-delay=0
+defaultfrontend=""
+vmprocpriority="default"
+storagecontrollername0="SATA"
+storagecontrollertype0="IntelAhci"
+storagecontrollerinstance0="0"
+storagecontrollermaxportcount0="30"
+storagecontrollerportcount0="30"
+storagecontrollerbootable0="on"
+"SATA-0-0"="/home/son/.minikube/machines/minikube/boot2docker.iso"
+"SATA-ImageUUID-0-0"="7ead6861-b2f7-4b36-9888-a6a3dcf59532"
+"SATA-tempeject-0-0"="off"
+"SATA-IsEjected-0-0"="off"
+"SATA-hot-pluggable-0-0"="off"
+"SATA-nonrotational-0-0"="off"
+"SATA-discard-0-0"="off"
+"SATA-1-0"="/home/son/.minikube/machines/minikube/disk.vmdk"
+"SATA-ImageUUID-1-0"="cf36a715-2519-4068-a0f9-e7d329f87f1d"
+"SATA-hot-pluggable-1-0"="off"
+"SATA-nonrotational-1-0"="off"
+"SATA-discard-1-0"="off"
+"SATA-2-0"="none"
+"SATA-3-0"="none"
+"SATA-4-0"="none"
+"SATA-5-0"="none"
+"SATA-6-0"="none"
+"SATA-7-0"="none"
+"SATA-8-0"="none"
+"SATA-9-0"="none"
+"SATA-10-0"="none"
+"SATA-11-0"="none"
+"SATA-12-0"="none"
+"SATA-13-0"="none"
+"SATA-14-0"="none"
+"SATA-15-0"="none"
+"SATA-16-0"="none"
+"SATA-17-0"="none"
+"SATA-18-0"="none"
+"SATA-19-0"="none"
+"SATA-20-0"="none"
+"SATA-21-0"="none"
+"SATA-22-0"="none"
+"SATA-23-0"="none"
+"SATA-24-0"="none"
+"SATA-25-0"="none"
+"SATA-26-0"="none"
+"SATA-27-0"="none"
+"SATA-28-0"="none"
+"SATA-29-0"="none"
+natnet1="nat"
+macaddress1="0800271912E9"
+cableconnected1="on"
+nic1="nat"
+nictype1="virtio"
+nicspeed1="0"
+mtu="0"
+sockSnd="64"
+sockRcv="64"
+tcpWndSnd="64"
+tcpWndRcv="64"
+Forwarding(0)="ssh,tcp,127.0.0.1,39213,,22"
+hostonlyadapter2="vboxnet3"
+macaddress2="080027430061"
+cableconnected2="on"
+nic2="hostonly"
+nictype2="virtio"
+nicspeed2="0"
+nic3="none"
+nic4="none"
+nic5="none"
+nic6="none"
+nic7="none"
+nic8="none"
+hidpointing="ps2mouse"
+hidkeyboard="ps2kbd"
+uart1="off"
+uart2="off"
+uart3="off"
+uart4="off"
+lpt1="off"
+lpt2="off"
+audio="default"
+audio_out="off"
+audio_in="off"
+clipboard="disabled"
+draganddrop="disabled"
+SessionName="headless"
+VideoMode="720,400,0"@0,0 1
+vrde="off"
+usb="off"
+ehci="off"
+xhci="off"
+VRDEActiveConnection="off"
+VRDEClients==0
+recording_enabled="off"
+recording_screens=1
+ rec_screen0
+rec_screen_enabled="on"
+rec_screen_id=0
+rec_screen_video_enabled="on"
+rec_screen_dest="File"
+rec_screen_dest_filename="/home/son/.minikube/machines/minikube/minikube/minikube-screen0.webm"
+rec_screen_opts="vc_enabled=true,ac_enabled=false,ac_profile=med"
+rec_screen_video_res_xy="1024x768"
+rec_screen_video_rate_kbps=512
+rec_screen_video_fps=25
+GuestMemoryBalloon=0
+GuestOSType="Linux26_64"
+GuestAdditionsRunLevel=2
+GuestAdditionsVersion="6.0.0 r127566"
+GuestAdditionsFacility_VirtualBox Base Driver=50,1709721760953
+GuestAdditionsFacility_VirtualBox System Service=50,1709721761182
+GuestAdditionsFacility_Seamless Mode=0,1709721760953
+GuestAdditionsFacility_Graphics Mode=0,1709721760952
+}
+I0306 17:42:45.356351  596486 main.go:141] libmachine: STDERR:
+{
+}
+I0306 17:42:45.356484  596486 main.go:141] libmachine: Host-only MAC: 080027430061
+
+I0306 17:42:45.356533  596486 main.go:141] libmachine: Using SSH client type: native
+I0306 17:42:45.356775  596486 main.go:141] libmachine: &{{{<nil> 0 [] [] []} docker [0x808a40] 0x80b720 <nil>  [] 0s} 127.0.0.1 39213 <nil> <nil>}
+I0306 17:42:45.356781  596486 main.go:141] libmachine: About to run SSH command:
+ip addr show
+I0306 17:42:45.422495  596486 main.go:141] libmachine: SSH cmd err, output: <nil>: 1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP group default qlen 1000
+    link/ether 08:00:27:19:12:e9 brd ff:ff:ff:ff:ff:ff
+    inet 10.0.2.15/24 brd 10.0.2.255 scope global dynamic eth0
+       valid_lft 86396sec preferred_lft 86396sec
+3: eth1: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP group default qlen 1000
+    link/ether 08:00:27:43:00:61 brd ff:ff:ff:ff:ff:ff
+    inet 192.168.59.107/24 brd 192.168.59.255 scope global dynamic eth1
+       valid_lft 596sec preferred_lft 596sec
+4: sit0@NONE: <NOARP> mtu 1480 qdisc noop state DOWN group default qlen 1000
+    link/sit 0.0.0.0 brd 0.0.0.0
+5: docker0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc noqueue state DOWN group default 
+    link/ether 02:42:5a:ec:23:16 brd ff:ff:ff:ff:ff:ff
+    inet 172.17.0.1/16 brd 172.17.255.255 scope global docker0
+       valid_lft forever preferred_lft forever
+
+I0306 17:42:45.422534  596486 main.go:141] libmachine: SSH returned: 1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP group default qlen 1000
+    link/ether 08:00:27:19:12:e9 brd ff:ff:ff:ff:ff:ff
+    inet 10.0.2.15/24 brd 10.0.2.255 scope global dynamic eth0
+       valid_lft 86396sec preferred_lft 86396sec
+3: eth1: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP group default qlen 1000
+    link/ether 08:00:27:43:00:61 brd ff:ff:ff:ff:ff:ff
+    inet 192.168.59.107/24 brd 192.168.59.255 scope global dynamic eth1
+       valid_lft 596sec preferred_lft 596sec
+4: sit0@NONE: <NOARP> mtu 1480 qdisc noop state DOWN group default qlen 1000
+    link/sit 0.0.0.0 brd 0.0.0.0
+5: docker0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc noqueue state DOWN group default 
+    link/ether 02:42:5a:ec:23:16 brd ff:ff:ff:ff:ff:ff
+    inet 172.17.0.1/16 brd 172.17.255.255 scope global docker0
+       valid_lft forever preferred_lft forever
+
+END SSH
+
+I0306 17:42:45.422940  596486 ssh_runner.go:195] Run: cat /version.json
+I0306 17:42:45.422965  596486 sshutil.go:53] new ssh client: &{IP:127.0.0.1 Port:39213 SSHKeyPath:/home/son/.minikube/machines/minikube/id_rsa Username:docker}
+I0306 17:42:45.423042  596486 ssh_runner.go:195] Run: curl -sS -m 2 https://registry.k8s.io/
+I0306 17:42:45.423072  596486 sshutil.go:53] new ssh client: &{IP:127.0.0.1 Port:39213 SSHKeyPath:/home/son/.minikube/machines/minikube/id_rsa Username:docker}
+I0306 17:42:45.645184  596486 ssh_runner.go:195] Run: systemctl --version
+I0306 17:42:45.648136  596486 ssh_runner.go:195] Run: sh -c "stat /etc/cni/net.d/*loopback.conf*"
+W0306 17:42:45.650515  596486 cni.go:209] loopback cni configuration skipped: "/etc/cni/net.d/*loopback.conf*" not found
+I0306 17:42:45.650556  596486 ssh_runner.go:195] Run: sudo find /etc/cni/net.d -maxdepth 1 -type f ( ( -name *bridge* -or -name *podman* ) -and -not -name *.mk_disabled ) -printf "%!p(MISSING), " -exec sh -c "sudo mv {} {}.mk_disabled" ;
+I0306 17:42:45.657940  596486 cni.go:262] disabled [/etc/cni/net.d/87-podman-bridge.conflist] bridge cni config(s)
+I0306 17:42:45.657951  596486 start.go:472] detecting cgroup driver to use...
+I0306 17:42:45.658043  596486 ssh_runner.go:195] Run: /bin/bash -c "sudo mkdir -p /etc && printf %!s(MISSING) "runtime-endpoint: unix:///run/containerd/containerd.sock
+" | sudo tee /etc/crictl.yaml"
+I0306 17:42:45.667054  596486 ssh_runner.go:195] Run: sh -c "sudo sed -i -r 's|^( *)sandbox_image = .*$|\1sandbox_image = "registry.k8s.io/pause:3.9"|' /etc/containerd/config.toml"
+I0306 17:42:45.673458  596486 ssh_runner.go:195] Run: sh -c "sudo sed -i -r 's|^( *)restrict_oom_score_adj = .*$|\1restrict_oom_score_adj = false|' /etc/containerd/config.toml"
+I0306 17:42:45.680113  596486 containerd.go:145] configuring containerd to use "cgroupfs" as cgroup driver...
+I0306 17:42:45.680190  596486 ssh_runner.go:195] Run: sh -c "sudo sed -i -r 's|^( *)SystemdCgroup = .*$|\1SystemdCgroup = false|g' /etc/containerd/config.toml"
+I0306 17:42:45.686081  596486 ssh_runner.go:195] Run: sh -c "sudo sed -i 's|"io.containerd.runtime.v1.linux"|"io.containerd.runc.v2"|g' /etc/containerd/config.toml"
+I0306 17:42:45.691186  596486 ssh_runner.go:195] Run: sh -c "sudo sed -i '/systemd_cgroup/d' /etc/containerd/config.toml"
+I0306 17:42:45.696259  596486 ssh_runner.go:195] Run: sh -c "sudo sed -i 's|"io.containerd.runc.v1"|"io.containerd.runc.v2"|g' /etc/containerd/config.toml"
+I0306 17:42:45.701325  596486 ssh_runner.go:195] Run: sh -c "sudo rm -rf /etc/cni/net.mk"
+I0306 17:42:45.710441  596486 ssh_runner.go:195] Run: sh -c "sudo sed -i -r 's|^( *)conf_dir = .*$|\1conf_dir = "/etc/cni/net.d"|g' /etc/containerd/config.toml"
+I0306 17:42:45.718980  596486 ssh_runner.go:195] Run: sudo sysctl net.bridge.bridge-nf-call-iptables
+I0306 17:42:45.724356  596486 ssh_runner.go:195] Run: sudo sh -c "echo 1 > /proc/sys/net/ipv4/ip_forward"
+I0306 17:42:45.730959  596486 ssh_runner.go:195] Run: sudo systemctl daemon-reload
+I0306 17:42:45.815010  596486 ssh_runner.go:195] Run: sudo systemctl restart containerd
+I0306 17:42:45.825239  596486 start.go:472] detecting cgroup driver to use...
+I0306 17:42:45.825307  596486 ssh_runner.go:195] Run: sudo systemctl cat docker.service
+I0306 17:42:45.835448  596486 ssh_runner.go:195] Run: sudo systemctl is-active --quiet service containerd
+I0306 17:42:45.846996  596486 ssh_runner.go:195] Run: sudo systemctl stop -f containerd
+I0306 17:42:45.857991  596486 ssh_runner.go:195] Run: sudo systemctl is-active --quiet service containerd
+I0306 17:42:45.866305  596486 ssh_runner.go:195] Run: sudo systemctl is-active --quiet service crio
+I0306 17:42:45.875740  596486 ssh_runner.go:195] Run: sudo systemctl stop -f crio
+I0306 17:42:45.898523  596486 ssh_runner.go:195] Run: sudo systemctl is-active --quiet service crio
+I0306 17:42:45.906550  596486 ssh_runner.go:195] Run: /bin/bash -c "sudo mkdir -p /etc && printf %!s(MISSING) "runtime-endpoint: unix:///var/run/cri-dockerd.sock
+" | sudo tee /etc/crictl.yaml"
+I0306 17:42:45.919252  596486 ssh_runner.go:195] Run: which cri-dockerd
+I0306 17:42:45.921499  596486 ssh_runner.go:195] Run: sudo mkdir -p /etc/systemd/system/cri-docker.service.d
+I0306 17:42:45.926439  596486 ssh_runner.go:362] scp memory --> /etc/systemd/system/cri-docker.service.d/10-cni.conf (189 bytes)
+I0306 17:42:45.937252  596486 ssh_runner.go:195] Run: sudo systemctl unmask docker.service
+I0306 17:42:46.018080  596486 ssh_runner.go:195] Run: sudo systemctl enable docker.socket
+I0306 17:42:46.089612  596486 docker.go:560] configuring docker to use "cgroupfs" as cgroup driver...
+I0306 17:42:46.089699  596486 ssh_runner.go:362] scp memory --> /etc/docker/daemon.json (130 bytes)
+I0306 17:42:46.100711  596486 ssh_runner.go:195] Run: sudo systemctl daemon-reload
+I0306 17:42:46.184183  596486 ssh_runner.go:195] Run: sudo systemctl restart docker
+I0306 17:42:47.423542  596486 ssh_runner.go:235] Completed: sudo systemctl restart docker: (1.239314908s)
+I0306 17:42:47.423650  596486 ssh_runner.go:195] Run: sudo systemctl enable cri-docker.socket
+I0306 17:42:47.503202  596486 ssh_runner.go:195] Run: sudo systemctl unmask cri-docker.socket
+I0306 17:42:47.586672  596486 ssh_runner.go:195] Run: sudo systemctl enable cri-docker.socket
+I0306 17:42:47.661253  596486 ssh_runner.go:195] Run: sudo systemctl daemon-reload
+I0306 17:42:47.733746  596486 ssh_runner.go:195] Run: sudo systemctl restart cri-docker.socket
+I0306 17:42:47.748532  596486 ssh_runner.go:195] Run: sudo systemctl daemon-reload
+I0306 17:42:47.836010  596486 ssh_runner.go:195] Run: sudo systemctl restart cri-docker
+I0306 17:42:47.878440  596486 start.go:519] Will wait 60s for socket path /var/run/cri-dockerd.sock
+I0306 17:42:47.878554  596486 ssh_runner.go:195] Run: stat /var/run/cri-dockerd.sock
+I0306 17:42:47.882647  596486 start.go:540] Will wait 60s for crictl version
+I0306 17:42:47.882734  596486 ssh_runner.go:195] Run: which crictl
+I0306 17:42:47.885161  596486 ssh_runner.go:195] Run: sudo /usr/bin/crictl version
+I0306 17:42:47.919572  596486 start.go:556] Version:  0.1.0
+RuntimeName:  docker
+RuntimeVersion:  24.0.7
+RuntimeApiVersion:  v1
+I0306 17:42:47.919625  596486 ssh_runner.go:195] Run: docker version --format {{.Server.Version}}
+I0306 17:42:47.937167  596486 ssh_runner.go:195] Run: docker version --format {{.Server.Version}}
+I0306 17:42:47.966156  596486 out.go:204] 🐳  Preparing Kubernetes v1.28.3 on Docker 24.0.7 ...
+I0306 17:42:48.163356  596486 ssh_runner.go:195] Run: grep 192.168.59.1	host.minikube.internal$ /etc/hosts
+I0306 17:42:48.165724  596486 ssh_runner.go:195] Run: /bin/bash -c "{ grep -v $'\thost.minikube.internal$' "/etc/hosts"; echo "192.168.59.1	host.minikube.internal"; } > /tmp/h.$$; sudo cp /tmp/h.$$ "/etc/hosts""
+I0306 17:42:48.172316  596486 preload.go:132] Checking if preload exists for k8s version v1.28.3 and runtime docker
+I0306 17:42:48.172381  596486 ssh_runner.go:195] Run: docker images --format {{.Repository}}:{{.Tag}}
+I0306 17:42:48.184689  596486 docker.go:671] Got preloaded images: 
+I0306 17:42:48.184699  596486 docker.go:677] registry.k8s.io/kube-apiserver:v1.28.3 wasn't preloaded
+I0306 17:42:48.184750  596486 ssh_runner.go:195] Run: sudo cat /var/lib/docker/image/overlay2/repositories.json
+I0306 17:42:48.192257  596486 ssh_runner.go:195] Run: which lz4
+I0306 17:42:48.194959  596486 ssh_runner.go:195] Run: stat -c "%!s(MISSING) %!y(MISSING)" /preloaded.tar.lz4
+I0306 17:42:48.197102  596486 ssh_runner.go:352] existence check for /preloaded.tar.lz4: stat -c "%!s(MISSING) %!y(MISSING)" /preloaded.tar.lz4: Process exited with status 1
+stdout:
+
+stderr:
+stat: cannot statx '/preloaded.tar.lz4': No such file or directory
+I0306 17:42:48.197119  596486 ssh_runner.go:362] scp /home/son/.minikube/cache/preloaded-tarball/preloaded-images-k8s-v18-v1.28.3-docker-overlay2-amd64.tar.lz4 --> /preloaded.tar.lz4 (422944352 bytes)
+I0306 17:42:50.762264  596486 docker.go:635] Took 2.567350 seconds to copy over tarball
+I0306 17:42:50.762341  596486 ssh_runner.go:195] Run: sudo tar -I lz4 -C /var -xf /preloaded.tar.lz4
+I0306 17:42:53.104445  596486 ssh_runner.go:235] Completed: sudo tar -I lz4 -C /var -xf /preloaded.tar.lz4: (2.34207245s)
+I0306 17:42:53.104470  596486 ssh_runner.go:146] rm: /preloaded.tar.lz4
+I0306 17:42:53.145239  596486 ssh_runner.go:195] Run: sudo cat /var/lib/docker/image/overlay2/repositories.json
+I0306 17:42:53.153823  596486 ssh_runner.go:362] scp memory --> /var/lib/docker/image/overlay2/repositories.json (2629 bytes)
+I0306 17:42:53.166608  596486 ssh_runner.go:195] Run: sudo systemctl daemon-reload
+I0306 17:42:53.244676  596486 ssh_runner.go:195] Run: sudo systemctl restart docker
+I0306 17:42:54.639049  596486 ssh_runner.go:235] Completed: sudo systemctl restart docker: (1.394348781s)
+I0306 17:42:54.639154  596486 ssh_runner.go:195] Run: docker images --format {{.Repository}}:{{.Tag}}
+I0306 17:42:54.652356  596486 docker.go:671] Got preloaded images: -- stdout --
+registry.k8s.io/kube-apiserver:v1.28.3
+registry.k8s.io/kube-controller-manager:v1.28.3
+registry.k8s.io/kube-scheduler:v1.28.3
+registry.k8s.io/kube-proxy:v1.28.3
+registry.k8s.io/etcd:3.5.9-0
+registry.k8s.io/coredns/coredns:v1.10.1
+registry.k8s.io/pause:3.9
+gcr.io/k8s-minikube/storage-provisioner:v5
+
+-- /stdout --
+I0306 17:42:54.652383  596486 cache_images.go:84] Images are preloaded, skipping loading
+I0306 17:42:54.652447  596486 ssh_runner.go:195] Run: docker info --format {{.CgroupDriver}}
+I0306 17:42:54.666011  596486 cni.go:84] Creating CNI manager for ""
+I0306 17:42:54.666029  596486 cni.go:158] "virtualbox" driver + "docker" container runtime found on kubernetes v1.24+, recommending bridge
+I0306 17:42:54.676875  596486 kubeadm.go:87] Using pod CIDR: 10.244.0.0/16
+I0306 17:42:54.676905  596486 kubeadm.go:176] kubeadm options: {CertDir:/var/lib/minikube/certs ServiceCIDR:10.96.0.0/12 PodSubnet:10.244.0.0/16 AdvertiseAddress:192.168.59.107 APIServerPort:8443 KubernetesVersion:v1.28.3 EtcdDataDir:/var/lib/minikube/etcd EtcdExtraArgs:map[] ClusterName:minikube NodeName:minikube DNSDomain:cluster.local CRISocket:/var/run/cri-dockerd.sock ImageRepository: ComponentOptions:[{Component:apiServer ExtraArgs:map[enable-admission-plugins:NamespaceLifecycle,LimitRanger,ServiceAccount,DefaultStorageClass,DefaultTolerationSeconds,NodeRestriction,MutatingAdmissionWebhook,ValidatingAdmissionWebhook,ResourceQuota] Pairs:map[certSANs:["127.0.0.1", "localhost", "192.168.59.107"]]} {Component:controllerManager ExtraArgs:map[allocate-node-cidrs:true leader-elect:false] Pairs:map[]} {Component:scheduler ExtraArgs:map[leader-elect:false] Pairs:map[]}] FeatureArgs:map[] NodeIP:192.168.59.107 CgroupDriver:cgroupfs ClientCAFile:/var/lib/minikube/certs/ca.crt StaticPodPath:/etc/kubernetes/manifests ControlPlaneAddress:control-plane.minikube.internal KubeProxyOptions:map[] ResolvConfSearchRegression:false KubeletConfigOpts:map[hairpinMode:hairpin-veth runtimeRequestTimeout:15m] PrependCriSocketUnix:true}
+I0306 17:42:54.677006  596486 kubeadm.go:181] kubeadm config:
+apiVersion: kubeadm.k8s.io/v1beta3
+kind: InitConfiguration
+localAPIEndpoint:
+  advertiseAddress: 192.168.59.107
+  bindPort: 8443
+bootstrapTokens:
+  - groups:
+      - system:bootstrappers:kubeadm:default-node-token
+    ttl: 24h0m0s
+    usages:
+      - signing
+      - authentication
+nodeRegistration:
+  criSocket: unix:///var/run/cri-dockerd.sock
+  name: "minikube"
+  kubeletExtraArgs:
+    node-ip: 192.168.59.107
+  taints: []
+---
+apiVersion: kubeadm.k8s.io/v1beta3
+kind: ClusterConfiguration
+apiServer:
+  certSANs: ["127.0.0.1", "localhost", "192.168.59.107"]
+  extraArgs:
+    enable-admission-plugins: "NamespaceLifecycle,LimitRanger,ServiceAccount,DefaultStorageClass,DefaultTolerationSeconds,NodeRestriction,MutatingAdmissionWebhook,ValidatingAdmissionWebhook,ResourceQuota"
+controllerManager:
+  extraArgs:
+    allocate-node-cidrs: "true"
+    leader-elect: "false"
+scheduler:
+  extraArgs:
+    leader-elect: "false"
+certificatesDir: /var/lib/minikube/certs
+clusterName: mk
+controlPlaneEndpoint: control-plane.minikube.internal:8443
+etcd:
+  local:
+    dataDir: /var/lib/minikube/etcd
+    extraArgs:
+      proxy-refresh-interval: "70000"
+kubernetesVersion: v1.28.3
+networking:
+  dnsDomain: cluster.local
+  podSubnet: "10.244.0.0/16"
+  serviceSubnet: 10.96.0.0/12
+---
+apiVersion: kubelet.config.k8s.io/v1beta1
+kind: KubeletConfiguration
+authentication:
+  x509:
+    clientCAFile: /var/lib/minikube/certs/ca.crt
+cgroupDriver: cgroupfs
+hairpinMode: hairpin-veth
+runtimeRequestTimeout: 15m
+clusterDomain: "cluster.local"
+# disable disk resource management by default
+imageGCHighThresholdPercent: 100
+evictionHard:
+  nodefs.available: "0%!"(MISSING)
+  nodefs.inodesFree: "0%!"(MISSING)
+  imagefs.available: "0%!"(MISSING)
+failSwapOn: false
+staticPodPath: /etc/kubernetes/manifests
+---
+apiVersion: kubeproxy.config.k8s.io/v1alpha1
+kind: KubeProxyConfiguration
+clusterCIDR: "10.244.0.0/16"
+metricsBindAddress: 0.0.0.0:10249
+conntrack:
+  maxPerCore: 0
+# Skip setting "net.netfilter.nf_conntrack_tcp_timeout_established"
+  tcpEstablishedTimeout: 0s
+# Skip setting "net.netfilter.nf_conntrack_tcp_timeout_close"
+  tcpCloseWaitTimeout: 0s
+
+I0306 17:42:54.677056  596486 kubeadm.go:976] kubelet [Unit]
+Wants=docker.socket
+
+[Service]
+ExecStart=
+ExecStart=/var/lib/minikube/binaries/v1.28.3/kubelet --bootstrap-kubeconfig=/etc/kubernetes/bootstrap-kubelet.conf --config=/var/lib/kubelet/config.yaml --container-runtime-endpoint=unix:///var/run/cri-dockerd.sock --hostname-override=minikube --kubeconfig=/etc/kubernetes/kubelet.conf --node-ip=192.168.59.107
+
+[Install]
+ config:
+{KubernetesVersion:v1.28.3 ClusterName:minikube Namespace:default APIServerName:minikubeCA APIServerNames:[] APIServerIPs:[] DNSDomain:cluster.local ContainerRuntime:docker CRISocket: NetworkPlugin:cni FeatureGates: ServiceCIDR:10.96.0.0/12 ImageRepository: LoadBalancerStartIP: LoadBalancerEndIP: CustomIngressCert: RegistryAliases: ExtraOptions:[] ShouldLoadCachedImages:true EnableDefaultCNI:false CNI: NodeIP: NodePort:8443 NodeName:}
+I0306 17:42:54.677115  596486 ssh_runner.go:195] Run: sudo ls /var/lib/minikube/binaries/v1.28.3
+I0306 17:42:54.682259  596486 binaries.go:44] Found k8s binaries, skipping transfer
+I0306 17:42:54.682312  596486 ssh_runner.go:195] Run: sudo mkdir -p /etc/systemd/system/kubelet.service.d /lib/systemd/system /var/tmp/minikube
+I0306 17:42:54.686872  596486 ssh_runner.go:362] scp memory --> /etc/systemd/system/kubelet.service.d/10-kubeadm.conf (371 bytes)
+I0306 17:42:54.695403  596486 ssh_runner.go:362] scp memory --> /lib/systemd/system/kubelet.service (352 bytes)
+I0306 17:42:54.707034  596486 ssh_runner.go:362] scp memory --> /var/tmp/minikube/kubeadm.yaml.new (2097 bytes)
+I0306 17:42:54.717699  596486 ssh_runner.go:195] Run: grep 192.168.59.107	control-plane.minikube.internal$ /etc/hosts
+I0306 17:42:54.719596  596486 ssh_runner.go:195] Run: /bin/bash -c "{ grep -v $'\tcontrol-plane.minikube.internal$' "/etc/hosts"; echo "192.168.59.107	control-plane.minikube.internal"; } > /tmp/h.$$; sudo cp /tmp/h.$$ "/etc/hosts""
+I0306 17:42:54.727974  596486 certs.go:56] Setting up /home/son/.minikube/profiles/minikube for IP: 192.168.59.107
+I0306 17:42:54.728015  596486 certs.go:190] acquiring lock for shared ca certs: {Name:mkd9b38f8a0ce740369269364960cff552f03ee6 Clock:{} Delay:500ms Timeout:1m0s Cancel:<nil>}
+I0306 17:42:54.728263  596486 certs.go:199] skipping minikubeCA CA generation: /home/son/.minikube/ca.key
+I0306 17:42:54.728723  596486 certs.go:199] skipping proxyClientCA CA generation: /home/son/.minikube/proxy-client-ca.key
+I0306 17:42:54.728795  596486 certs.go:319] generating minikube-user signed cert: /home/son/.minikube/profiles/minikube/client.key
+I0306 17:42:54.728814  596486 crypto.go:68] Generating cert /home/son/.minikube/profiles/minikube/client.crt with IP's: []
+I0306 17:42:54.870247  596486 crypto.go:156] Writing cert to /home/son/.minikube/profiles/minikube/client.crt ...
+I0306 17:42:54.870260  596486 lock.go:35] WriteFile acquiring /home/son/.minikube/profiles/minikube/client.crt: {Name:mka4880e987e79dcb50f755d9a82742c19fd2cc2 Clock:{} Delay:500ms Timeout:1m0s Cancel:<nil>}
+I0306 17:42:54.870420  596486 crypto.go:164] Writing key to /home/son/.minikube/profiles/minikube/client.key ...
+I0306 17:42:54.870433  596486 lock.go:35] WriteFile acquiring /home/son/.minikube/profiles/minikube/client.key: {Name:mkcf3eede51939d5539218670331edec8f264d5a Clock:{} Delay:500ms Timeout:1m0s Cancel:<nil>}
+I0306 17:42:54.870546  596486 certs.go:319] generating minikube signed cert: /home/son/.minikube/profiles/minikube/apiserver.key.38bdfee6
+I0306 17:42:54.870559  596486 crypto.go:68] Generating cert /home/son/.minikube/profiles/minikube/apiserver.crt.38bdfee6 with IP's: [192.168.59.107 10.96.0.1 127.0.0.1 10.0.0.1]
+I0306 17:42:54.918201  596486 crypto.go:156] Writing cert to /home/son/.minikube/profiles/minikube/apiserver.crt.38bdfee6 ...
+I0306 17:42:54.918228  596486 lock.go:35] WriteFile acquiring /home/son/.minikube/profiles/minikube/apiserver.crt.38bdfee6: {Name:mk3d184d99a3f9cd14a15026d2ea58f3f225df27 Clock:{} Delay:500ms Timeout:1m0s Cancel:<nil>}
+I0306 17:42:54.918467  596486 crypto.go:164] Writing key to /home/son/.minikube/profiles/minikube/apiserver.key.38bdfee6 ...
+I0306 17:42:54.918476  596486 lock.go:35] WriteFile acquiring /home/son/.minikube/profiles/minikube/apiserver.key.38bdfee6: {Name:mk1fdbb5ce91f37b02c5899f15d9fe02800e968a Clock:{} Delay:500ms Timeout:1m0s Cancel:<nil>}
+I0306 17:42:54.918593  596486 certs.go:337] copying /home/son/.minikube/profiles/minikube/apiserver.crt.38bdfee6 -> /home/son/.minikube/profiles/minikube/apiserver.crt
+I0306 17:42:54.918705  596486 certs.go:341] copying /home/son/.minikube/profiles/minikube/apiserver.key.38bdfee6 -> /home/son/.minikube/profiles/minikube/apiserver.key
+I0306 17:42:54.918777  596486 certs.go:319] generating aggregator signed cert: /home/son/.minikube/profiles/minikube/proxy-client.key
+I0306 17:42:54.918793  596486 crypto.go:68] Generating cert /home/son/.minikube/profiles/minikube/proxy-client.crt with IP's: []
+I0306 17:42:55.018296  596486 crypto.go:156] Writing cert to /home/son/.minikube/profiles/minikube/proxy-client.crt ...
+I0306 17:42:55.018310  596486 lock.go:35] WriteFile acquiring /home/son/.minikube/profiles/minikube/proxy-client.crt: {Name:mk9d0995c08defe5a6fad311093740261b2c7c06 Clock:{} Delay:500ms Timeout:1m0s Cancel:<nil>}
+I0306 17:42:55.018485  596486 crypto.go:164] Writing key to /home/son/.minikube/profiles/minikube/proxy-client.key ...
+I0306 17:42:55.018494  596486 lock.go:35] WriteFile acquiring /home/son/.minikube/profiles/minikube/proxy-client.key: {Name:mka5bba75d83456041cccd09c1173cbc53a5351b Clock:{} Delay:500ms Timeout:1m0s Cancel:<nil>}
+I0306 17:42:55.020799  596486 certs.go:437] found cert: /home/son/.minikube/certs/home/son/.minikube/certs/ca-key.pem (1679 bytes)
+I0306 17:42:55.020837  596486 certs.go:437] found cert: /home/son/.minikube/certs/home/son/.minikube/certs/ca.pem (1070 bytes)
+I0306 17:42:55.020869  596486 certs.go:437] found cert: /home/son/.minikube/certs/home/son/.minikube/certs/cert.pem (1115 bytes)
+I0306 17:42:55.020893  596486 certs.go:437] found cert: /home/son/.minikube/certs/home/son/.minikube/certs/key.pem (1679 bytes)
+I0306 17:42:55.021450  596486 ssh_runner.go:362] scp /home/son/.minikube/profiles/minikube/apiserver.crt --> /var/lib/minikube/certs/apiserver.crt (1399 bytes)
+I0306 17:42:55.035623  596486 ssh_runner.go:362] scp /home/son/.minikube/profiles/minikube/apiserver.key --> /var/lib/minikube/certs/apiserver.key (1679 bytes)
+I0306 17:42:55.049449  596486 ssh_runner.go:362] scp /home/son/.minikube/profiles/minikube/proxy-client.crt --> /var/lib/minikube/certs/proxy-client.crt (1147 bytes)
+I0306 17:42:55.061715  596486 ssh_runner.go:362] scp /home/son/.minikube/profiles/minikube/proxy-client.key --> /var/lib/minikube/certs/proxy-client.key (1679 bytes)
+I0306 17:42:55.075165  596486 ssh_runner.go:362] scp /home/son/.minikube/ca.crt --> /var/lib/minikube/certs/ca.crt (1111 bytes)
+I0306 17:42:55.088134  596486 ssh_runner.go:362] scp /home/son/.minikube/ca.key --> /var/lib/minikube/certs/ca.key (1679 bytes)
+I0306 17:42:55.104039  596486 ssh_runner.go:362] scp /home/son/.minikube/proxy-client-ca.crt --> /var/lib/minikube/certs/proxy-client-ca.crt (1119 bytes)
+I0306 17:42:55.118442  596486 ssh_runner.go:362] scp /home/son/.minikube/proxy-client-ca.key --> /var/lib/minikube/certs/proxy-client-ca.key (1679 bytes)
+I0306 17:42:55.134081  596486 ssh_runner.go:362] scp /home/son/.minikube/ca.crt --> /usr/share/ca-certificates/minikubeCA.pem (1111 bytes)
+I0306 17:42:55.147192  596486 ssh_runner.go:362] scp memory --> /var/lib/minikube/kubeconfig (738 bytes)
+I0306 17:42:55.156093  596486 ssh_runner.go:195] Run: openssl version
+I0306 17:42:55.158749  596486 ssh_runner.go:195] Run: sudo /bin/bash -c "test -s /usr/share/ca-certificates/minikubeCA.pem && ln -fs /usr/share/ca-certificates/minikubeCA.pem /etc/ssl/certs/minikubeCA.pem"
+I0306 17:42:55.164502  596486 ssh_runner.go:195] Run: ls -la /usr/share/ca-certificates/minikubeCA.pem
+I0306 17:42:55.167292  596486 certs.go:480] hashing: -rw-r--r-- 1 root root 1111 Dec 28 16:46 /usr/share/ca-certificates/minikubeCA.pem
+I0306 17:42:55.167349  596486 ssh_runner.go:195] Run: openssl x509 -hash -noout -in /usr/share/ca-certificates/minikubeCA.pem
+I0306 17:42:55.170552  596486 ssh_runner.go:195] Run: sudo /bin/bash -c "test -L /etc/ssl/certs/b5213941.0 || ln -fs /etc/ssl/certs/minikubeCA.pem /etc/ssl/certs/b5213941.0"
+I0306 17:42:55.175934  596486 ssh_runner.go:195] Run: ls /var/lib/minikube/certs/etcd
+I0306 17:42:55.177755  596486 certs.go:353] certs directory doesn't exist, likely first start: ls /var/lib/minikube/certs/etcd: Process exited with status 2
+stdout:
+
+stderr:
+ls: cannot access '/var/lib/minikube/certs/etcd': No such file or directory
+I0306 17:42:55.177794  596486 kubeadm.go:404] StartCluster: {Name:minikube KeepContext:false EmbedCerts:false MinikubeISO:https://storage.googleapis.com/minikube/iso/minikube-v1.32.1-amd64.iso KicBaseImage:gcr.io/k8s-minikube/kicbase:v0.0.42@sha256:d35ac07dfda971cabee05e0deca8aeac772f885a5348e1a0c0b0a36db20fcfc0 Memory:4000 CPUs:2 DiskSize:10240 VMDriver: Driver:virtualbox HyperkitVpnKitSock: HyperkitVSockPorts:[] DockerEnv:[] ContainerVolumeMounts:[] InsecureRegistry:[] RegistryMirror:[] HostOnlyCIDR:192.168.59.1/24 HypervVirtualSwitch: HypervUseExternalSwitch:false HypervExternalAdapter: KVMNetwork:default KVMQemuURI:qemu:///system KVMGPU:false KVMHidden:false KVMNUMACount:1 APIServerPort:0 DockerOpt:[] DisableDriverMounts:true NFSShare:[] NFSSharesRoot:/nfsshares UUID: NoVTXCheck:false DNSProxy:false HostDNSResolver:true HostOnlyNicType:virtio NatNicType:virtio SSHIPAddress: SSHUser:root SSHKey: SSHPort:22 KubernetesConfig:{KubernetesVersion:v1.28.3 ClusterName:minikube Namespace:default APIServerName:minikubeCA APIServerNames:[] APIServerIPs:[] DNSDomain:cluster.local ContainerRuntime:docker CRISocket: NetworkPlugin:cni FeatureGates: ServiceCIDR:10.96.0.0/12 ImageRepository: LoadBalancerStartIP: LoadBalancerEndIP: CustomIngressCert: RegistryAliases: ExtraOptions:[] ShouldLoadCachedImages:true EnableDefaultCNI:false CNI: NodeIP: NodePort:8443 NodeName:} Nodes:[{Name: IP:192.168.59.107 Port:8443 KubernetesVersion:v1.28.3 ContainerRuntime:docker ControlPlane:true Worker:true}] Addons:map[] CustomAddonImages:map[] CustomAddonRegistries:map[] VerifyComponents:map[apiserver:true system_pods:true] StartHostTimeout:6m0s ScheduledStop:<nil> ExposedPorts:[] ListenAddress: Network: Subnet: MultiNodeRequested:false ExtraDisks:0 CertExpiration:26280h0m0s Mount:false MountString:/home/son:/minikube-host Mount9PVersion:9p2000.L MountGID:docker MountIP: MountMSize:262144 MountOptions:[] MountPort:0 MountType:9p MountUID:docker BinaryMirror: DisableOptimizations:false DisableMetrics:false CustomQemuFirmwarePath: SocketVMnetClientPath: SocketVMnetPath: StaticIP: SSHAuthSock: SSHAgentPID:0 AutoPauseInterval:1m0s GPUs:}
+I0306 17:42:55.177871  596486 ssh_runner.go:195] Run: docker ps --filter status=paused --filter=name=k8s_.*_(kube-system)_ --format={{.ID}}
+I0306 17:42:55.187431  596486 ssh_runner.go:195] Run: sudo ls /var/lib/kubelet/kubeadm-flags.env /var/lib/kubelet/config.yaml /var/lib/minikube/etcd
+I0306 17:42:55.192667  596486 ssh_runner.go:195] Run: sudo cp /var/tmp/minikube/kubeadm.yaml.new /var/tmp/minikube/kubeadm.yaml
+I0306 17:42:55.197658  596486 ssh_runner.go:195] Run: sudo ls -la /etc/kubernetes/admin.conf /etc/kubernetes/kubelet.conf /etc/kubernetes/controller-manager.conf /etc/kubernetes/scheduler.conf
+I0306 17:42:55.202882  596486 kubeadm.go:152] config check failed, skipping stale config cleanup: sudo ls -la /etc/kubernetes/admin.conf /etc/kubernetes/kubelet.conf /etc/kubernetes/controller-manager.conf /etc/kubernetes/scheduler.conf: Process exited with status 2
+stdout:
+
+stderr:
+ls: cannot access '/etc/kubernetes/admin.conf': No such file or directory
+ls: cannot access '/etc/kubernetes/kubelet.conf': No such file or directory
+ls: cannot access '/etc/kubernetes/controller-manager.conf': No such file or directory
+ls: cannot access '/etc/kubernetes/scheduler.conf': No such file or directory
+I0306 17:42:55.202913  596486 ssh_runner.go:286] Start: /bin/bash -c "sudo env PATH="/var/lib/minikube/binaries/v1.28.3:$PATH" kubeadm init --config /var/tmp/minikube/kubeadm.yaml  --ignore-preflight-errors=DirAvailable--etc-kubernetes-manifests,DirAvailable--var-lib-minikube,DirAvailable--var-lib-minikube-etcd,FileAvailable--etc-kubernetes-manifests-kube-scheduler.yaml,FileAvailable--etc-kubernetes-manifests-kube-apiserver.yaml,FileAvailable--etc-kubernetes-manifests-kube-controller-manager.yaml,FileAvailable--etc-kubernetes-manifests-etcd.yaml,Port-10250,Swap,NumCPU,Mem"
+I0306 17:42:55.235552  596486 kubeadm.go:322] [init] Using Kubernetes version: v1.28.3
+I0306 17:42:55.235625  596486 kubeadm.go:322] [preflight] Running pre-flight checks
+I0306 17:42:55.324317  596486 kubeadm.go:322] [preflight] Pulling images required for setting up a Kubernetes cluster
+I0306 17:42:55.324459  596486 kubeadm.go:322] [preflight] This might take a minute or two, depending on the speed of your internet connection
+I0306 17:42:55.324567  596486 kubeadm.go:322] [preflight] You can also perform this action in beforehand using 'kubeadm config images pull'
+I0306 17:42:55.524643  596486 kubeadm.go:322] [certs] Using certificateDir folder "/var/lib/minikube/certs"
+I0306 17:42:55.527171  596486 out.go:204]     ▪ Generating certificates and keys ...
+I0306 17:42:55.527390  596486 kubeadm.go:322] [certs] Using existing ca certificate authority
+I0306 17:42:55.527601  596486 kubeadm.go:322] [certs] Using existing apiserver certificate and key on disk
+I0306 17:42:55.772745  596486 kubeadm.go:322] [certs] Generating "apiserver-kubelet-client" certificate and key
+I0306 17:42:55.916787  596486 kubeadm.go:322] [certs] Generating "front-proxy-ca" certificate and key
+I0306 17:42:56.048114  596486 kubeadm.go:322] [certs] Generating "front-proxy-client" certificate and key
+I0306 17:42:56.303021  596486 kubeadm.go:322] [certs] Generating "etcd/ca" certificate and key
+I0306 17:42:56.383183  596486 kubeadm.go:322] [certs] Generating "etcd/server" certificate and key
+I0306 17:42:56.383505  596486 kubeadm.go:322] [certs] etcd/server serving cert is signed for DNS names [localhost minikube] and IPs [192.168.59.107 127.0.0.1 ::1]
+I0306 17:42:56.522321  596486 kubeadm.go:322] [certs] Generating "etcd/peer" certificate and key
+I0306 17:42:56.522705  596486 kubeadm.go:322] [certs] etcd/peer serving cert is signed for DNS names [localhost minikube] and IPs [192.168.59.107 127.0.0.1 ::1]
+I0306 17:42:56.796347  596486 kubeadm.go:322] [certs] Generating "etcd/healthcheck-client" certificate and key
+I0306 17:42:56.841881  596486 kubeadm.go:322] [certs] Generating "apiserver-etcd-client" certificate and key
+I0306 17:42:56.983843  596486 kubeadm.go:322] [certs] Generating "sa" key and public key
+I0306 17:42:56.983960  596486 kubeadm.go:322] [kubeconfig] Using kubeconfig folder "/etc/kubernetes"
+I0306 17:42:57.074792  596486 kubeadm.go:322] [kubeconfig] Writing "admin.conf" kubeconfig file
+I0306 17:42:57.171344  596486 kubeadm.go:322] [kubeconfig] Writing "kubelet.conf" kubeconfig file
+I0306 17:42:57.304724  596486 kubeadm.go:322] [kubeconfig] Writing "controller-manager.conf" kubeconfig file
+I0306 17:42:57.461980  596486 kubeadm.go:322] [kubeconfig] Writing "scheduler.conf" kubeconfig file
+I0306 17:42:57.462621  596486 kubeadm.go:322] [etcd] Creating static Pod manifest for local etcd in "/etc/kubernetes/manifests"
+I0306 17:42:57.465016  596486 kubeadm.go:322] [control-plane] Using manifest folder "/etc/kubernetes/manifests"
+I0306 17:42:57.477958  596486 out.go:204]     ▪ Booting up control plane ...
+I0306 17:42:57.478128  596486 kubeadm.go:322] [control-plane] Creating static Pod manifest for "kube-apiserver"
+I0306 17:42:57.478360  596486 kubeadm.go:322] [control-plane] Creating static Pod manifest for "kube-controller-manager"
+I0306 17:42:57.478462  596486 kubeadm.go:322] [control-plane] Creating static Pod manifest for "kube-scheduler"
+I0306 17:42:57.478608  596486 kubeadm.go:322] [kubelet-start] Writing kubelet environment file with flags to file "/var/lib/kubelet/kubeadm-flags.env"
+I0306 17:42:57.478726  596486 kubeadm.go:322] [kubelet-start] Writing kubelet configuration to file "/var/lib/kubelet/config.yaml"
+I0306 17:42:57.478783  596486 kubeadm.go:322] [kubelet-start] Starting the kubelet
+I0306 17:42:57.565753  596486 kubeadm.go:322] [wait-control-plane] Waiting for the kubelet to boot up the control plane as static Pods from directory "/etc/kubernetes/manifests". This can take up to 4m0s
+I0306 17:43:03.066987  596486 kubeadm.go:322] [apiclient] All control plane components are healthy after 5.501601 seconds
+I0306 17:43:03.067376  596486 kubeadm.go:322] [upload-config] Storing the configuration used in ConfigMap "kubeadm-config" in the "kube-system" Namespace
+I0306 17:43:03.074932  596486 kubeadm.go:322] [kubelet] Creating a ConfigMap "kubelet-config" in namespace kube-system with the configuration for the kubelets in the cluster
+I0306 17:43:03.592504  596486 kubeadm.go:322] [upload-certs] Skipping phase. Please see --upload-certs
+I0306 17:43:03.592770  596486 kubeadm.go:322] [mark-control-plane] Marking the node minikube as control-plane by adding the labels: [node-role.kubernetes.io/control-plane node.kubernetes.io/exclude-from-external-load-balancers]
+I0306 17:43:04.100883  596486 kubeadm.go:322] [bootstrap-token] Using token: zh8elq.mghidlaivbm5o7c8
+I0306 17:43:04.149186  596486 out.go:204]     ▪ Configuring RBAC rules ...
+I0306 17:43:04.149503  596486 kubeadm.go:322] [bootstrap-token] Configuring bootstrap tokens, cluster-info ConfigMap, RBAC Roles
+I0306 17:43:04.149634  596486 kubeadm.go:322] [bootstrap-token] Configured RBAC rules to allow Node Bootstrap tokens to get nodes
+I0306 17:43:04.149823  596486 kubeadm.go:322] [bootstrap-token] Configured RBAC rules to allow Node Bootstrap tokens to post CSRs in order for nodes to get long term certificate credentials
+I0306 17:43:04.149981  596486 kubeadm.go:322] [bootstrap-token] Configured RBAC rules to allow the csrapprover controller automatically approve CSRs from a Node Bootstrap Token
+I0306 17:43:04.150138  596486 kubeadm.go:322] [bootstrap-token] Configured RBAC rules to allow certificate rotation for all node client certificates in the cluster
+I0306 17:43:04.150251  596486 kubeadm.go:322] [bootstrap-token] Creating the "cluster-info" ConfigMap in the "kube-public" namespace
+I0306 17:43:04.150381  596486 kubeadm.go:322] [kubelet-finalize] Updating "/etc/kubernetes/kubelet.conf" to point to a rotatable kubelet client certificate and key
+I0306 17:43:04.312352  596486 kubeadm.go:322] [addons] Applied essential addon: CoreDNS
+I0306 17:43:04.513177  596486 kubeadm.go:322] [addons] Applied essential addon: kube-proxy
+I0306 17:43:04.514392  596486 kubeadm.go:322] 
+I0306 17:43:04.514632  596486 kubeadm.go:322] Your Kubernetes control-plane has initialized successfully!
+I0306 17:43:04.514642  596486 kubeadm.go:322] 
+I0306 17:43:04.514802  596486 kubeadm.go:322] To start using your cluster, you need to run the following as a regular user:
+I0306 17:43:04.514816  596486 kubeadm.go:322] 
+I0306 17:43:04.514874  596486 kubeadm.go:322]   mkdir -p $HOME/.kube
+I0306 17:43:04.514952  596486 kubeadm.go:322]   sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
+I0306 17:43:04.515017  596486 kubeadm.go:322]   sudo chown $(id -u):$(id -g) $HOME/.kube/config
+I0306 17:43:04.515024  596486 kubeadm.go:322] 
+I0306 17:43:04.515087  596486 kubeadm.go:322] Alternatively, if you are the root user, you can run:
+I0306 17:43:04.515092  596486 kubeadm.go:322] 
+I0306 17:43:04.515167  596486 kubeadm.go:322]   export KUBECONFIG=/etc/kubernetes/admin.conf
+I0306 17:43:04.515172  596486 kubeadm.go:322] 
+I0306 17:43:04.515236  596486 kubeadm.go:322] You should now deploy a pod network to the cluster.
+I0306 17:43:04.515316  596486 kubeadm.go:322] Run "kubectl apply -f [podnetwork].yaml" with one of the options listed at:
+I0306 17:43:04.515394  596486 kubeadm.go:322]   https://kubernetes.io/docs/concepts/cluster-administration/addons/
+I0306 17:43:04.515400  596486 kubeadm.go:322] 
+I0306 17:43:04.515504  596486 kubeadm.go:322] You can now join any number of control-plane nodes by copying certificate authorities
+I0306 17:43:04.515594  596486 kubeadm.go:322] and service account keys on each node and then running the following as root:
+I0306 17:43:04.515598  596486 kubeadm.go:322] 
+I0306 17:43:04.515691  596486 kubeadm.go:322]   kubeadm join control-plane.minikube.internal:8443 --token zh8elq.mghidlaivbm5o7c8 \
+I0306 17:43:04.515809  596486 kubeadm.go:322] 	--discovery-token-ca-cert-hash sha256:d9cb6b248ecb62e520cd58b193b49a15844a9767e600c7e7a6531c6d221f690a \
+I0306 17:43:04.515830  596486 kubeadm.go:322] 	--control-plane 
+I0306 17:43:04.515838  596486 kubeadm.go:322] 
+I0306 17:43:04.515932  596486 kubeadm.go:322] Then you can join any number of worker nodes by running the following on each as root:
+I0306 17:43:04.515936  596486 kubeadm.go:322] 
+I0306 17:43:04.516032  596486 kubeadm.go:322] kubeadm join control-plane.minikube.internal:8443 --token zh8elq.mghidlaivbm5o7c8 \
+I0306 17:43:04.516173  596486 kubeadm.go:322] 	--discovery-token-ca-cert-hash sha256:d9cb6b248ecb62e520cd58b193b49a15844a9767e600c7e7a6531c6d221f690a 
+I0306 17:43:04.516385  596486 kubeadm.go:322] 	[WARNING Service-Kubelet]: kubelet service is not enabled, please run 'systemctl enable kubelet.service'
+I0306 17:43:04.516395  596486 cni.go:84] Creating CNI manager for ""
+I0306 17:43:04.516413  596486 cni.go:158] "virtualbox" driver + "docker" container runtime found on kubernetes v1.24+, recommending bridge
+I0306 17:43:04.562584  596486 out.go:177] 🔗  Configuring bridge CNI (Container Networking Interface) ...
+I0306 17:43:04.596284  596486 ssh_runner.go:195] Run: sudo mkdir -p /etc/cni/net.d
+I0306 17:43:04.601730  596486 ssh_runner.go:362] scp memory --> /etc/cni/net.d/1-k8s.conflist (457 bytes)
+I0306 17:43:04.612561  596486 ssh_runner.go:195] Run: /bin/bash -c "cat /proc/$(pgrep kube-apiserver)/oom_adj"
+I0306 17:43:04.612638  596486 ssh_runner.go:195] Run: sudo /var/lib/minikube/binaries/v1.28.3/kubectl create clusterrolebinding minikube-rbac --clusterrole=cluster-admin --serviceaccount=kube-system:default --kubeconfig=/var/lib/minikube/kubeconfig
+I0306 17:43:04.612638  596486 ssh_runner.go:195] Run: sudo /var/lib/minikube/binaries/v1.28.3/kubectl label nodes minikube.k8s.io/version=v1.32.0 minikube.k8s.io/commit=8220a6eb95f0a4d75f7f2d7b14cef975f050512d minikube.k8s.io/name=minikube minikube.k8s.io/updated_at=2024_03_06T17_43_04_0700 minikube.k8s.io/primary=true --all --overwrite --kubeconfig=/var/lib/minikube/kubeconfig
+I0306 17:43:04.631411  596486 ops.go:34] apiserver oom_adj: -16
+I0306 17:43:04.714285  596486 kubeadm.go:1081] duration metric: took 101.708752ms to wait for elevateKubeSystemPrivileges.
+I0306 17:43:04.714318  596486 kubeadm.go:406] StartCluster complete in 9.536531377s
+I0306 17:43:04.714337  596486 settings.go:142] acquiring lock: {Name:mke8c8a07828db33c5b0a0de22f43f16310043d0 Clock:{} Delay:500ms Timeout:1m0s Cancel:<nil>}
+I0306 17:43:04.714417  596486 settings.go:150] Updating kubeconfig:  /home/son/.kube/config
+I0306 17:43:04.715375  596486 lock.go:35] WriteFile acquiring /home/son/.kube/config: {Name:mk6a56e97bb64272d6d61fe228afa8fd58fc0997 Clock:{} Delay:500ms Timeout:1m0s Cancel:<nil>}
+I0306 17:43:04.715578  596486 ssh_runner.go:195] Run: /bin/bash -c "sudo /var/lib/minikube/binaries/v1.28.3/kubectl --kubeconfig=/var/lib/minikube/kubeconfig -n kube-system get configmap coredns -o yaml"
+I0306 17:43:04.715598  596486 global.go:111] Querying for installed drivers using PATH=/home/son/.minikube/bin:/home/linuxbrew/.linuxbrew/bin:/home/linuxbrew/.linuxbrew/sbin:/home/son/.cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/usr/local/go/bin:/home/son/.local/bin:/usr/local/go/bin:/home/son/.local/bin
+I0306 17:43:04.715605  596486 global.go:122] ssh default: false priority: 4, state: {Installed:true Healthy:true Running:false NeedsImprovement:false Error:<nil> Reason: Fix: Doc: Version:}
+I0306 17:43:04.715651  596486 addons.go:499] enable addons start: toEnable=map[ambassador:false auto-pause:false cloud-spanner:false csi-hostpath-driver:false dashboard:false default-storageclass:true efk:false freshpod:false gcp-auth:false gvisor:false headlamp:false helm-tiller:false inaccel:false ingress:false ingress-dns:false inspektor-gadget:false istio:false istio-provisioner:false kong:false kubeflow:false kubevirt:false logviewer:false metallb:false metrics-server:false nvidia-device-plugin:false nvidia-driver-installer:false nvidia-gpu-device-plugin:false olm:false pod-security-policy:false portainer:false registry:false registry-aliases:false registry-creds:false storage-provisioner:true storage-provisioner-gluster:false storage-provisioner-rancher:false volumesnapshots:false]
+I0306 17:43:04.715705  596486 addons.go:69] Setting storage-provisioner=true in profile "minikube"
+I0306 17:43:04.715709  596486 addons.go:69] Setting default-storageclass=true in profile "minikube"
+I0306 17:43:04.715718  596486 addons.go:231] Setting addon storage-provisioner=true in "minikube"
+I0306 17:43:04.715722  596486 addons_storage_classes.go:33] enableOrDisableStorageClasses default-storageclass=true on "minikube"
+I0306 17:43:04.715746  596486 config.go:182] Loaded profile config "minikube": Driver=virtualbox, ContainerRuntime=docker, KubernetesVersion=v1.28.3
+I0306 17:43:04.715750  596486 global.go:122] kvm2 default: true priority: 8, state: {Installed:false Healthy:false Running:false NeedsImprovement:false Error:exec: "virsh": executable file not found in $PATH Reason: Fix:Install libvirt Doc:https://minikube.sigs.k8s.io/docs/reference/drivers/kvm2/ Version:}
+I0306 17:43:04.715762  596486 host.go:66] Checking if "minikube" exists ...
+I0306 17:43:04.715853  596486 global.go:122] qemu2 default: true priority: 7, state: {Installed:false Healthy:false Running:false NeedsImprovement:false Error:exec: "qemu-system-x86_64": executable file not found in $PATH Reason: Fix:Install qemu-system Doc:https://minikube.sigs.k8s.io/docs/reference/drivers/qemu/ Version:}
+I0306 17:43:04.715931  596486 main.go:141] libmachine: COMMAND: /usr/bin/VBoxManage showvminfo minikube --machinereadable
+I0306 17:43:04.716103  596486 main.go:141] libmachine: COMMAND: /usr/bin/VBoxManage showvminfo minikube --machinereadable
+I0306 17:43:04.760832  596486 virtualbox.go:136] virtual box version: 7.0.12r159484
+I0306 17:43:04.760852  596486 global.go:122] virtualbox default: true priority: 6, state: {Installed:true Healthy:true Running:false NeedsImprovement:false Error:<nil> Reason: Fix: Doc: Version:7.0.12r159484
+}
+I0306 17:43:04.760944  596486 global.go:122] vmware default: false priority: 5, state: {Installed:false Healthy:false Running:false NeedsImprovement:false Error:exec: "vmrun": executable file not found in $PATH Reason: Fix:Install vmrun Doc:https://minikube.sigs.k8s.io/docs/reference/drivers/vmware/ Version:}
+I0306 17:43:04.781811  596486 ssh_runner.go:195] Run: /bin/bash -c "sudo /var/lib/minikube/binaries/v1.28.3/kubectl --kubeconfig=/var/lib/minikube/kubeconfig -n kube-system get configmap coredns -o yaml | sed -e '/^        forward . \/etc\/resolv.conf.*/i \        hosts {\n           192.168.59.1 host.minikube.internal\n           fallthrough\n        }' -e '/^        errors *$/i \        log' | sudo /var/lib/minikube/binaries/v1.28.3/kubectl --kubeconfig=/var/lib/minikube/kubeconfig replace -f -"
+I0306 17:43:04.830293  596486 main.go:141] libmachine: STDOUT:
+{
+name="minikube"
+Encryption:     disabled
+groups="/"
+ostype="Linux 2.6 / 3.x / 4.x / 5.x (64-bit)"
+UUID="d4122688-2626-4d9d-b4ed-edd33383d12d"
+CfgFile="/home/son/.minikube/machines/minikube/minikube/minikube.vbox"
+SnapFldr="/home/son/.minikube/machines/minikube/minikube/Snapshots"
+LogFldr="/home/son/.minikube/machines/minikube/minikube/Logs"
+hardwareuuid="d4122688-2626-4d9d-b4ed-edd33383d12d"
+memory=4000
+pagefusion="off"
+vram=8
+cpuexecutioncap=100
+hpet="on"
+cpu-profile="host"
+chipset="piix3"
+firmware="BIOS"
+cpus=2
+pae="on"
+longmode="on"
+triplefaultreset="off"
+apic="on"
+x2apic="off"
+nested-hw-virt="off"
+cpuid-portability-level=0
+bootmenu="disabled"
+boot1="dvd"
+boot2="dvd"
+boot3="disk"
+boot4="none"
+acpi="on"
+ioapic="on"
+biosapic="apic"
+biossystemtimeoffset=0
+BIOS NVRAM File="/home/son/.minikube/machines/minikube/minikube/minikube.nvram"
+rtcuseutc="on"
+hwvirtex="on"
+nestedpaging="on"
+largepages="on"
+vtxvpid="on"
+vtxux="on"
+virtvmsavevmload="on"
+iommu="none"
+paravirtprovider="default"
+effparavirtprovider="kvm"
+VMState="running"
+VMStateChangeTime="2024-03-06T10:42:22.593000000"
+graphicscontroller="vboxvga"
+monitorcount=1
+accelerate3d="off"
+accelerate2dvideo="off"
+teleporterenabled="off"
+teleporterport=0
+teleporteraddress=""
+teleporterpassword=""
+tracing-enabled="off"
+tracing-allow-vm-access="off"
+tracing-config=""
+autostart-enabled="off"
+autostart-delay=0
+defaultfrontend=""
+vmprocpriority="default"
+storagecontrollername0="SATA"
+storagecontrollertype0="IntelAhci"
+storagecontrollerinstance0="0"
+storagecontrollermaxportcount0="30"
+storagecontrollerportcount0="30"
+storagecontrollerbootable0="on"
+"SATA-0-0"="/home/son/.minikube/machines/minikube/boot2docker.iso"
+"SATA-ImageUUID-0-0"="7ead6861-b2f7-4b36-9888-a6a3dcf59532"
+"SATA-tempeject-0-0"="off"
+"SATA-IsEjected-0-0"="off"
+"SATA-hot-pluggable-0-0"="off"
+"SATA-nonrotational-0-0"="off"
+"SATA-discard-0-0"="off"
+"SATA-1-0"="/home/son/.minikube/machines/minikube/disk.vmdk"
+"SATA-ImageUUID-1-0"="cf36a715-2519-4068-a0f9-e7d329f87f1d"
+"SATA-hot-pluggable-1-0"="off"
+"SATA-nonrotational-1-0"="off"
+"SATA-discard-1-0"="off"
+"SATA-2-0"="none"
+"SATA-3-0"="none"
+"SATA-4-0"="none"
+"SATA-5-0"="none"
+"SATA-6-0"="none"
+"SATA-7-0"="none"
+"SATA-8-0"="none"
+"SATA-9-0"="none"
+"SATA-10-0"="none"
+"SATA-11-0"="none"
+"SATA-12-0"="none"
+"SATA-13-0"="none"
+"SATA-14-0"="none"
+"SATA-15-0"="none"
+"SATA-16-0"="none"
+"SATA-17-0"="none"
+"SATA-18-0"="none"
+"SATA-19-0"="none"
+"SATA-20-0"="none"
+"SATA-21-0"="none"
+"SATA-22-0"="none"
+"SATA-23-0"="none"
+"SATA-24-0"="none"
+"SATA-25-0"="none"
+"SATA-26-0"="none"
+"SATA-27-0"="none"
+"SATA-28-0"="none"
+"SATA-29-0"="none"
+natnet1="nat"
+macaddress1="0800271912E9"
+cableconnected1="on"
+nic1="nat"
+nictype1="virtio"
+nicspeed1="0"
+mtu="0"
+sockSnd="64"
+sockRcv="64"
+tcpWndSnd="64"
+tcpWndRcv="64"
+Forwarding(0)="ssh,tcp,127.0.0.1,39213,,22"
+hostonlyadapter2="vboxnet3"
+macaddress2="080027430061"
+cableconnected2="on"
+nic2="hostonly"
+nictype2="virtio"
+nicspeed2="0"
+nic3="none"
+nic4="none"
+nic5="none"
+nic6="none"
+nic7="none"
+nic8="none"
+hidpointing="ps2mouse"
+hidkeyboard="ps2kbd"
+uart1="off"
+uart2="off"
+uart3="off"
+uart4="off"
+lpt1="off"
+lpt2="off"
+audio="default"
+audio_out="off"
+audio_in="off"
+clipboard="disabled"
+draganddrop="disabled"
+SessionName="headless"
+VideoMode="720,400,0"@0,0 1
+vrde="off"
+usb="off"
+ehci="off"
+xhci="off"
+VRDEActiveConnection="off"
+VRDEClients==0
+recording_enabled="off"
+recording_screens=1
+ rec_screen0
+rec_screen_enabled="on"
+rec_screen_id=0
+rec_screen_video_enabled="on"
+rec_screen_dest="File"
+rec_screen_dest_filename="/home/son/.minikube/machines/minikube/minikube/minikube-screen0.webm"
+rec_screen_opts="vc_enabled=true,ac_enabled=false,ac_profile=med"
+rec_screen_video_res_xy="1024x768"
+rec_screen_video_rate_kbps=512
+rec_screen_video_fps=25
+GuestMemoryBalloon=0
+GuestOSType="Linux26_64"
+GuestAdditionsRunLevel=2
+GuestAdditionsVersion="6.0.0 r127566"
+GuestAdditionsFacility_VirtualBox Base Driver=50,1709721760953
+GuestAdditionsFacility_VirtualBox System Service=50,1709721761182
+GuestAdditionsFacility_Seamless Mode=0,1709721760953
+GuestAdditionsFacility_Graphics Mode=0,1709721760952
+}
+I0306 17:43:04.830326  596486 main.go:141] libmachine: STDERR:
+{
+}
+I0306 17:43:04.830765  596486 main.go:141] libmachine: STDOUT:
+{
+name="minikube"
+Encryption:     disabled
+groups="/"
+ostype="Linux 2.6 / 3.x / 4.x / 5.x (64-bit)"
+UUID="d4122688-2626-4d9d-b4ed-edd33383d12d"
+CfgFile="/home/son/.minikube/machines/minikube/minikube/minikube.vbox"
+SnapFldr="/home/son/.minikube/machines/minikube/minikube/Snapshots"
+LogFldr="/home/son/.minikube/machines/minikube/minikube/Logs"
+hardwareuuid="d4122688-2626-4d9d-b4ed-edd33383d12d"
+memory=4000
+pagefusion="off"
+vram=8
+cpuexecutioncap=100
+hpet="on"
+cpu-profile="host"
+chipset="piix3"
+firmware="BIOS"
+cpus=2
+pae="on"
+longmode="on"
+triplefaultreset="off"
+apic="on"
+x2apic="off"
+nested-hw-virt="off"
+cpuid-portability-level=0
+bootmenu="disabled"
+boot1="dvd"
+boot2="dvd"
+boot3="disk"
+boot4="none"
+acpi="on"
+ioapic="on"
+biosapic="apic"
+biossystemtimeoffset=0
+BIOS NVRAM File="/home/son/.minikube/machines/minikube/minikube/minikube.nvram"
+rtcuseutc="on"
+hwvirtex="on"
+nestedpaging="on"
+largepages="on"
+vtxvpid="on"
+vtxux="on"
+virtvmsavevmload="on"
+iommu="none"
+paravirtprovider="default"
+effparavirtprovider="kvm"
+VMState="running"
+VMStateChangeTime="2024-03-06T10:42:22.593000000"
+graphicscontroller="vboxvga"
+monitorcount=1
+accelerate3d="off"
+accelerate2dvideo="off"
+teleporterenabled="off"
+teleporterport=0
+teleporteraddress=""
+teleporterpassword=""
+tracing-enabled="off"
+tracing-allow-vm-access="off"
+tracing-config=""
+autostart-enabled="off"
+autostart-delay=0
+defaultfrontend=""
+vmprocpriority="default"
+storagecontrollername0="SATA"
+storagecontrollertype0="IntelAhci"
+storagecontrollerinstance0="0"
+storagecontrollermaxportcount0="30"
+storagecontrollerportcount0="30"
+storagecontrollerbootable0="on"
+"SATA-0-0"="/home/son/.minikube/machines/minikube/boot2docker.iso"
+"SATA-ImageUUID-0-0"="7ead6861-b2f7-4b36-9888-a6a3dcf59532"
+"SATA-tempeject-0-0"="off"
+"SATA-IsEjected-0-0"="off"
+"SATA-hot-pluggable-0-0"="off"
+"SATA-nonrotational-0-0"="off"
+"SATA-discard-0-0"="off"
+"SATA-1-0"="/home/son/.minikube/machines/minikube/disk.vmdk"
+"SATA-ImageUUID-1-0"="cf36a715-2519-4068-a0f9-e7d329f87f1d"
+"SATA-hot-pluggable-1-0"="off"
+"SATA-nonrotational-1-0"="off"
+"SATA-discard-1-0"="off"
+"SATA-2-0"="none"
+"SATA-3-0"="none"
+"SATA-4-0"="none"
+"SATA-5-0"="none"
+"SATA-6-0"="none"
+"SATA-7-0"="none"
+"SATA-8-0"="none"
+"SATA-9-0"="none"
+"SATA-10-0"="none"
+"SATA-11-0"="none"
+"SATA-12-0"="none"
+"SATA-13-0"="none"
+"SATA-14-0"="none"
+"SATA-15-0"="none"
+"SATA-16-0"="none"
+"SATA-17-0"="none"
+"SATA-18-0"="none"
+"SATA-19-0"="none"
+"SATA-20-0"="none"
+"SATA-21-0"="none"
+"SATA-22-0"="none"
+"SATA-23-0"="none"
+"SATA-24-0"="none"
+"SATA-25-0"="none"
+"SATA-26-0"="none"
+"SATA-27-0"="none"
+"SATA-28-0"="none"
+"SATA-29-0"="none"
+natnet1="nat"
+macaddress1="0800271912E9"
+cableconnected1="on"
+nic1="nat"
+nictype1="virtio"
+nicspeed1="0"
+mtu="0"
+sockSnd="64"
+sockRcv="64"
+tcpWndSnd="64"
+tcpWndRcv="64"
+Forwarding(0)="ssh,tcp,127.0.0.1,39213,,22"
+hostonlyadapter2="vboxnet3"
+macaddress2="080027430061"
+cableconnected2="on"
+nic2="hostonly"
+nictype2="virtio"
+nicspeed2="0"
+nic3="none"
+nic4="none"
+nic5="none"
+nic6="none"
+nic7="none"
+nic8="none"
+hidpointing="ps2mouse"
+hidkeyboard="ps2kbd"
+uart1="off"
+uart2="off"
+uart3="off"
+uart4="off"
+lpt1="off"
+lpt2="off"
+audio="default"
+audio_out="off"
+audio_in="off"
+clipboard="disabled"
+draganddrop="disabled"
+SessionName="headless"
+VideoMode="720,400,0"@0,0 1
+vrde="off"
+usb="off"
+ehci="off"
+xhci="off"
+VRDEActiveConnection="off"
+VRDEClients==0
+recording_enabled="off"
+recording_screens=1
+ rec_screen0
+rec_screen_enabled="on"
+rec_screen_id=0
+rec_screen_video_enabled="on"
+rec_screen_dest="File"
+rec_screen_dest_filename="/home/son/.minikube/machines/minikube/minikube/minikube-screen0.webm"
+rec_screen_opts="vc_enabled=true,ac_enabled=false,ac_profile=med"
+rec_screen_video_res_xy="1024x768"
+rec_screen_video_rate_kbps=512
+rec_screen_video_fps=25
+GuestMemoryBalloon=0
+GuestOSType="Linux26_64"
+GuestAdditionsRunLevel=2
+GuestAdditionsVersion="6.0.0 r127566"
+GuestAdditionsFacility_VirtualBox Base Driver=50,1709721760953
+GuestAdditionsFacility_VirtualBox System Service=50,1709721761182
+GuestAdditionsFacility_Seamless Mode=0,1709721760953
+GuestAdditionsFacility_Graphics Mode=0,1709721760952
+}
+I0306 17:43:04.830780  596486 main.go:141] libmachine: STDERR:
+{
+}
+I0306 17:43:04.884711  596486 out.go:177]     ▪ Using image gcr.io/k8s-minikube/storage-provisioner:v5
+I0306 17:43:04.946974  596486 addons.go:423] installing /etc/kubernetes/addons/storage-provisioner.yaml
+I0306 17:43:04.946987  596486 ssh_runner.go:362] scp memory --> /etc/kubernetes/addons/storage-provisioner.yaml (2676 bytes)
+I0306 17:43:04.947005  596486 sshutil.go:53] new ssh client: &{IP:127.0.0.1 Port:39213 SSHKeyPath:/home/son/.minikube/machines/minikube/id_rsa Username:docker}
+I0306 17:43:04.992890  596486 addons.go:231] Setting addon default-storageclass=true in "minikube"
+I0306 17:43:04.992917  596486 host.go:66] Checking if "minikube" exists ...
+I0306 17:43:04.993388  596486 main.go:141] libmachine: COMMAND: /usr/bin/VBoxManage showvminfo minikube --machinereadable
+I0306 17:43:05.013526  596486 ssh_runner.go:195] Run: sudo KUBECONFIG=/var/lib/minikube/kubeconfig /var/lib/minikube/binaries/v1.28.3/kubectl apply -f /etc/kubernetes/addons/storage-provisioner.yaml
+I0306 17:43:05.019194  596486 kapi.go:248] "coredns" deployment in "kube-system" namespace and "minikube" context rescaled to 1 replicas
+I0306 17:43:05.019222  596486 start.go:223] Will wait 6m0s for node &{Name: IP:192.168.59.107 Port:8443 KubernetesVersion:v1.28.3 ContainerRuntime:docker ControlPlane:true Worker:true}
+I0306 17:43:05.057804  596486 out.go:177] 🔎  Verifying Kubernetes components...
+I0306 17:43:05.091129  596486 ssh_runner.go:195] Run: sudo systemctl is-active --quiet service kubelet
+I0306 17:43:05.110070  596486 main.go:141] libmachine: STDOUT:
+{
+name="minikube"
+Encryption:     disabled
+groups="/"
+ostype="Linux 2.6 / 3.x / 4.x / 5.x (64-bit)"
+UUID="d4122688-2626-4d9d-b4ed-edd33383d12d"
+CfgFile="/home/son/.minikube/machines/minikube/minikube/minikube.vbox"
+SnapFldr="/home/son/.minikube/machines/minikube/minikube/Snapshots"
+LogFldr="/home/son/.minikube/machines/minikube/minikube/Logs"
+hardwareuuid="d4122688-2626-4d9d-b4ed-edd33383d12d"
+memory=4000
+pagefusion="off"
+vram=8
+cpuexecutioncap=100
+hpet="on"
+cpu-profile="host"
+chipset="piix3"
+firmware="BIOS"
+cpus=2
+pae="on"
+longmode="on"
+triplefaultreset="off"
+apic="on"
+x2apic="off"
+nested-hw-virt="off"
+cpuid-portability-level=0
+bootmenu="disabled"
+boot1="dvd"
+boot2="dvd"
+boot3="disk"
+boot4="none"
+acpi="on"
+ioapic="on"
+biosapic="apic"
+biossystemtimeoffset=0
+BIOS NVRAM File="/home/son/.minikube/machines/minikube/minikube/minikube.nvram"
+rtcuseutc="on"
+hwvirtex="on"
+nestedpaging="on"
+largepages="on"
+vtxvpid="on"
+vtxux="on"
+virtvmsavevmload="on"
+iommu="none"
+paravirtprovider="default"
+effparavirtprovider="kvm"
+VMState="running"
+VMStateChangeTime="2024-03-06T10:42:22.593000000"
+graphicscontroller="vboxvga"
+monitorcount=1
+accelerate3d="off"
+accelerate2dvideo="off"
+teleporterenabled="off"
+teleporterport=0
+teleporteraddress=""
+teleporterpassword=""
+tracing-enabled="off"
+tracing-allow-vm-access="off"
+tracing-config=""
+autostart-enabled="off"
+autostart-delay=0
+defaultfrontend=""
+vmprocpriority="default"
+storagecontrollername0="SATA"
+storagecontrollertype0="IntelAhci"
+storagecontrollerinstance0="0"
+storagecontrollermaxportcount0="30"
+storagecontrollerportcount0="30"
+storagecontrollerbootable0="on"
+"SATA-0-0"="/home/son/.minikube/machines/minikube/boot2docker.iso"
+"SATA-ImageUUID-0-0"="7ead6861-b2f7-4b36-9888-a6a3dcf59532"
+"SATA-tempeject-0-0"="off"
+"SATA-IsEjected-0-0"="off"
+"SATA-hot-pluggable-0-0"="off"
+"SATA-nonrotational-0-0"="off"
+"SATA-discard-0-0"="off"
+"SATA-1-0"="/home/son/.minikube/machines/minikube/disk.vmdk"
+"SATA-ImageUUID-1-0"="cf36a715-2519-4068-a0f9-e7d329f87f1d"
+"SATA-hot-pluggable-1-0"="off"
+"SATA-nonrotational-1-0"="off"
+"SATA-discard-1-0"="off"
+"SATA-2-0"="none"
+"SATA-3-0"="none"
+"SATA-4-0"="none"
+"SATA-5-0"="none"
+"SATA-6-0"="none"
+"SATA-7-0"="none"
+"SATA-8-0"="none"
+"SATA-9-0"="none"
+"SATA-10-0"="none"
+"SATA-11-0"="none"
+"SATA-12-0"="none"
+"SATA-13-0"="none"
+"SATA-14-0"="none"
+"SATA-15-0"="none"
+"SATA-16-0"="none"
+"SATA-17-0"="none"
+"SATA-18-0"="none"
+"SATA-19-0"="none"
+"SATA-20-0"="none"
+"SATA-21-0"="none"
+"SATA-22-0"="none"
+"SATA-23-0"="none"
+"SATA-24-0"="none"
+"SATA-25-0"="none"
+"SATA-26-0"="none"
+"SATA-27-0"="none"
+"SATA-28-0"="none"
+"SATA-29-0"="none"
+natnet1="nat"
+macaddress1="0800271912E9"
+cableconnected1="on"
+nic1="nat"
+nictype1="virtio"
+nicspeed1="0"
+mtu="0"
+sockSnd="64"
+sockRcv="64"
+tcpWndSnd="64"
+tcpWndRcv="64"
+Forwarding(0)="ssh,tcp,127.0.0.1,39213,,22"
+hostonlyadapter2="vboxnet3"
+macaddress2="080027430061"
+cableconnected2="on"
+nic2="hostonly"
+nictype2="virtio"
+nicspeed2="0"
+nic3="none"
+nic4="none"
+nic5="none"
+nic6="none"
+nic7="none"
+nic8="none"
+hidpointing="ps2mouse"
+hidkeyboard="ps2kbd"
+uart1="off"
+uart2="off"
+uart3="off"
+uart4="off"
+lpt1="off"
+lpt2="off"
+audio="default"
+audio_out="off"
+audio_in="off"
+clipboard="disabled"
+draganddrop="disabled"
+SessionName="headless"
+VideoMode="720,400,0"@0,0 1
+vrde="off"
+usb="off"
+ehci="off"
+xhci="off"
+VRDEActiveConnection="off"
+VRDEClients==0
+recording_enabled="off"
+recording_screens=1
+ rec_screen0
+rec_screen_enabled="on"
+rec_screen_id=0
+rec_screen_video_enabled="on"
+rec_screen_dest="File"
+rec_screen_dest_filename="/home/son/.minikube/machines/minikube/minikube/minikube-screen0.webm"
+rec_screen_opts="vc_enabled=true,ac_enabled=false,ac_profile=med"
+rec_screen_video_res_xy="1024x768"
+rec_screen_video_rate_kbps=512
+rec_screen_video_fps=25
+GuestMemoryBalloon=0
+GuestOSType="Linux26_64"
+GuestAdditionsRunLevel=2
+GuestAdditionsVersion="6.0.0 r127566"
+GuestAdditionsFacility_VirtualBox Base Driver=50,1709721760953
+GuestAdditionsFacility_VirtualBox System Service=50,1709721761182
+GuestAdditionsFacility_Seamless Mode=0,1709721760953
+GuestAdditionsFacility_Graphics Mode=0,1709721760952
+}
+I0306 17:43:05.110107  596486 main.go:141] libmachine: STDERR:
+{
+}
+I0306 17:43:05.110392  596486 addons.go:423] installing /etc/kubernetes/addons/storageclass.yaml
+I0306 17:43:05.110404  596486 ssh_runner.go:362] scp memory --> /etc/kubernetes/addons/storageclass.yaml (271 bytes)
+I0306 17:43:05.110443  596486 sshutil.go:53] new ssh client: &{IP:127.0.0.1 Port:39213 SSHKeyPath:/home/son/.minikube/machines/minikube/id_rsa Username:docker}
+I0306 17:43:05.192967  596486 ssh_runner.go:195] Run: sudo KUBECONFIG=/var/lib/minikube/kubeconfig /var/lib/minikube/binaries/v1.28.3/kubectl apply -f /etc/kubernetes/addons/storageclass.yaml
+I0306 17:43:05.650348  596486 start.go:926] {"host.minikube.internal": 192.168.59.1} host record injected into CoreDNS's ConfigMap
+I0306 17:43:05.776976  596486 api_server.go:52] waiting for apiserver process to appear ...
+I0306 17:43:05.777079  596486 ssh_runner.go:195] Run: sudo pgrep -xnf kube-apiserver.*minikube.*
+I0306 17:43:05.799284  596486 api_server.go:72] duration metric: took 780.036132ms to wait for apiserver process to appear ...
+I0306 17:43:05.824168  596486 out.go:177] 🌟  Enabled addons: storage-provisioner, default-storageclass
+I0306 17:43:05.824178  596486 api_server.go:88] waiting for apiserver healthz status ...
+I0306 17:43:05.824229  596486 api_server.go:253] Checking apiserver healthz at https://192.168.59.107:8443/healthz ...
+I0306 17:43:05.854442  596486 addons.go:502] enable addons completed in 1.138768883s: enabled=[storage-provisioner default-storageclass]
+I0306 17:43:05.858447  596486 api_server.go:279] https://192.168.59.107:8443/healthz returned 200:
+ok
+I0306 17:43:05.859440  596486 api_server.go:141] control plane version: v1.28.3
+I0306 17:43:05.859454  596486 api_server.go:131] duration metric: took 35.267697ms to wait for apiserver health ...
+I0306 17:43:05.859463  596486 system_pods.go:43] waiting for kube-system pods to appear ...
+I0306 17:43:05.885759  596486 system_pods.go:59] 5 kube-system pods found
+I0306 17:43:05.885779  596486 system_pods.go:61] "etcd-minikube" [fed2535b-431d-409a-900a-08984ea0258a] Running / Ready:ContainersNotReady (containers with unready status: [etcd]) / ContainersReady:ContainersNotReady (containers with unready status: [etcd])
+I0306 17:43:05.885788  596486 system_pods.go:61] "kube-apiserver-minikube" [5856a824-29cd-4cce-b650-be1f40db53df] Running / Ready:ContainersNotReady (containers with unready status: [kube-apiserver]) / ContainersReady:ContainersNotReady (containers with unready status: [kube-apiserver])
+I0306 17:43:05.885797  596486 system_pods.go:61] "kube-controller-manager-minikube" [e9c84d62-d733-465a-9282-7c0758412b2d] Running / Ready:ContainersNotReady (containers with unready status: [kube-controller-manager]) / ContainersReady:ContainersNotReady (containers with unready status: [kube-controller-manager])
+I0306 17:43:05.885809  596486 system_pods.go:61] "kube-scheduler-minikube" [7f6fe3f3-6b71-405f-96d3-0a1efb5f739b] Running / Ready:ContainersNotReady (containers with unready status: [kube-scheduler]) / ContainersReady:ContainersNotReady (containers with unready status: [kube-scheduler])
+I0306 17:43:05.885814  596486 system_pods.go:61] "storage-provisioner" [5e1b6fdd-1bf4-4166-891d-f620c5ccd743] Pending: PodScheduled:Unschedulable (0/1 nodes are available: 1 node(s) had untolerated taint {node.kubernetes.io/not-ready: }. preemption: 0/1 nodes are available: 1 Preemption is not helpful for scheduling..)
+I0306 17:43:05.885822  596486 system_pods.go:74] duration metric: took 26.351754ms to wait for pod list to return data ...
+I0306 17:43:05.885832  596486 kubeadm.go:581] duration metric: took 866.58878ms to wait for : map[apiserver:true system_pods:true] ...
+I0306 17:43:05.885845  596486 node_conditions.go:102] verifying NodePressure condition ...
+I0306 17:43:05.888668  596486 node_conditions.go:122] node storage ephemeral capacity is 9107004Ki
+I0306 17:43:05.888679  596486 node_conditions.go:123] node cpu capacity is 2
+I0306 17:43:05.888703  596486 node_conditions.go:105] duration metric: took 2.851085ms to run NodePressure ...
+I0306 17:43:05.888715  596486 start.go:228] waiting for startup goroutines ...
+I0306 17:43:05.888722  596486 start.go:233] waiting for cluster config update ...
+I0306 17:43:05.888733  596486 start.go:242] writing updated cluster config ...
+I0306 17:43:05.888979  596486 ssh_runner.go:195] Run: rm -f paused
+I0306 17:43:05.931193  596486 start.go:600] kubectl: 1.28.3, cluster: 1.28.3 (minor skew: 0)
+I0306 17:43:05.971152  596486 out.go:177] 🏄  Done! kubectl is now configured to use "minikube" cluster and "default" namespace by default
+
+* 

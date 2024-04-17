@@ -1,0 +1,71 @@
+apiVersion: apps/v1
+# ở đây phiên bản cũ hơn của kubernetes có dạng extensions/v1beta1
+kind: Deployment
+# kind là loại Deployment
+metadata:
+  name: web-server-deployment
+spec:
+  replicas: 2
+  # replica ở đây sẽ tạo ra 2 pods luôn luôn chạy, khi một số pods bị down hay chết hay bất kì lý do nào đó sẽ tự động tạo lại số lượng pods bằng 2
+  selector:
+    matchLabels:
+      app: web-server-deployment
+  template:
+    metadata:
+      labels:
+        app: web-server-deployment
+    spec:
+      containers:
+      - name: web-server
+      # image của container docker
+        image: sonnguyen129/quang_khai_car_service:v1.0.2
+        ports:
+        # port bên trong container
+        - containerPort: 80
+# ---
+# apiVersion: v1
+# # kind là loại Service
+# kind: Service
+# metadata:
+#   name: web-server-svc
+# spec:
+#   ports:
+#   # port bên ngoài của pods mà các pods có thể giao tiếp được với nhau
+#   - port: 80
+#   # port target với 8080 của deployment
+#     targetPort: 80
+#     protocol: TCP
+#     name: http
+#   - port: 443
+#     targetPort: 443
+#     protocol: TCP
+#     name: https
+#   selector:
+#   # dựa theo app : nginx-deployment ở labels trên kia sẽ map với service này
+#     app: web-server-deployment
+#   type: ClusterIP
+
+# service kind type nodeport
+---
+apiVersion: v1
+# kind là loại Service
+kind: Service
+metadata:
+  name: web-server-svc
+spec:
+  ports:
+  # port bên ngoài của pods mà các pods có thể giao tiếp được với nhau
+  - port: 80
+    targetPort: 80
+    protocol: TCP
+    name: http
+    nodePort: 30080
+  - port: 443
+    targetPort: 443
+    protocol: TCP
+    name: https
+    nodePort: 30443
+  selector:
+  # dựa theo app : nginx-deployment ở labels trên kia sẽ map với service này
+    app: web-server-deployment
+  type: NodePort # specific port
