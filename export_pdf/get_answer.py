@@ -1,7 +1,6 @@
 import requests
 import sys
 # Import the library
-from docx import Document
 
 sourceId = sys.argv[1]
 # print(sourceId)
