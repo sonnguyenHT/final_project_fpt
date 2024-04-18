@@ -1,0 +1,28 @@
+Xin chào! Trong trang 1 của PDF, chúng ta có các biểu đồ và thông tin về CPU, bộ nhớ, ổ đĩa và mạng. Dưới đây là báo cáo phân tích:
+
+**CPU:**
+- Tỷ lệ sử dụng CPU dao động từ 0% đến 100% trong khoảng thời gian từ 12:00 đến 08:00.
+- Load average tăng dần từ 0 đến 2.5 trong cùng khoảng thời gian.
+*Nhận xét:* CPU có thể gặp tình trạng quá tải vào thời điểm cao điểm.
+*Kết luận:* Cần theo dõi và tối ưu hóa việc sử dụng CPU để tránh quá tải.
+
+**Memory:**
+- Sử dụng bộ nhớ từ 0 đến 4.66 GiB trong khoảng thời gian từ 14:00 đến 12:00.
+*Nhận xét:* Bộ nhớ được sử dụng tăng dần theo thời gian.
+*Kết luận:* Cần quản lý bộ nhớ hiệu quả để tránh tình trạng thiếu tài nguyên.
+
+**Disk:**
+- Sử dụng không gian đĩa từ 0 đến 61 GB cho các phân vùng khác nhau.
+- Tốc độ I/O đĩa tăng dần từ 0 đến 2 MB/s.
+*Nhận xét:* Có sự sử dụng đĩa và tốc độ I/O đĩa tăng dần.
+*Kết luận:* Cần kiểm tra và quản lý không gian đĩa hiệu quả để tránh sự cố.
+
+**Network:**
+- Tốc độ truyền và nhận mạng dao động từ 0 đến 1 Mb/s.
+- Có sự sử dụng các giao diện mạng khác nhau.
+*Nhận xét:* Tốc độ mạng ổn định và có sự sử dụng đa dạng các giao diện mạng.
+*Kết luận:* Cần theo dõi và quản lý tốc độ mạng để đảm bảo hiệu suất.
+
+*Lưu ý:* Đề xuất theo dõi và tối ưu hóa CPU, bộ nhớ, ổ đĩa và mạng để đảm bảo hệ thống hoạt động ổn định và hiệu quả.
+
+Hy vọng báo cáo này hữu ích cho bạn!
