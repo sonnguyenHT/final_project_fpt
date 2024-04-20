@@ -1,0 +1,23 @@
+Xin chào! Trang 1 của PDF cung cấp thông tin chi tiết về sử dụng CPU, bộ nhớ, ổ đĩa và mạng. Dưới đây là báo cáo phân tích dựa trên dữ liệu từ trang 1:
+
+**CPU Usage:**
+- Từ biểu đồ, chúng ta thấy CPU sử dụng dao động từ 0% đến 100% trong khoảng thời gian 04:00 - 00:00.
+- Có một sự tăng đột ngột ở 20:00, khi CPU sử dụng tăng lên 75%.
+- Khuyến nghị: Theo dõi sát sao CPU vào các thời điểm cao điểm để đảm bảo hiệu suất hệ thống.
+
+**Memory Usage:**
+- Bộ nhớ được sử dụng tăng dần từ 0 B lên 4.66 GiB trong khoảng thời gian 04:00 - 00:00.
+- Có một sự tăng đột ngột ở 20:00, khi bộ nhớ sử dụng tăng lên 3.73 GiB.
+- Lưu ý: Đảm bảo rằng không gian bộ nhớ đủ cho các ứng dụng và quá trình hoạt động của hệ thống.
+
+**Disk Space Usage:**
+- Dung lượng ổ đĩa / sử dụng 778 MB trong khi /data và /mnt/sda1 sử dụng 4.69 GB mỗi phần.
+- /tmp chỉ sử dụng 8.19 kB, trong khi /run sử dụng 20.2 MB.
+- Khuyến nghị: Kiểm tra và quản lý không gian ổ đĩa để tránh sự cố về dung lượng.
+
+**Network Transmitted và Network Received:**
+- Mạng truyền và nhận dữ liệu ổn định trong khoảng thời gian 04:00 - 00:00.
+- Tốc độ truyền và nhận dữ liệu tăng dần từ 0 b/s lên 1 Mb/s.
+- Khuyến nghị: Đảm bảo mạng hoạt động ổn định và không gặp vấn đề về băng thông.
+
+Kết luận: Dựa trên dữ liệu từ trang 1, hệ thống hiện đang hoạt động ổn định với một số biến động trong sử dụng CPU, bộ nhớ, ổ đĩa và mạng. Để duy trì hiệu suất tốt, cần theo dõi và quản lý các yếu tố này một cách cẩn thận. Nếu có bất kỳ vấn đề nào, hãy xem xét các biện pháp cải thiện và tối ưu hóa hệ thống.

@@ -30,16 +30,7 @@ else:
     print('Status:', response.status_code)
     print('Error:', response.text)
 
-# Define the document text
-text = "This is some text content written to a docx file."
-
-# Create a new document
-document = Document()
-
-# Add a paragraph to the document
-document.add_paragraph(text)
-
-# Save the document with a filename
-document.save("System-report.docx")
-
-print("Document created successfully!")
+file_name = "report.txt"
+with open(file_name, "w") as f:
+    data_to_write = response.json()['content']
+    f.write(data_to_write)
